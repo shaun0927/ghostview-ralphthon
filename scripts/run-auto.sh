@@ -108,35 +108,26 @@ start_claude_session
 while [ "$RESTARTS" -le "$MAX_RESTARTS" ]; do
   sleep 10
 
-  # 1. phase-gate 확인 (GitHub cross-check 포함)
-  PENDING=$(check_phase_gate)
-  if [ "$PENDING" -eq 0 ]; then
-    # phase-gate.json만 믿지 않음 — GitHub 이슈 상태로 실제 완료 검증
-    REAL_DONE=$(check_real_completion)
-    if [ "$REAL_DONE" = "true" ]; then
-      echo ""
-      echo "━━━ 모든 Phase 완료! $(date +%H:%M:%S) ━━━"
-      node -p "JSON.stringify(JSON.parse(require('fs').readFileSync('${ROOT}/state/phase-gate.json','utf8')),null,2)"
-      tmux send-keys -t "$SESSION_NAME" C-c 2>/dev/null
-      exit 0
-    else
-      # phase-gate는 complete인데 GitHub 이슈가 안 닫혔으면 → phase-gate가 오염된 것
-      CLOSED_N=$(gh issue list --state closed --json number -q 'length' 2>/dev/null || echo "0")
-      TOTAL_N=$(gh issue list --state all --json number -q 'length' 2>/dev/null || echo "0")
-      echo "  [WARN] phase-gate 오염 감지: 파일은 all-complete지만 GitHub ${CLOSED_N}/${TOTAL_N} closed"
-      # GitHub 닫힌 이슈 수에 맞게 phase-gate 복구
-      node -e "
-        const fs=require('fs');
-        const path='${ROOT}/state/phase-gate.json';
-        const g=JSON.parse(fs.readFileSync(path,'utf8'));
-        for(let i=0;i<5;i++) g['phase'+i] = i < ${CLOSED_N} ? 'complete' : 'pending';
-        g.completedAt=null;
-        fs.writeFileSync(path,JSON.stringify(g,null,2));
-        console.log('  phase-gate 복구: phase0~'+(${CLOSED_N}-1)+' complete, 나머지 pending');
-      " 2>/dev/null
-      PENDING=$(check_phase_gate)
-    fi
+  # 1. 완료 확인 — GitHub이 진실의 원천 (phase-gate.json은 오염 가능)
+  REAL_DONE=$(check_real_completion)
+  if [ "$REAL_DONE" = "true" ]; then
+    echo ""
+    echo "━━━ 모든 Phase 완료! $(date +%H:%M:%S) ━━━"
+    # phase-gate.json도 정리
+    node -e "
+      const fs=require('fs');
+      const path='${ROOT}/state/phase-gate.json';
+      const g=JSON.parse(fs.readFileSync(path,'utf8'));
+      for(let i=0;i<5;i++) g['phase'+i]='complete';
+      g.completedAt=new Date().toISOString();
+      fs.writeFileSync(path,JSON.stringify(g,null,2));
+    " 2>/dev/null
+    node -p "JSON.stringify(JSON.parse(require('fs').readFileSync('${ROOT}/state/phase-gate.json','utf8')),null,2)"
+    tmux send-keys -t "$SESSION_NAME" C-c 2>/dev/null
+    exit 0
   fi
+
+  PENDING=$(check_phase_gate)
 
   # 2. 세션 생존 확인
   if ! tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
