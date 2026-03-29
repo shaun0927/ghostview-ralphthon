@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0a;
+  --card: #141414;
+  --card-border: #1e1e1e;
+  --text: #fafafa;
+  --text-muted: #a1a1aa;
+  --ghost: #ef4444;
+  --ambiguous: #f97316;
+  --duplicate: #eab308;
+  --clear: #22c55e;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Score color classes */
+.score-low { color: #ef4444; }
+.score-mid { color: #f97316; }
+.score-high { color: #22c55e; }
