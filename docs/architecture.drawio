@@ -1,0 +1,288 @@
+<mxfile host="app.diagrams.net" modified="2026-03-29T12:00:00.000Z" agent="Claude" version="24.0.0">
+  <diagram id="harness-architecture" name="Harness Engineering Architecture">
+    <mxGraphModel dx="1800" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ============ TITLE ============ -->
+        <mxCell id="title" value="&lt;b&gt;GhostView Ralphthon — Harness Engineering Architecture&lt;/b&gt;" style="text;html=1;fontSize=22;fontColor=#1a1a2e;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="250" y="-80" width="900" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="결정적(Deterministic) ↔ 비결정적(Non-Deterministic) 분리 아키텍처" style="text;html=1;fontSize=13;fontColor=#666;align=center;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-45" width="700" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- ============ LAYER 0: EXTERNAL SUPERVISOR (run-auto.sh + tmux) ============ -->
+        <mxCell id="tmux-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;arcSize=8;dashed=1;dashPattern=8 4;" vertex="1" parent="1">
+          <mxGeometry x="20" y="0" width="1360" height="820" as="geometry"/>
+        </mxCell>
+        <mxCell id="tmux-label" value="&lt;b&gt;run-auto.sh&lt;/b&gt; — External Supervisor (tmux session: ghostview-auto)" style="text;html=1;fontSize=14;fontColor=#7c6c00;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="500" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- Monitor Loop -->
+        <mxCell id="monitor" value="&lt;b&gt;Monitor Loop&lt;/b&gt;&lt;br&gt;(10초 폴링)" style="shape=process;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;size=0.08;" vertex="1" parent="1">
+          <mxGeometry x="40" y="650" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="mon1" value="완료 체크&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;gh issue list --state closed&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="720" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="mon2" value="Phase 진행 감지&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;high-water mark 비교&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="720" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="mon3" value="행 감지 (60초)&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;tmux capture-pane -p&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="360" y="720" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="mon4" value="세션 재시작&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;tmux respawn-pane&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="520" y="720" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="mon-e1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#d6b656;" edge="1" source="monitor" target="mon1" parent="1"/>
+        <mxCell id="mon-e2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#d6b656;" edge="1" source="monitor" target="mon2" parent="1"/>
+        <mxCell id="mon-e3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#d6b656;" edge="1" source="monitor" target="mon3" parent="1"/>
+        <mxCell id="mon-e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#d6b656;" edge="1" source="mon3" target="mon4" parent="1"/>
+
+        <!-- ============ LAYER 1: CLAUDE CODE CLI ============ -->
+        <mxCell id="claude-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="60" y="50" width="1300" height="580" as="geometry"/>
+        </mxCell>
+        <mxCell id="claude-label" value="&lt;b&gt;Claude Code CLI&lt;/b&gt; (--dangerously-skip-permissions) — AI Agent" style="text;html=1;fontSize=13;fontColor=#2a5599;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="80" y="58" width="450" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- CLAUDE.md -->
+        <mxCell id="claudemd" value="&lt;b&gt;CLAUDE.md&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;시스템 프롬프트&lt;br&gt;가드레일&lt;br&gt;연속 실행 규칙&lt;/font&gt;" style="shape=document;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="90" width="130" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase Commands -->
+        <mxCell id="phasemd" value="&lt;b&gt;phase*.md&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Phase별 상세 지시&lt;br&gt;P0~P4 (5개)&lt;/font&gt;" style="shape=document;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="230" y="90" width="130" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- AI Brain -->
+        <mxCell id="ai-brain" value="&lt;b&gt;AI Agent&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;비결정적 작업&lt;br&gt;코드 작성 / 버그 수정&lt;br&gt;알고리즘 구현&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;size=0.15;" vertex="1" parent="1">
+          <mxGeometry x="430" y="85" width="180" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrow from docs to brain -->
+        <mxCell id="e-cmd1" style="rounded=1;strokeColor=#9673a6;dashed=1;" edge="1" source="claudemd" target="ai-brain" parent="1"/>
+        <mxCell id="e-cmd2" style="rounded=1;strokeColor=#9673a6;dashed=1;" edge="1" source="phasemd" target="ai-brain" parent="1"/>
+
+        <!-- ============ LAYER 2: MCP SERVERS ============ -->
+        <!-- GhostView MCP -->
+        <mxCell id="gv-mcp-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="80" y="210" width="540" height="400" as="geometry"/>
+        </mxCell>
+        <mxCell id="gv-mcp-label" value="&lt;b&gt;GhostView MCP Server&lt;/b&gt; (node mcp/dist/index.js)" style="text;html=1;fontSize=12;fontColor=#3a7728;align=left;" vertex="1" parent="1">
+          <mxGeometry x="100" y="218" width="380" height="22" as="geometry"/>
+        </mxCell>
+
+        <!-- MCP Tools -->
+        <mxCell id="gv-status" value="&lt;b&gt;gv_status&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Context 복구&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="110" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="gv-resume" value="&lt;b&gt;gv_resume&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;재개 지점 결정&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="250" width="110" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="gv-start" value="&lt;b&gt;gv_start&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;issue-start.sh 래핑&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="340" y="250" width="120" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="gv-finish" value="&lt;b&gt;gv_finish&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;issue-finish.sh 래핑&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="470" y="250" width="130" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="gv-scan" value="&lt;b&gt;gv_scan_batch&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;배치 스캔 준비/저장&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="310" width="130" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="gv-verify" value="&lt;b&gt;gv_verify&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;FP 검증&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="240" y="310" width="110" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="gv-vqa" value="&lt;b&gt;gv_visual_qa&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;시각 QA 체크리스트&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="360" y="310" width="130" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrow AI to MCP tools -->
+        <mxCell id="e-ai-mcp" value="도구 호출" style="rounded=1;strokeColor=#82b366;strokeWidth=2;fontSize=10;" edge="1" source="ai-brain" target="gv-start" parent="1"/>
+
+        <!-- ============ SHELL SCRIPTS (inside GV MCP) ============ -->
+        <mxCell id="scripts-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;strokeWidth=1;arcSize=6;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="380" width="500" height="210" as="geometry"/>
+        </mxCell>
+        <mxCell id="scripts-label" value="&lt;b&gt;Shell Scripts&lt;/b&gt; — 결정적 실행 (Deterministic)" style="text;html=1;fontSize=11;fontColor=#666;align=left;" vertex="1" parent="1">
+          <mxGeometry x="115" y="385" width="300" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="issue-start" value="&lt;b&gt;issue-start.sh&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;env 복구&lt;br&gt;이슈 읽기 + 의존성 체크&lt;br&gt;라벨: ready→in-progress&lt;br&gt;브랜치 생성&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="115" y="410" width="150" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="issue-finish" value="&lt;b&gt;issue-finish.sh&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;커밋 + 푸시&lt;br&gt;Supabase 업로드&lt;br&gt;verify-gate.sh 실행&lt;br&gt;PR 생성 → 머지&lt;br&gt;이슈 종료 + 언블록&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="280" y="410" width="155" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="verify-gate" value="&lt;b&gt;verify-gate.sh&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Phase별 품질 게이트&lt;br&gt;실패 시 머지 차단&lt;br&gt;누적 검증 (0~N)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="450" y="410" width="135" height="75" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="retry-sh" value="&lt;b&gt;retry.sh&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;지수 백오프&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="115" y="510" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="create-issues" value="&lt;b&gt;create-phase-issues.sh&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;GitHub 이슈 부트스트랩&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="225" y="510" width="170" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="upload-scripts" value="&lt;b&gt;upload-*.js&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Supabase 업로드&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="405" y="510" width="120" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrows: MCP → Scripts -->
+        <mxCell id="e-mcp-start" style="rounded=1;strokeColor=#82b366;" edge="1" source="gv-start" target="issue-start" parent="1"/>
+        <mxCell id="e-mcp-finish" style="rounded=1;strokeColor=#82b366;" edge="1" source="gv-finish" target="issue-finish" parent="1"/>
+        <mxCell id="e-finish-gate" style="rounded=1;strokeColor=#b85450;" edge="1" source="issue-finish" target="verify-gate" parent="1"/>
+
+        <!-- ============ OPENCHROME MCP ============ -->
+        <mxCell id="oc-mcp-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff0e6;strokeColor=#d79b00;strokeWidth=2;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="660" y="210" width="320" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="oc-mcp-label" value="&lt;b&gt;OpenChrome MCP&lt;/b&gt; — Browser Automation" style="text;html=1;fontSize=12;fontColor=#b37400;align=left;" vertex="1" parent="1">
+          <mxGeometry x="680" y="218" width="280" height="22" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="oc-navigate" value="&lt;b&gt;navigate&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff0e6;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="680" y="250" width="90" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="oc-batch" value="&lt;b&gt;batch_execute&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff0e6;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="780" y="250" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="oc-screenshot" value="&lt;b&gt;screenshot&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff0e6;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="890" y="250" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="oc-tabs" value="&lt;b&gt;tabs_create&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;5~10탭 병렬&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff0e6;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="680" y="295" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="oc-query" value="&lt;b&gt;query_dom&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;CSS/XPath&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff0e6;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="790" y="295" width="90" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="oc-js" value="&lt;b&gt;javascript_tool&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Ghost 탐지 JS&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff0e6;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="890" y="295" width="80" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Chrome Browser -->
+        <mxCell id="chrome" value="&lt;b&gt;Chrome Browser&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;CDP (DevTools Protocol)&lt;br&gt;WebSocket 통신&lt;/font&gt;" style="shape=mxgraph.cisco.computers_and_peripherals.web_browser;whiteSpace=wrap;html=1;fillColor=#fff0e6;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="730" y="355" width="80" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-oc-chrome" style="rounded=1;strokeColor=#d79b00;" edge="1" source="oc-tabs" target="chrome" parent="1"/>
+
+        <!-- Arrow AI to OpenChrome -->
+        <mxCell id="e-ai-oc" value="브라우저 제어" style="rounded=1;strokeColor=#d79b00;strokeWidth=2;fontSize=10;" edge="1" source="ai-brain" target="oc-batch" parent="1"/>
+
+        <!-- ============ STATE FILES ============ -->
+        <mxCell id="state-group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6e0f3;strokeColor=#7c68a6;strokeWidth=2;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="210" width="320" height="400" as="geometry"/>
+        </mxCell>
+        <mxCell id="state-label" value="&lt;b&gt;State Layer&lt;/b&gt; — File-Based State Machine" style="text;html=1;fontSize=12;fontColor=#5c4a8a;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="218" width="280" height="22" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="phase-gate" value="&lt;b&gt;phase-gate.json&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Phase 상태 머신&lt;br&gt;pending → complete&lt;br&gt;&lt;b&gt;로컬 전용 (git X)&lt;/b&gt;&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#e6e0f3;strokeColor=#7c68a6;fontSize=10;size=10;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="250" width="135" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="events-jsonl" value="&lt;b&gt;events.jsonl&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Append-only 이벤트 로그&lt;br&gt;세션 내 디버깅/복구&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#e6e0f3;strokeColor=#7c68a6;fontSize=10;size=10;" vertex="1" parent="1">
+          <mxGeometry x="1195" y="250" width="130" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="scan-progress" value="&lt;b&gt;scan-progress.json&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;cursor, completed, failed&lt;br&gt;UPSERT 중복 제거&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#e6e0f3;strokeColor=#7c68a6;fontSize=10;size=10;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="335" width="135" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="deepdive-prog" value="&lt;b&gt;deepdive-progress.json&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;딥다이브 진행 상태&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#e6e0f3;strokeColor=#7c68a6;fontSize=10;size=10;" vertex="1" parent="1">
+          <mxGeometry x="1195" y="335" width="130" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="verify-results" value="&lt;b&gt;verify-results.json&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;FP 검증 결과&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#e6e0f3;strokeColor=#7c68a6;fontSize=10;size=10;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="415" width="130" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="visual-qa" value="&lt;b&gt;visual-qa.json&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;시각 QA 결과&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#e6e0f3;strokeColor=#7c68a6;fontSize=10;size=10;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="415" width="120" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- GitHub Issues (Source of Truth) -->
+        <mxCell id="github" value="&lt;b&gt;GitHub Issues&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;진실의 원천 (Source of Truth)&lt;br&gt;Labels: ready / in-progress / done / blocked&lt;br&gt;Dependencies: &quot;depends on #N&quot;&lt;/font&gt;" style="shape=cloud;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="490" width="290" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrows: Scripts → State -->
+        <mxCell id="e-start-state" style="rounded=1;strokeColor=#7c68a6;dashed=1;" edge="1" source="issue-start" target="phase-gate" parent="1"/>
+        <mxCell id="e-finish-state" style="rounded=1;strokeColor=#7c68a6;dashed=1;" edge="1" source="issue-finish" target="events-jsonl" parent="1"/>
+        <mxCell id="e-scripts-gh" value="gh CLI" style="rounded=1;strokeColor=#666;strokeWidth=2;fontSize=9;" edge="1" source="issue-finish" target="github" parent="1"/>
+        <mxCell id="e-scan-state" style="rounded=1;strokeColor=#7c68a6;dashed=1;" edge="1" source="gv-scan" target="scan-progress" parent="1"/>
+
+        <!-- ============ EXTERNAL SERVICES (bottom) ============ -->
+        <mxCell id="supabase" value="&lt;b&gt;Supabase&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;PostgreSQL&lt;br&gt;sites + reports&lt;br&gt;Storage (screenshots)&lt;/font&gt;" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#43a047;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="720" y="480" width="130" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="vercel" value="&lt;b&gt;Vercel&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Next.js 14 호스팅&lt;br&gt;서버리스 API&lt;/font&gt;" style="shape=cloud;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="880" y="480" width="130" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e-upload-supa" style="rounded=1;strokeColor=#43a047;" edge="1" source="upload-scripts" target="supabase" parent="1"/>
+        <mxCell id="e-gate-gh" style="rounded=1;strokeColor=#b85450;dashed=1;" edge="1" source="verify-gate" target="github" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="450"/>
+              <mxPoint x="900" y="590"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ============ PHASE FLOW (right side) ============ -->
+        <mxCell id="p0" value="&lt;b&gt;P0&lt;/b&gt; Infra" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#43a047;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="680" y="100" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1" value="&lt;b&gt;P1&lt;/b&gt; Scan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#43a047;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="780" y="100" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2" value="&lt;b&gt;P2&lt;/b&gt; Deep" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#43a047;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="880" y="100" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3" value="&lt;b&gt;P3&lt;/b&gt; Build" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#43a047;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="980" y="100" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="p4" value="&lt;b&gt;P4&lt;/b&gt; Deploy" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#43a047;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="100" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="ep01" style="rounded=0;strokeColor=#43a047;strokeWidth=2;" edge="1" source="p0" target="p1" parent="1"/>
+        <mxCell id="ep12" style="rounded=0;strokeColor=#43a047;strokeWidth=2;" edge="1" source="p1" target="p2" parent="1"/>
+        <mxCell id="ep23" style="rounded=0;strokeColor=#43a047;strokeWidth=2;" edge="1" source="p2" target="p3" parent="1"/>
+        <mxCell id="ep34" style="rounded=0;strokeColor=#43a047;strokeWidth=2;" edge="1" source="p3" target="p4" parent="1"/>
+        <mxCell id="done-check" value="✓" style="text;html=1;fontSize=16;fontColor=#43a047;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="100" width="30" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-title" value="&lt;b&gt;Legend&lt;/b&gt;" style="text;html=1;fontSize=11;fontColor=#333;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="100" width="50" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="125" width="15" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg1t" value="tmux Supervisor" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="125" width="100" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="145" width="15" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2t" value="Claude Code CLI" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="145" width="100" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="165" width="15" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3t" value="GhostView MCP" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="165" width="100" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff0e6;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="185" width="15" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg4t" value="OpenChrome MCP" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="185" width="100" height="15" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

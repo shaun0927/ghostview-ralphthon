@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GhostView Ralphthon — Harness Engineering Architecture</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface2: #1a1a28;
+    --border: #2a2a3a;
+    --text: #e4e4ef;
+    --text-dim: #8888a0;
+    --accent: #6c63ff;
+    --accent2: #00d4aa;
+    --accent3: #ff6b6b;
+    --accent4: #ffd93d;
+    --accent5: #4ecdc4;
+    --glow: rgba(108, 99, 255, 0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--surface);
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── Navigation ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 10, 15, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+  }
+  nav .nav-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 56px;
+  }
+  nav .logo {
+    font-weight: 800; font-size: 1.1rem;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  nav .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+  nav .nav-links a {
+    color: var(--text-dim); text-decoration: none; font-size: 0.85rem;
+    font-weight: 500; transition: color 0.2s;
+  }
+  nav .nav-links a:hover { color: var(--accent); }
+
+  /* ── Hero ── */
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 6rem 2rem 4rem;
+    position: relative;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(108,99,255,0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 50%, rgba(0,212,170,0.06) 0%, transparent 50%);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.4rem 1rem; border-radius: 100px;
+    background: var(--surface2); border: 1px solid var(--border);
+    font-size: 0.8rem; color: var(--accent); font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .hero-badge .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent2);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 900; line-height: 1.1;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #fff 0%, #ccc 50%, var(--accent) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .hero .subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    color: var(--text-dim); max-width: 700px;
+    font-weight: 400; margin-bottom: 3rem;
+  }
+  .hero-stats {
+    display: flex; gap: 3rem; flex-wrap: wrap; justify-content: center;
+  }
+  .hero-stat {
+    text-align: center;
+  }
+  .hero-stat .num {
+    font-size: 2.5rem; font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    animation: countFade 1s ease-out both;
+  }
+  .hero-stat:nth-child(1) .num { animation-delay: 0.1s; }
+  .hero-stat:nth-child(2) .num { animation-delay: 0.25s; }
+  .hero-stat:nth-child(3) .num { animation-delay: 0.4s; }
+  .hero-stat:nth-child(4) .num { animation-delay: 0.55s; }
+  @keyframes countFade {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-stat .label {
+    font-size: 0.8rem; color: var(--text-dim); margin-top: 0.2rem;
+  }
+
+  /* ── Sections ── */
+  section {
+    max-width: 1200px; margin: 0 auto;
+    padding: 5rem 2rem;
+  }
+  .section-header {
+    text-align: center; margin-bottom: 4rem;
+  }
+  .section-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem; color: var(--accent);
+    font-weight: 600; letter-spacing: 2px;
+    text-transform: uppercase; margin-bottom: 0.5rem;
+  }
+  .section-header h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800; margin-bottom: 1rem;
+  }
+  .section-header p {
+    color: var(--text-dim); max-width: 600px; margin: 0 auto;
+    font-size: 1.05rem;
+  }
+
+  /* ── Architecture Diagram ── */
+  .arch-diagram {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px; padding: 2rem;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+  }
+  .arch-diagram pre {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem; line-height: 1.5;
+    color: var(--text-dim);
+    white-space: pre;
+    overflow-x: auto;
+  }
+  .arch-diagram .hl-yellow { color: var(--accent4); font-weight: 600; }
+  .arch-diagram .hl-blue { color: #6cb4ee; font-weight: 600; }
+  .arch-diagram .hl-green { color: var(--accent2); font-weight: 600; }
+  .arch-diagram .hl-orange { color: #f0a060; font-weight: 600; }
+  .arch-diagram .hl-purple { color: #b088f9; font-weight: 600; }
+  .arch-diagram .hl-red { color: var(--accent3); font-weight: 600; }
+  .arch-diagram .hl-dim { color: #555568; }
+
+  .drawio-note {
+    text-align: center; color: var(--text-dim);
+    font-size: 0.85rem; margin-top: 1rem;
+  }
+  .drawio-note a {
+    color: var(--accent); text-decoration: none;
+  }
+
+  /* ── Cards Grid ── */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 1.5rem; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px; padding: 2rem;
+    transition: border-color 0.3s, transform 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+  .card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .card:hover::before { opacity: 1; }
+  .card::after {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at top left, rgba(108,99,255,0.04), transparent 70%);
+    pointer-events: none;
+  }
+  .card-icon {
+    width: 48px; height: 48px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; margin-bottom: 1.4rem;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .card h3 {
+    font-size: 1.15rem; font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+  .card p {
+    color: var(--text-dim); font-size: 0.9rem; line-height: 1.6;
+  }
+  .card code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem; background: var(--surface2);
+    padding: 0.15rem 0.4rem; border-radius: 4px;
+    color: var(--accent2);
+  }
+
+  /* ── Timeline ── */
+  .timeline { position: relative; padding-left: 3rem; }
+  .timeline::before {
+    content: ''; position: absolute; left: 14px; top: 0; bottom: 0;
+    width: 2px; background: linear-gradient(180deg, var(--accent), var(--accent2), var(--accent4));
+  }
+  .tl-item {
+    position: relative; margin-bottom: 2.5rem; padding-left: 1.5rem;
+  }
+  .tl-dot {
+    position: absolute; left: -2.35rem; top: 0.35rem;
+    width: 18px; height: 18px; border-radius: 50%;
+    border: 3px solid var(--accent); background: var(--bg);
+  }
+  .tl-item.done .tl-dot { background: var(--accent2); border-color: var(--accent2); }
+  .tl-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem; color: var(--accent);
+    margin-bottom: 0.3rem;
+  }
+  .tl-item h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.3rem; }
+  .tl-item p { color: var(--text-dim); font-size: 0.9rem; }
+
+  /* ── Code Block ── */
+  .code-block {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden;
+    margin: 1.5rem 0;
+  }
+  .code-header {
+    display: flex; align-items: center; gap: 0.5rem;
+    padding: 0.75rem 1.2rem;
+    background: var(--surface2); border-bottom: 1px solid var(--border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem; color: var(--text-dim);
+  }
+  .code-header .dots { display: flex; gap: 5px; margin-right: 0.5rem; }
+  .code-header .dots span {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+  .code-header .dots span:nth-child(1) { background: #ff5f57; }
+  .code-header .dots span:nth-child(2) { background: #febc2e; }
+  .code-header .dots span:nth-child(3) { background: #28c840; }
+  .code-block pre {
+    padding: 1.2rem; overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem; line-height: 1.7;
+    color: #c8c8d8;
+  }
+  .code-block .kw { color: #c792ea; }
+  .code-block .fn { color: #82aaff; }
+  .code-block .str { color: #c3e88d; }
+  .code-block .cm { color: #546e7a; }
+  .code-block .num { color: #f78c6c; }
+  .code-block .op { color: #89ddff; }
+
+  /* ── Flow Diagram ── */
+  .flow {
+    display: flex; align-items: center; gap: 0.5rem;
+    flex-wrap: wrap; justify-content: center;
+    margin: 2rem 0;
+  }
+  .flow-step {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px; padding: 0.8rem 1.2rem;
+    text-align: center; min-width: 120px;
+    transition: border-color 0.3s;
+  }
+  .flow-step:hover { border-color: var(--accent); }
+  .flow-step .step-label {
+    font-size: 0.7rem; color: var(--text-dim);
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 0.3rem;
+  }
+  .flow-step .step-name {
+    font-weight: 700; font-size: 0.95rem;
+  }
+  .flow-arrow {
+    color: var(--accent); font-size: 1.2rem; font-weight: 700;
+  }
+
+  /* ── Table ── */
+  .data-table {
+    width: 100%; border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+  .data-table th, .data-table td {
+    padding: 0.8rem 1rem;
+    text-align: left; font-size: 0.9rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .data-table th {
+    font-weight: 600; color: var(--text-dim);
+    font-size: 0.8rem; text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .data-table td code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem; background: var(--surface2);
+    padding: 0.15rem 0.4rem; border-radius: 4px;
+    color: var(--accent2);
+  }
+  .data-table tr:hover td { background: var(--surface); }
+
+  /* ── Tag / Badge ── */
+  .tag {
+    display: inline-block; padding: 0.2rem 0.6rem;
+    border-radius: 6px; font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .tag-green { background: rgba(0,212,170,0.15); color: var(--accent2); }
+  .tag-blue { background: rgba(108,99,255,0.15); color: var(--accent); }
+  .tag-red { background: rgba(255,107,107,0.15); color: var(--accent3); }
+  .tag-yellow { background: rgba(255,217,61,0.15); color: var(--accent4); }
+  .tag-orange { background: rgba(240,160,96,0.15); color: #f0a060; }
+
+  /* ── Principle Cards ── */
+  .principle {
+    display: flex; gap: 1.5rem; align-items: flex-start;
+    padding: 1.5rem; margin-bottom: 1rem;
+    background: var(--surface); border-radius: 12px;
+    border-left: 3px solid var(--accent);
+  }
+  .principle-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.8rem; font-weight: 800;
+    color: var(--accent); min-width: 50px;
+    line-height: 1;
+  }
+  .principle h4 { font-weight: 700; margin-bottom: 0.4rem; }
+  .principle p { color: var(--text-dim); font-size: 0.9rem; }
+
+  /* ── Comparison ── */
+  .comparison {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  .comp-col {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px; padding: 2rem; overflow: hidden;
+  }
+  .comp-col h4 {
+    font-size: 1rem; font-weight: 700;
+    margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;
+  }
+  .comp-col ul { list-style: none; }
+  .comp-col li {
+    padding: 0.5rem 0; font-size: 0.9rem; color: var(--text-dim);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .comp-col li::before {
+    content: ''; width: 6px; height: 6px;
+    border-radius: 50%; flex-shrink: 0;
+  }
+  .comp-determ li::before { background: var(--accent2); }
+  .comp-nondet li::before { background: var(--accent); }
+
+  /* ── Separator ── */
+  .sep {
+    height: 1px; max-width: 1200px; margin: 0 auto;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+  }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center; padding: 3rem 2rem;
+    color: var(--text-dim); font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  /* ── Scroll Progress Bar ── */
+  .scroll-progress {
+    position: fixed; top: 56px; left: 0; z-index: 99;
+    width: 0%; height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    transition: width 0.1s linear;
+  }
+
+  /* ── Section Fade-in ── */
+  .section-header, .card, .principle, .tl-item, .code-block, .comparison, .flow, .arch-diagram {
+    opacity: 0; transform: translateY(24px);
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  @keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .comparison { grid-template-columns: 1fr; }
+    .cards { grid-template-columns: 1fr; }
+    .hero-stats { gap: 2rem; }
+    nav .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ SCROLL PROGRESS ═══════════ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">GhostView Ralphthon</div>
+    <ul class="nav-links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#tmux">tmux</a></li>
+      <li><a href="#mcp">MCP</a></li>
+      <li><a href="#scripts">Scripts</a></li>
+      <li><a href="#phase-gate">Phase Gate</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<div class="hero">
+  <div class="hero-badge">
+    <span class="dot"></span>
+    Harness Engineering Architecture
+  </div>
+  <h1>AI Agent를 위한<br>자율 실행 하네스</h1>
+  <p class="subtitle">
+    결정적 인프라가 비결정적 AI를 감싸는 아키텍처.<br>
+    약 3시간 만에 960개 사이트를 스캔하고, 웹사이트를 빌드하고, 배포까지 완료.
+  </p>
+  <a href="https://ghostview-chi.vercel.app" target="_blank" style="
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    padding: 0.75rem 1.8rem; border-radius: 100px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff; text-decoration: none; font-weight: 600; font-size: 0.95rem;
+    margin-bottom: 3rem; transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(108,99,255,0.3);
+  " onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 30px rgba(108,99,255,0.4)'"
+     onmouseout="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(108,99,255,0.3)'">
+    &#x2197; 라이브 사이트 바로가기
+  </a>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="num">~3h</div>
+      <div class="label">전체 파이프라인</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num">960</div>
+      <div class="label">사이트 스캔 완료</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num">5</div>
+      <div class="label">Phase 자동 완료</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num">0</div>
+      <div class="label">사람 개입 횟수</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ SECTION 1: CORE PRINCIPLE ═══════════ -->
+<section id="overview">
+  <div class="section-header">
+    <div class="section-num">01 &mdash; Core Principle</div>
+    <h2>결정적 / 비결정적 분리</h2>
+    <p>AI는 코드만 짜고, 나머지는 스크립트가 강제한다</p>
+  </div>
+
+  <div class="comparison">
+    <div class="comp-col comp-determ" style="border-color: rgba(0,212,170,0.3);">
+      <h4><span class="tag tag-green">Deterministic</span> 스크립트가 담당</h4>
+      <ul>
+        <li>Git 브랜치 생성 / 커밋 / 푸시</li>
+        <li>GitHub 라벨 변경 (ready &rarr; in-progress &rarr; done)</li>
+        <li>PR 생성 &rarr; 머지 &rarr; 이슈 종료</li>
+        <li>Phase Gate 품질 검증</li>
+        <li>환경변수 자동 복구</li>
+        <li>후속 이슈 언블록</li>
+      </ul>
+    </div>
+    <div class="comp-col comp-nondet" style="border-color: rgba(108,99,255,0.3);">
+      <h4><span class="tag tag-blue">Non-Deterministic</span> AI가 담당</h4>
+      <ul>
+        <li>코드 작성 (구현 세부사항)</li>
+        <li>접근성 탐지 알고리즘 구현</li>
+        <li>버그 수정 (게이트 실패 시)</li>
+        <li>브라우저 자동화 전략 선택</li>
+        <li>웹사이트 UI/UX 구현</li>
+        <li>최적화 (성능 튜닝)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="flow">
+    <div class="flow-step" style="border-color: var(--accent2);">
+      <div class="step-label">Step 1</div>
+      <div class="step-name">issue-start.sh</div>
+    </div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-step" style="border-color: var(--accent);">
+      <div class="step-label">Step 2</div>
+      <div class="step-name">AI 코드 작성</div>
+    </div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-step" style="border-color: var(--accent3);">
+      <div class="step-label">Step 3</div>
+      <div class="step-name">verify-gate.sh</div>
+    </div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-step" style="border-color: var(--accent2);">
+      <div class="step-label">Step 4</div>
+      <div class="step-name">issue-finish.sh</div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ═══════════ SECTION 2: ARCHITECTURE ═══════════ -->
+<section id="architecture">
+  <div class="section-header">
+    <div class="section-num">02 &mdash; Architecture</div>
+    <h2>4-Layer 하네스 아키텍처</h2>
+    <p>tmux &rarr; Claude Code &rarr; MCP Server &rarr; Shell Scripts</p>
+  </div>
+
+  <div class="arch-diagram">
+<pre>
+<span class="hl-yellow">  run-auto.sh  (External Supervisor)</span>
+<span class="hl-dim">  ┌─────────────────────────────────────────────────────────────────────────────┐</span>
+<span class="hl-dim">  │</span> <span class="hl-yellow">tmux session: ghostview-auto</span>                                               <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>                                                                             <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-blue">Claude Code CLI  (--dangerously-skip-permissions)</span>                         <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">┌──────────────────────────────────────────────────────────────────────┐</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>                                                                      <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-purple">CLAUDE.md</span>  +  <span class="hl-purple">phase*.md</span>  &rarr;  <span class="hl-blue">AI Agent</span>  (비결정적 코드 작성)          <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>                                    <span class="hl-dim">│</span>                                  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>                    <span class="hl-dim">┌───────────────┼───────────────┐</span>                <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>                    <span class="hl-dim">│</span>               <span class="hl-dim">│</span>               <span class="hl-dim">│</span>                <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-green">GhostView MCP</span>        <span class="hl-orange">OpenChrome MCP</span>       <span class="hl-purple">State Files</span>           <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-green">┌──────────────┐</span>  <span class="hl-orange">┌──────────────┐</span>  <span class="hl-purple">┌─────────────────┐</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-green">│</span> gv_start     <span class="hl-green">│</span>  <span class="hl-orange">│</span> navigate     <span class="hl-orange">│</span>  <span class="hl-purple">│</span> phase-gate.json <span class="hl-purple">│</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-green">│</span> gv_finish    <span class="hl-green">│</span>  <span class="hl-orange">│</span> batch_execute<span class="hl-orange">│</span>  <span class="hl-purple">│</span> events.jsonl    <span class="hl-purple">│</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-green">│</span> gv_resume    <span class="hl-green">│</span>  <span class="hl-orange">│</span> screenshot   <span class="hl-orange">│</span>  <span class="hl-purple">│</span> scan-progress   <span class="hl-purple">│</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-green">│</span> gv_scan_batch<span class="hl-green">│</span>  <span class="hl-orange">│</span> tabs_create  <span class="hl-orange">│</span>  <span class="hl-purple">│</span> verify-results  <span class="hl-purple">│</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-green">│</span> gv_verify    <span class="hl-green">│</span>  <span class="hl-orange">│</span> query_dom    <span class="hl-orange">│</span>  <span class="hl-purple">│</span> visual-qa.json  <span class="hl-purple">│</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-green">└──────┬───────┘</span>  <span class="hl-orange">└──────────────┘</span>  <span class="hl-purple">└─────────────────┘</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>         <span class="hl-green">│</span>                 <span class="hl-dim">│</span>                                    <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-dim">Shell Scripts (결정적)</span>      <span class="hl-dim">│</span>           <span class="hl-dim">External Services</span>          <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-dim">┌──────────────────┐</span>    <span class="hl-dim">│</span>    <span class="hl-dim">┌───────────────────────────┐</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span> issue-start.sh   <span class="hl-dim">│</span>    <span class="hl-dim">│</span>    <span class="hl-dim">│</span> <span class="hl-dim">GitHub Issues  (진실의 원천)</span><span class="hl-dim">│</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span> issue-finish.sh  <span class="hl-dim">│────┘</span>    <span class="hl-dim">│</span> <span class="hl-dim">Supabase       (DB+Storage)</span><span class="hl-dim">│</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span> <span class="hl-red">verify-gate.sh</span>   <span class="hl-dim">│─────────│</span> <span class="hl-dim">Vercel         (배포)</span>       <span class="hl-dim">│</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span> retry.sh         <span class="hl-dim">│</span>         <span class="hl-dim">│</span> <span class="hl-dim">Chrome Browser (CDP)</span>        <span class="hl-dim">│</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">│</span>  <span class="hl-dim">└──────────────────┘</span>         <span class="hl-dim">└───────────────────────────┘</span>  <span class="hl-dim">│</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-dim">└──────────────────────────────────────────────────────────────────────┘</span>  <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>                                                                             <span class="hl-dim">│</span>
+<span class="hl-dim">  │</span>  <span class="hl-yellow">Monitor: 완료체크 | Phase진행감지 | 행감지(60초) | 세션재시작</span>              <span class="hl-dim">│</span>
+<span class="hl-dim">  └─────────────────────────────────────────────────────────────────────────────┘</span>
+</pre>
+  </div>
+
+</section>
+
+<div class="sep"></div>
+
+<!-- ═══════════ SECTION 3: TMUX ═══════════ -->
+<section id="tmux">
+  <div class="section-header">
+    <div class="section-num">03 &mdash; tmux Supervisor</div>
+    <h2>run-auto.sh &mdash; 외부 감독자</h2>
+    <p>Claude Code의 context overflow를 외부에서 감지하고 복구하는 메커니즘</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon" style="background: rgba(255,217,61,0.15);">&#9881;</div>
+      <h3>세션 관리</h3>
+      <p>
+        <code>tmux new-session -d -s ghostview-auto</code>로 세션 생성 후
+        <code>tmux respawn-pane</code>으로 Claude CLI를 실행.
+        프롬프트 자동 주입으로 자율 실행 시작.
+      </p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background: rgba(255,107,107,0.15);">&#128270;</div>
+      <h3>행(Hang) 감지</h3>
+      <p>
+        10초마다 <code>tmux capture-pane -p</code>로 출력 캡처.
+        60초간 변화 없으면 <code>"계속 진행해"</code> 자동 주입.
+        10회 실패 시 세션 재시작.
+      </p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background: rgba(0,212,170,0.15);">&#128260;</div>
+      <h3>Phase 진행 감지</h3>
+      <p>
+        <code>phase-gate.json</code>의 high-water mark 모니터링.
+        Phase가 진행되면 context overflow로 판단 &rarr; 세션 재시작 &rarr;
+        <code>gv_resume</code>로 자동 복구.
+      </p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background: rgba(108,99,255,0.15);">&#10003;</div>
+      <h3>완료 체크</h3>
+      <p>
+        <code>gh issue list --state closed</code>로 GitHub에서 직접 확인.
+        phase-gate.json은 AI가 오염할 수 있으므로 GitHub이 진실의 원천.
+        모든 이슈가 닫히면 자동 종료.
+      </p>
+    </div>
+  </div>
+
+  <div class="code-block">
+    <div class="code-header">
+      <div class="dots"><span></span><span></span><span></span></div>
+      scripts/run-auto.sh &mdash; 핵심 모니터 루프
+    </div>
+<pre><span class="kw">while</span> [ <span class="str">"$RESTARTS"</span> -le <span class="str">"$MAX_RESTARTS"</span> ]; <span class="kw">do</span>
+  sleep <span class="num">10</span>
+
+  <span class="cm"># 1. GitHub이 진실의 원천 (phase-gate.json은 오염 가능)</span>
+  REAL_DONE=$(<span class="fn">check_real_completion</span>)
+  <span class="kw">if</span> [ <span class="str">"$REAL_DONE"</span> = <span class="str">"true"</span> ]; <span class="kw">then</span> exit <span class="num">0</span>; <span class="kw">fi</span>
+
+  <span class="cm"># 2. Phase 진행 감지 → Context overflow → 세션 재시작</span>
+  COMPLETED_PHASES=$(gh issue list --state closed --json number <span class="op">|</span> jq length)
+  <span class="kw">if</span> [ <span class="str">"$COMPLETED_PHASES"</span> -gt <span class="str">"$MAX_COMPLETED_PHASES"</span> ]; <span class="kw">then</span>
+    <span class="fn">start_claude_session</span>  <span class="cm"># Context 초기화</span>
+  <span class="kw">fi</span>
+
+  <span class="cm"># 3. 행 감지 — 60초간 출력 무변화</span>
+  CURRENT_SCREEN=$(<span class="fn">get_screen</span>)  <span class="cm"># tmux capture-pane</span>
+  <span class="kw">if</span> [ <span class="str">"$CURRENT_SCREEN"</span> = <span class="str">"$LAST_SCREEN"</span> ]; <span class="kw">then</span>
+    tmux send-keys <span class="str">"계속 진행해"</span> Enter
+  <span class="kw">fi</span>
+<span class="kw">done</span></pre>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ═══════════ SECTION 4: MCP ═══════════ -->
+<section id="mcp">
+  <div class="section-header">
+    <div class="section-num">04 &mdash; MCP Servers</div>
+    <h2>도구 인터페이스 계층</h2>
+    <p>Shell 스크립트와 브라우저를 AI의 도구로 노출</p>
+  </div>
+
+  <div class="cards">
+    <div class="card" style="grid-column: span 2;">
+      <div class="card-icon" style="background: rgba(0,212,170,0.15);">&#9874;</div>
+      <h3>GhostView MCP &mdash; 파이프라인 오케스트레이션</h3>
+      <p style="margin-bottom: 1rem;">
+        <code>.claude/settings.json</code>에 등록된 단 하나의 커스텀 MCP 서버.
+        Shell 스크립트를 래핑하여 Claude Code의 도구로 노출합니다.
+      </p>
+      <table class="data-table">
+        <thead>
+          <tr><th>도구</th><th>역할</th><th>래핑 대상</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>gv_status</code></td><td>Context 압축 후 상태 복원</td><td>phase-gate.json + gh issue list</td></tr>
+          <tr><td><code>gv_resume</code></td><td>재개 지점 결정 (events.jsonl 읽기)</td><td>events.jsonl tail</td></tr>
+          <tr><td><code>gv_start</code></td><td>이슈 시작: 브랜치 생성 + 이슈 반환</td><td><code>issue-start.sh</code></td></tr>
+          <tr><td><code>gv_finish</code></td><td>이슈 종료: 커밋 &rarr; PR &rarr; 머지</td><td><code>issue-finish.sh</code></td></tr>
+          <tr><td><code>gv_scan_batch</code></td><td>배치 스캔 준비 / 결과 저장 (UPSERT)</td><td>scan-progress.json R/W</td></tr>
+          <tr><td><code>gv_verify</code></td><td>False Positive 검증</td><td>verify-results.json</td></tr>
+          <tr><td><code>gv_visual_qa</code></td><td>Phase 4 시각 QA 체크리스트</td><td>visual-qa.json</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-icon" style="background: rgba(240,160,96,0.15);">&#127760;</div>
+      <h3>OpenChrome MCP &mdash; 브라우저 자동화</h3>
+      <p>
+        Chrome DevTools Protocol(CDP)로 브라우저를 제어.
+        <code>batch_execute</code>로 5~10개 탭을 병렬 실행하여 Ghost 탐지 JS를 주입.
+        Puppeteer 직접 사용은 <code>verify-gate.sh</code>에서 금지됨.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon" style="background: rgba(176,136,249,0.15);">&#128203;</div>
+      <h3>CLAUDE.md &mdash; 시스템 프롬프트</h3>
+      <p>
+        AI의 행동 규칙을 강제하는 가드레일 문서.
+        "gv_finish 후 nextReady가 있으면 즉시 gv_start" 같은 연속 실행 규칙,
+        "verify-gate.sh를 절대 우회하지 마" 같은 안전 규칙을 주입.
+      </p>
+    </div>
+  </div>
+
+  <div class="code-block">
+    <div class="code-header">
+      <div class="dots"><span></span><span></span><span></span></div>
+      .claude/settings.json &mdash; MCP 등록
+    </div>
+<pre>{
+  <span class="str">"mcpServers"</span>: {
+    <span class="str">"ghostview"</span>: {
+      <span class="str">"command"</span>: <span class="str">"node"</span>,
+      <span class="str">"args"</span>: [<span class="str">"mcp/dist/index.js"</span>],
+      <span class="str">"env"</span>: { <span class="str">"GHOSTVIEW_CWD"</span>: <span class="str">"."</span> }
+    }
+  }
+}</pre>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ═══════════ SECTION 5: SCRIPTS ═══════════ -->
+<section id="scripts">
+  <div class="section-header">
+    <div class="section-num">05 &mdash; Shell Scripts</div>
+    <h2>결정적 실행 계층</h2>
+    <p>AI가 실수할 수 없는 부분을 스크립트가 강제</p>
+  </div>
+
+  <div class="principle">
+    <div class="principle-num">1</div>
+    <div>
+      <h4>issue-start.sh &mdash; Steps 0~3</h4>
+      <p>
+        <code>.env.local</code> 복구 (config/env.json &rarr; Supabase CLI 폴백) &rarr;
+        <code>gh issue view</code>로 이슈 읽기 &rarr;
+        <code>depends on #N</code> 의존성 체크 (CLOSED가 아니면 BLOCKED) &rarr;
+        라벨 변경 (ready &rarr; in-progress) &rarr;
+        브랜치 생성 + state 파일 백업/복원
+      </p>
+    </div>
+  </div>
+
+  <div class="principle">
+    <div class="principle-num">2</div>
+    <div>
+      <h4>issue-finish.sh &mdash; Steps 6~11</h4>
+      <p>
+        <code>git add -A && git commit && git push</code> &rarr;
+        Supabase 자동 업로드 (scan-progress, deepdive-reports) &rarr;
+        <strong style="color:var(--accent3)">verify-gate.sh 누적 검증 (Phase 0~N 전부)</strong> &rarr;
+        <code>gh pr create --base develop</code> &rarr;
+        <code>gh pr merge --squash</code> &rarr;
+        phase-gate.json 업데이트 &rarr;
+        이슈 종료 + 후속 이슈 언블록
+      </p>
+    </div>
+  </div>
+
+  <div class="principle">
+    <div class="principle-num">3</div>
+    <div>
+      <h4>verify-gate.sh &mdash; 품질 게이트</h4>
+      <p>
+        Phase별 검증 규칙. 실패 시 머지 차단.
+        P1: 데이터 완전성 + FP 0건 + 성능 기준 + 80% 완료율.
+        P2: Puppeteer 미사용 + 딥다이브 &ge;5.
+        P3: <code>npm run build</code> 성공 + worst-first 정렬.
+        P4: HTTP 200 + 콘텐츠 검증 + Visual QA.
+      </p>
+    </div>
+  </div>
+
+  <div class="principle">
+    <div class="principle-num">4</div>
+    <div>
+      <h4>retry.sh &mdash; 네트워크 복원력</h4>
+      <p>
+        <code>gh</code> CLI 명령을 감싸는 지수 백오프 래퍼.
+        1회 실패: 2초 대기 &rarr; 2회 실패: 4초 대기 &rarr; 3회 실패: 6초 대기 &rarr; 포기.
+        GitHub rate limit과 네트워크 불안정 처리.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ═══════════ SECTION 6: PHASE GATE ═══════════ -->
+<section id="phase-gate">
+  <div class="section-header">
+    <div class="section-num">06 &mdash; Phase Gate</div>
+    <h2>상태 머신 &amp; 이벤트 소싱</h2>
+    <p>파일 기반 상태 관리 + GitHub Issues가 진실의 원천</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon" style="background: rgba(176,136,249,0.15);">&#128451;</div>
+      <h3>phase-gate.json</h3>
+      <p>
+        Phase 상태 머신. <code>pending &rarr; complete</code> 단방향 전이만 허용.
+        <strong>로컬 전용</strong> (git에 커밋하지 않음).
+        Git checkout으로 덮어써지는 것을 방지하기 위해 issue-start.sh가 백업/복원.
+      </p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background: rgba(78,205,196,0.15);">&#128221;</div>
+      <h3>events.jsonl</h3>
+      <p>
+        Append-only 이벤트 로그.
+        <code>gv_resume</code>이 tail을 읽어 재개 지점 결정.
+        issue_started &rarr; continue_coding.
+        issue_closed &rarr; start_next.
+        세션 내 디버깅/복구 용도.
+      </p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background: rgba(255,217,61,0.15);">&#127993;</div>
+      <h3>GitHub Issues</h3>
+      <p>
+        <strong>진실의 원천.</strong>
+        Labels: <span class="tag tag-green">ready</span>
+        <span class="tag tag-blue">in-progress</span>
+        <span class="tag tag-yellow">done</span>
+        <span class="tag tag-red">blocked</span>.
+        의존성: <code>depends on #N</code>.
+        phase-gate.json이 오염되면 GitHub closed issue 수로 복구.
+      </p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background: rgba(255,107,107,0.15);">&#128274;</div>
+      <h3>Gate-Driven Merge Prevention</h3>
+      <p>
+        <code>issue-finish.sh</code> Step 6.5에서 <code>verify-gate.sh</code> 실행.
+        게이트 실패 &rarr; PR body에 "GATE FAILED" &rarr; exit 1 &rarr; 머지 차단.
+        누적 검증: Phase N 머지 시 0~N 전부 재검증.
+      </p>
+    </div>
+  </div>
+
+  <div class="code-block">
+    <div class="code-header">
+      <div class="dots"><span></span><span></span><span></span></div>
+      state/phase-gate.json &mdash; 최종 상태
+    </div>
+<pre>{
+  <span class="str">"phase0"</span>: <span class="str">"complete"</span>,
+  <span class="str">"phase1"</span>: <span class="str">"complete"</span>,
+  <span class="str">"phase2"</span>: <span class="str">"complete"</span>,
+  <span class="str">"phase3"</span>: <span class="str">"complete"</span>,
+  <span class="str">"phase4"</span>: <span class="str">"complete"</span>,
+  <span class="str">"startedAt"</span>: <span class="str">"2026-03-29T03:10:00.000Z"</span>,
+  <span class="str">"completedAt"</span>: <span class="str">"2026-03-29T06:00:00.000Z"</span>
+}</pre>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ═══════════ SECTION 7: TIMELINE ═══════════ -->
+<section id="timeline">
+  <div class="section-header">
+    <div class="section-num">07 &mdash; Execution Timeline</div>
+    <h2>실제 실행 타임라인</h2>
+    <p>12:10 ~ 15:00 KST (약 2시간 50분)</p>
+  </div>
+
+  <div class="timeline">
+    <div class="tl-item done">
+      <div class="tl-dot"></div>
+      <div class="tl-time">12:10 KST</div>
+      <h4>Phase 0 &mdash; Infrastructure</h4>
+      <p>Supabase 테이블 생성 (sites, reports), env 설정, Vercel 프로젝트 연결. ~15분.</p>
+    </div>
+    <div class="tl-item done">
+      <div class="tl-dot"></div>
+      <div class="tl-time">12:25 KST</div>
+      <h4>Phase 1 &mdash; Mass Scan</h4>
+      <p>OpenChrome으로 960/1000개 한국 사이트 배치 스캔. gv_verify FP 검증 통과. Supabase 업로드. ~80분.</p>
+    </div>
+    <div class="tl-item done">
+      <div class="tl-dot"></div>
+      <div class="tl-time">13:45 KST</div>
+      <h4>Phase 2 &mdash; Deep Dive</h4>
+      <p>최악 10개 사이트 상세 분석. Before/After 스크린샷 캡처 &rarr; Supabase Storage 업로드. ~30분.</p>
+    </div>
+    <div class="tl-item done">
+      <div class="tl-dot"></div>
+      <div class="tl-time">14:15 KST</div>
+      <h4>Phase 3 &mdash; Website Build</h4>
+      <p>Next.js 14 리더보드 + 상세 페이지 + Before/After 슬라이더 구현. npm run build 성공. ~25분.</p>
+    </div>
+    <div class="tl-item done">
+      <div class="tl-dot"></div>
+      <div class="tl-time">14:40 KST</div>
+      <h4>Phase 4 &mdash; Deploy &amp; Visual QA</h4>
+      <p>Vercel 배포. Visual QA 13/13 항목 통과. Live URL HTTP 200 확인. ~20분.</p>
+    </div>
+    <div class="tl-item done">
+      <div class="tl-dot"></div>
+      <div class="tl-time">15:00 KST</div>
+      <h4>Pipeline Complete</h4>
+      <p>모든 Phase 완료. 사람 개입 0회. 총 소요 시간: 약 2시간 50분.</p>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ═══════════ SECTION 8: KEY INSIGHTS ═══════════ -->
+<section id="insights">
+  <div class="section-header">
+    <div class="section-num">08 &mdash; Key Insights</div>
+    <h2>핵심 설계 원칙</h2>
+    <p>이 아키텍처가 작동하는 이유</p>
+  </div>
+
+  <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+    <div class="card">
+      <h3>상태는 파일에, 메모리에 의존하지 않는다</h3>
+      <p>Claude Code의 context window는 유한하다. 모든 상태를 JSON 파일에 기록하고, context가 압축되면 gv_resume으로 파일에서 복원.</p>
+    </div>
+    <div class="card">
+      <h3>GitHub = 진실의 원천</h3>
+      <p>로컬 state 파일이 오염될 수 있다. GitHub의 issue closed 수가 실제 진행 상황을 결정. 외부 시스템이 내부 상태를 교정.</p>
+    </div>
+    <div class="card">
+      <h3>게이트가 머지를 차단한다</h3>
+      <p>verify-gate.sh가 통과하지 않으면 코드가 develop에 머지되지 않는다. 불완전한 작업이 메인 브랜치를 오염시키는 것을 물리적으로 방지.</p>
+    </div>
+    <div class="card">
+      <h3>누적 검증으로 회귀 방지</h3>
+      <p>Phase N 머지 시 0~N까지 전부 재검증. Phase 3 코드가 Phase 1 데이터를 망가뜨리면 게이트에서 잡힌다.</p>
+    </div>
+    <div class="card">
+      <h3>외부 감독자가 AI를 관리</h3>
+      <p>AI는 자기 자신의 context overflow를 감지할 수 없다. tmux + run-auto.sh가 외부에서 모니터링하고, 필요시 세션을 재시작.</p>
+    </div>
+    <div class="card">
+      <h3>시간 하드컷으로 무한 루프 방지</h3>
+      <p>각 Phase에 시간 예산이 있다. 불완전해도 다음 단계로 진행. 5시간 내 전체 파이프라인 완료를 보장.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <p>
+    GhostView Ralphthon &mdash; Harness Engineering Architecture<br>
+    Built with Claude Code + OMC (oh-my-claudecode)<br>
+    <a href="https://ghostview-chi.vercel.app" target="_blank">Live Site</a> &middot; <a href="https://github.com">GitHub</a>
+  </p>
+</footer>
+
+<script>
+  // Scroll progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('scrollProgress').style.width = pct + '%';
+  });
+
+  // Intersection Observer for fade-in animations
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.animationPlayState = 'running';
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.section-header, .card, .principle, .tl-item, .code-block, .comparison, .flow, .arch-diagram').forEach(el => {
+    el.style.animationPlayState = 'paused';
+    obs.observe(el);
+  });
+
+  // Active nav link highlighting
+  const sections = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 200) current = s.id;
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
+    });
+  });
+</script>
+</body>
+</html>
