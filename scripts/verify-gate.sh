@@ -263,8 +263,8 @@ case "$PHASE" in
       LIVE_HTML=$(curl -s "$URL" 2>/dev/null)
       GHOST_NUM=$(echo "$LIVE_HTML" | node -e "
         const html=require('fs').readFileSync(0,'utf8');
-        const m=html.match(/>(\d+)<\/p>[^<]*<p[^>]*>총 Ghost/);
-        console.log(m ? m[1] : '0');
+        const m=html.match(/([\d,]+)<\/div>\s*<div[^>]*>Ghost 총 개수/);
+        console.log(m ? m[1].replace(/,/g,'') : '0');
       " 2>/dev/null)
       if [ "$GHOST_NUM" = "0" ] || [ -z "$GHOST_NUM" ]; then
         echo "  FAIL: 라이브에서 총 Ghost 수 = 0"
