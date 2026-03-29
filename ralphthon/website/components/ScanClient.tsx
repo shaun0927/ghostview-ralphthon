@@ -12,14 +12,16 @@ interface ScanResult {
   ghostCount: number
   categories: { ghost: number; ambiguous: number; duplicate: number; clear: number }
   totalInteractive: number
-  normalScreenshot?: string
-  blackholeScreenshot?: string
+  normalScreenshot?: string | null
+  blackholeScreenshot?: string | null
   findings: Array<{
     severity: 'ghost' | 'ambiguous' | 'duplicate'
     title: string
     description: string
     fix: { label: string; code: string }
   }>
+  cached?: boolean
+  message?: string
 }
 
 function scoreColor(score: number): string {
@@ -106,9 +108,26 @@ export default function ScanClient() {
         </div>
       )}
 
+      {/* Not in DB message */}
+      {result && result.message && !result.cached && (
+        <div className="bg-card border border-card-border rounded-xl p-6 mb-6 text-center">
+          <p className="text-zinc-400">{result.message}</p>
+          <p className="text-sm text-zinc-500 mt-2">
+            {locale === 'ko'
+              ? '이 사이트는 아직 스캔되지 않았습니다. 리더보드에서 이미 스캔된 사이트를 확인하세요.'
+              : 'This site has not been scanned yet. Check the leaderboard for already scanned sites.'}
+          </p>
+        </div>
+      )}
+
       {/* Result */}
-      {result && (
+      {result && (result.cached || result.parityScore > 0) && (
         <div className="space-y-6">
+          {result.cached && (
+            <div className="text-xs text-zinc-500 text-center">
+              {locale === 'ko' ? '데이터베이스에서 가져온 캐시 결과입니다.' : 'Cached result from database.'}
+            </div>
+          )}
           {/* Score Cards */}
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-card border border-card-border rounded-xl p-4 text-center">
