@@ -67,8 +67,29 @@ gh issue edit "$N" --remove-label "status:ready" --add-label "status:in-progress
 # Step 3: 브랜치 생성 (ASCII only)
 SLUG=$(echo "$TITLE" | sed 's/[^a-zA-Z0-9]/-/g' | tr '[:upper:]' '[:lower:]' | sed 's/--*/-/g' | sed 's/^-//' | head -c 30 | sed 's/-$//')
 BRANCH="issue-${N}-${SLUG}"
+# Backup local state files to prevent checkout conflicts
+# phase-gate.json: 로컬 전용 상태 (git에 커밋하지 않음)
+# events.jsonl: MCP가 기록하는 이벤트 로그
+EVENTS_BAK=""
+PHASEGATE_BAK=""
+if [ -f "$ROOT/state/events.jsonl" ]; then
+  EVENTS_BAK=$(cat "$ROOT/state/events.jsonl")
+  rm -f "$ROOT/state/events.jsonl"
+fi
+if [ -f "$ROOT/state/phase-gate.json" ]; then
+  PHASEGATE_BAK=$(cat "$ROOT/state/phase-gate.json")
+fi
 git checkout develop 2>/dev/null && git pull origin develop 2>/dev/null
 git checkout -b "$BRANCH" develop
+# Restore local state after branch switch
+if [ -n "$EVENTS_BAK" ]; then
+  echo "$EVENTS_BAK" > "$ROOT/state/events.jsonl"
+else
+  touch "$ROOT/state/events.jsonl"
+fi
+if [ -n "$PHASEGATE_BAK" ]; then
+  echo "$PHASEGATE_BAK" > "$ROOT/state/phase-gate.json"
+fi
 
 echo ""
 echo "━━━ AI 작업 시작 ━━━"

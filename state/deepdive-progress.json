@@ -1,7 +1,7 @@
 {
-  "cursor": 0,
-  "completed": 0,
-  "targetSites": [],
-  "completedSites": [],
-  "lastSavedAt": null
+  "cursor": 10,
+  "completed": 10,
+  "targetSites": ["coupang.com", "gmarket.co.kr", "11st.co.kr", "naver.com", "chosun.com", "daum.net", "auction.co.kr", "tmon.co.kr", "yes24.com", "interpark.com"],
+  "completedSites": ["coupang.com", "gmarket.co.kr", "11st.co.kr", "naver.com", "chosun.com", "daum.net", "auction.co.kr", "tmon.co.kr", "yes24.com", "interpark.com"],
+  "lastSavedAt": "2026-03-29T02:00:00.000Z"
 }

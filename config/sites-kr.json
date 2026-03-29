@@ -1,0 +1,5002 @@
+[
+  {
+    "url": "https://www.naver.com",
+    "domain": "naver.com",
+    "category": "portal"
+  },
+  {
+    "url": "https://www.daum.net",
+    "domain": "daum.net",
+    "category": "portal"
+  },
+  {
+    "url": "https://www.zum.com",
+    "domain": "zum.com",
+    "category": "portal"
+  },
+  {
+    "url": "https://www.nate.com",
+    "domain": "nate.com",
+    "category": "portal"
+  },
+  {
+    "url": "https://www.coupang.com",
+    "domain": "coupang.com",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.gmarket.co.kr",
+    "domain": "gmarket.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.11st.co.kr",
+    "domain": "11st.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.auction.co.kr",
+    "domain": "auction.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.tmon.co.kr",
+    "domain": "tmon.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.wemakeprice.com",
+    "domain": "wemakeprice.com",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.interpark.com",
+    "domain": "interpark.com",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.yes24.com",
+    "domain": "yes24.com",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.ssg.com",
+    "domain": "ssg.com",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.lotteon.com",
+    "domain": "lotteon.com",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.kurly.com",
+    "domain": "kurly.com",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.musinsa.com",
+    "domain": "musinsa.com",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.oliveyoung.co.kr",
+    "domain": "oliveyoung.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.bunjang.co.kr",
+    "domain": "bunjang.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.danawa.com",
+    "domain": "danawa.com",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.ably.com",
+    "domain": "ably.com",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.chosun.com",
+    "domain": "chosun.com",
+    "category": "news"
+  },
+  {
+    "url": "https://www.joins.com",
+    "domain": "joins.com",
+    "category": "news"
+  },
+  {
+    "url": "https://www.donga.com",
+    "domain": "donga.com",
+    "category": "news"
+  },
+  {
+    "url": "https://www.hani.co.kr",
+    "domain": "hani.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.kmib.co.kr",
+    "domain": "kmib.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.khan.co.kr",
+    "domain": "khan.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.hankyung.com",
+    "domain": "hankyung.com",
+    "category": "news"
+  },
+  {
+    "url": "https://www.mk.co.kr",
+    "domain": "mk.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.sedaily.com",
+    "domain": "sedaily.com",
+    "category": "news"
+  },
+  {
+    "url": "https://www.ytn.co.kr",
+    "domain": "ytn.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.sbs.co.kr",
+    "domain": "sbs.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.kbs.co.kr",
+    "domain": "kbs.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.mbc.co.kr",
+    "domain": "mbc.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.jtbc.co.kr",
+    "domain": "jtbc.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.sisain.co.kr",
+    "domain": "sisain.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.korea.kr",
+    "domain": "korea.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.seoul.go.kr",
+    "domain": "seoul.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.busan.go.kr",
+    "domain": "busan.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.incheon.go.kr",
+    "domain": "incheon.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.daegu.go.kr",
+    "domain": "daegu.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.gwangju.go.kr",
+    "domain": "gwangju.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.daejeon.go.kr",
+    "domain": "daejeon.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.ulsan.go.kr",
+    "domain": "ulsan.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.sejong.go.kr",
+    "domain": "sejong.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.gg.go.kr",
+    "domain": "gg.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.chungnam.go.kr",
+    "domain": "chungnam.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.jeonbuk.go.kr",
+    "domain": "jeonbuk.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.gyeongnam.go.kr",
+    "domain": "gyeongnam.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.jeju.go.kr",
+    "domain": "jeju.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.assembly.go.kr",
+    "domain": "assembly.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.moe.go.kr",
+    "domain": "moe.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.mohw.go.kr",
+    "domain": "mohw.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.mois.go.kr",
+    "domain": "mois.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.mofa.go.kr",
+    "domain": "mofa.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.nts.go.kr",
+    "domain": "nts.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.snu.ac.kr",
+    "domain": "snu.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.yonsei.ac.kr",
+    "domain": "yonsei.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.korea.ac.kr",
+    "domain": "korea.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.kaist.ac.kr",
+    "domain": "kaist.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.postech.ac.kr",
+    "domain": "postech.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.skku.edu",
+    "domain": "skku.edu",
+    "category": "education"
+  },
+  {
+    "url": "https://www.hanyang.ac.kr",
+    "domain": "hanyang.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.sogang.ac.kr",
+    "domain": "sogang.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.cau.ac.kr",
+    "domain": "cau.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.ewha.ac.kr",
+    "domain": "ewha.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.khu.ac.kr",
+    "domain": "khu.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.konkuk.ac.kr",
+    "domain": "konkuk.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.pusan.ac.kr",
+    "domain": "pusan.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.gnu.ac.kr",
+    "domain": "gnu.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.jnu.ac.kr",
+    "domain": "jnu.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.kbstar.com",
+    "domain": "kbstar.com",
+    "category": "finance"
+  },
+  {
+    "url": "https://www.shinhan.com",
+    "domain": "shinhan.com",
+    "category": "finance"
+  },
+  {
+    "url": "https://www.wooribank.com",
+    "domain": "wooribank.com",
+    "category": "finance"
+  },
+  {
+    "url": "https://www.hanabank.com",
+    "domain": "hanabank.com",
+    "category": "finance"
+  },
+  {
+    "url": "https://www.nhbank.com",
+    "domain": "nhbank.com",
+    "category": "finance"
+  },
+  {
+    "url": "https://www.ibk.co.kr",
+    "domain": "ibk.co.kr",
+    "category": "finance"
+  },
+  {
+    "url": "https://www.kbsec.com",
+    "domain": "kbsec.com",
+    "category": "finance"
+  },
+  {
+    "url": "https://www.samsunglife.com",
+    "domain": "samsunglife.com",
+    "category": "finance"
+  },
+  {
+    "url": "https://www.toss.im",
+    "domain": "toss.im",
+    "category": "finance"
+  },
+  {
+    "url": "https://www.kakaobank.com",
+    "domain": "kakaobank.com",
+    "category": "finance"
+  },
+  {
+    "url": "https://www.kakaocorp.com",
+    "domain": "kakaocorp.com",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kakao.com",
+    "domain": "kakao.com",
+    "category": "general"
+  },
+  {
+    "url": "https://www.linecorp.com",
+    "domain": "linecorp.com",
+    "category": "general"
+  },
+  {
+    "url": "https://www.watcha.com",
+    "domain": "watcha.com",
+    "category": "entertainment"
+  },
+  {
+    "url": "https://www.laftel.net",
+    "domain": "laftel.net",
+    "category": "entertainment"
+  },
+  {
+    "url": "https://www.melon.com",
+    "domain": "melon.com",
+    "category": "entertainment"
+  },
+  {
+    "url": "https://www.bugs.co.kr",
+    "domain": "bugs.co.kr",
+    "category": "entertainment"
+  },
+  {
+    "url": "https://www.afreecatv.com",
+    "domain": "afreecatv.com",
+    "category": "entertainment"
+  },
+  {
+    "url": "https://www.yanolja.com",
+    "domain": "yanolja.com",
+    "category": "travel"
+  },
+  {
+    "url": "https://www.goodchoice.kr",
+    "domain": "goodchoice.kr",
+    "category": "travel"
+  },
+  {
+    "url": "https://www.yogiyo.co.kr",
+    "domain": "yogiyo.co.kr",
+    "category": "food"
+  },
+  {
+    "url": "https://www.baemin.com",
+    "domain": "baemin.com",
+    "category": "food"
+  },
+  {
+    "url": "https://www.samsung.com",
+    "domain": "samsung.com",
+    "category": "general"
+  },
+  {
+    "url": "https://www.lge.co.kr",
+    "domain": "lge.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hyundai.com",
+    "domain": "hyundai.com",
+    "category": "general"
+  },
+  {
+    "url": "https://www.sk.com",
+    "domain": "sk.com",
+    "category": "general"
+  },
+  {
+    "url": "https://www.snuh.org",
+    "domain": "snuh.org",
+    "category": "medical"
+  },
+  {
+    "url": "https://www.amc.seoul.kr",
+    "domain": "amc.seoul.kr",
+    "category": "medical"
+  },
+  {
+    "url": "https://www.samsunghospital.com",
+    "domain": "samsunghospital.com",
+    "category": "medical"
+  },
+  {
+    "url": "https://www.severance.healthcare",
+    "domain": "severance.healthcare",
+    "category": "medical"
+  },
+  {
+    "url": "https://www.saramin.co.kr",
+    "domain": "saramin.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.jobkorea.co.kr",
+    "domain": "jobkorea.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.aladin.co.kr",
+    "domain": "aladin.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.kyobobook.co.kr",
+    "domain": "kyobobook.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.ridibooks.com",
+    "domain": "ridibooks.com",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.avsubs.co.kr",
+    "domain": "avsubs.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.idpaper.co.kr",
+    "domain": "idpaper.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.lopec.kr",
+    "domain": "lopec.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ororo.co.kr",
+    "domain": "ororo.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mashop.kr",
+    "domain": "mashop.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.sweettracker.co.kr",
+    "domain": "sweettracker.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.foodrecipe.co.kr",
+    "domain": "foodrecipe.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hidoc.co.kr",
+    "domain": "hidoc.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.epost.go.kr",
+    "domain": "epost.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.talkstation.co.kr",
+    "domain": "talkstation.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dailian.co.kr",
+    "domain": "dailian.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.homeplus.co.kr",
+    "domain": "homeplus.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dotal.or.kr",
+    "domain": "dotal.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.q-net.or.kr",
+    "domain": "q-net.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.eps.go.kr",
+    "domain": "eps.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.4insure.or.kr",
+    "domain": "4insure.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.blingkeyword.kr",
+    "domain": "blingkeyword.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.clickmate.kr",
+    "domain": "clickmate.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.gold-rain.co.kr",
+    "domain": "gold-rain.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hangloo.co.kr",
+    "domain": "hangloo.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.jeomsinpf1.co.kr",
+    "domain": "jeomsinpf1.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mocation.co.kr",
+    "domain": "mocation.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.onnuri-mall.co.kr",
+    "domain": "onnuri-mall.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.svote.kr",
+    "domain": "svote.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.about.co.kr",
+    "domain": "about.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dcinside.co.kr",
+    "domain": "dcinside.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.waemok.co.kr",
+    "domain": "waemok.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hufs.ac.kr",
+    "domain": "hufs.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.tokenpost.kr",
+    "domain": "tokenpost.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.yonhapnewstv.co.kr",
+    "domain": "yonhapnewstv.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.flexcdn.kr",
+    "domain": "flexcdn.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kepco.co.kr",
+    "domain": "kepco.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kotra.or.kr",
+    "domain": "kotra.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.mtpolice.kr",
+    "domain": "mtpolice.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mailplug.co.kr",
+    "domain": "mailplug.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.tf.co.kr",
+    "domain": "tf.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cninet.co.kr",
+    "domain": "cninet.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cnu.ac.kr",
+    "domain": "cnu.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.makeshop.kr",
+    "domain": "makeshop.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.ticketlink.co.kr",
+    "domain": "ticketlink.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.coinone.co.kr",
+    "domain": "coinone.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cbs.co.kr",
+    "domain": "cbs.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kreonet.re.kr",
+    "domain": "kreonet.re.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kosaf.go.kr",
+    "domain": "kosaf.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.lululemon.co.kr",
+    "domain": "lululemon.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.wowtv.co.kr",
+    "domain": "wowtv.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.i-web.kr",
+    "domain": "i-web.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cafe24dns.co.kr",
+    "domain": "cafe24dns.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ok-name.co.kr",
+    "domain": "ok-name.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.comics-art.co.kr",
+    "domain": "comics-art.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.afreecatv.co.kr",
+    "domain": "afreecatv.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.marketb.kr",
+    "domain": "marketb.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.ssu.ac.kr",
+    "domain": "ssu.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.sch.ac.kr",
+    "domain": "sch.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.lfmall.co.kr",
+    "domain": "lfmall.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.adinsight.co.kr",
+    "domain": "adinsight.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.megabox.co.kr",
+    "domain": "megabox.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.gyeongshin.co.kr",
+    "domain": "gyeongshin.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ppomppu1.co.kr",
+    "domain": "ppomppu1.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.webmaker21.kr",
+    "domain": "webmaker21.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.alphasquare.co.kr",
+    "domain": "alphasquare.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.tmoney.co.kr",
+    "domain": "tmoney.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.chonnam.ac.kr",
+    "domain": "chonnam.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.doctornow.co.kr",
+    "domain": "doctornow.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bmw.co.kr",
+    "domain": "bmw.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hotge.co.kr",
+    "domain": "hotge.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mugungfit.co.kr",
+    "domain": "mugungfit.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.jpg3.kr",
+    "domain": "jpg3.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.newswire.co.kr",
+    "domain": "newswire.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.hiworks.co.kr",
+    "domain": "hiworks.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.fromkorea.kr",
+    "domain": "fromkorea.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.donga.ac.kr",
+    "domain": "donga.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.slnk.kr",
+    "domain": "slnk.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.gist.ac.kr",
+    "domain": "gist.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.iwinv.kr",
+    "domain": "iwinv.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.racers.co.kr",
+    "domain": "racers.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.thebell.co.kr",
+    "domain": "thebell.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.s-golflex.kr",
+    "domain": "s-golflex.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.jjan.kr",
+    "domain": "jjan.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.egreef.kr",
+    "domain": "egreef.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.asianmate.kr",
+    "domain": "asianmate.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hcmp.co.kr",
+    "domain": "hcmp.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cb.or.kr",
+    "domain": "cb.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.kshosting.co.kr",
+    "domain": "kshosting.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ralphlauren.co.kr",
+    "domain": "ralphlauren.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.issuelink.co.kr",
+    "domain": "issuelink.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nic.or.kr",
+    "domain": "nic.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.woodwell.co.kr",
+    "domain": "woodwell.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.peoplead.kr",
+    "domain": "peoplead.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.inlive.co.kr",
+    "domain": "inlive.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.blockmedia.co.kr",
+    "domain": "blockmedia.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cbci.co.kr",
+    "domain": "cbci.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.maniahouse.co.kr",
+    "domain": "maniahouse.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.sen.go.kr",
+    "domain": "sen.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.webhard.co.kr",
+    "domain": "webhard.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.tium.co.kr",
+    "domain": "tium.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.devicemart.co.kr",
+    "domain": "devicemart.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.suto.co.kr",
+    "domain": "suto.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.sejong.ac.kr",
+    "domain": "sejong.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.elandmall.co.kr",
+    "domain": "elandmall.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.virtusize.kr",
+    "domain": "virtusize.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.clickmon.co.kr",
+    "domain": "clickmon.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.koreagoldx.co.kr",
+    "domain": "koreagoldx.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.haegin.co.kr",
+    "domain": "haegin.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.skku.ac.kr",
+    "domain": "skku.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.kcp.co.kr",
+    "domain": "kcp.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.e-arrivalcard.go.kr",
+    "domain": "e-arrivalcard.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.medik.co.kr",
+    "domain": "medik.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.xplant.co.kr",
+    "domain": "xplant.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ulsan.ac.kr",
+    "domain": "ulsan.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.cu.ac.kr",
+    "domain": "cu.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.supple.kr",
+    "domain": "supple.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.chungbuk.ac.kr",
+    "domain": "chungbuk.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.booked.kr",
+    "domain": "booked.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.lawtimes.co.kr",
+    "domain": "lawtimes.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.1004114.co.kr",
+    "domain": "1004114.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.gnj.kr",
+    "domain": "gnj.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mtrc.co.kr",
+    "domain": "mtrc.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.schoolmusic.co.kr",
+    "domain": "schoolmusic.co.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.jbnu.ac.kr",
+    "domain": "jbnu.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.kmu.ac.kr",
+    "domain": "kmu.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.z00.kr",
+    "domain": "z00.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.uu.co.kr",
+    "domain": "uu.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cosmopolitan.co.kr",
+    "domain": "cosmopolitan.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.career.co.kr",
+    "domain": "career.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.korea-pass.kr",
+    "domain": "korea-pass.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kw.ac.kr",
+    "domain": "kw.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.gachon.ac.kr",
+    "domain": "gachon.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.kaeri.re.kr",
+    "domain": "kaeri.re.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.genebiotech.co.kr",
+    "domain": "genebiotech.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.onch3.co.kr",
+    "domain": "onch3.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.10x10.co.kr",
+    "domain": "10x10.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.uni-fy.kr",
+    "domain": "uni-fy.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.daegu.ac.kr",
+    "domain": "daegu.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.knou.ac.kr",
+    "domain": "knou.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.silichem.co.kr",
+    "domain": "silichem.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.helpstart.co.kr",
+    "domain": "helpstart.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hipass.co.kr",
+    "domain": "hipass.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.theguru.co.kr",
+    "domain": "theguru.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ktnet.co.kr",
+    "domain": "ktnet.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.rhaon.co.kr",
+    "domain": "rhaon.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cultureland.co.kr",
+    "domain": "cultureland.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mamentor.co.kr",
+    "domain": "mamentor.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.programmers.co.kr",
+    "domain": "programmers.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.planetad.co.kr",
+    "domain": "planetad.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.wku.ac.kr",
+    "domain": "wku.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.e9pay.co.kr",
+    "domain": "e9pay.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.axa.co.kr",
+    "domain": "axa.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kisa.or.kr",
+    "domain": "kisa.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.heydaily.kr",
+    "domain": "heydaily.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.etri.re.kr",
+    "domain": "etri.re.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.event-us.kr",
+    "domain": "event-us.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.koreagrandsale.co.kr",
+    "domain": "koreagrandsale.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.holybible.or.kr",
+    "domain": "holybible.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.cbckl.kr",
+    "domain": "cbckl.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.milkt.co.kr",
+    "domain": "milkt.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.airport.co.kr",
+    "domain": "airport.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kyonggi.ac.kr",
+    "domain": "kyonggi.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.kimyoung.co.kr",
+    "domain": "kimyoung.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.tple.co.kr",
+    "domain": "tple.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.yeoshin.co.kr",
+    "domain": "yeoshin.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.thekorea.kr",
+    "domain": "thekorea.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.battlegroundsmobile.kr",
+    "domain": "battlegroundsmobile.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kornet.ne.kr",
+    "domain": "kornet.ne.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.my-auction.co.kr",
+    "domain": "my-auction.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.wordrow.kr",
+    "domain": "wordrow.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.freet.co.kr",
+    "domain": "freet.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bbiz.kr",
+    "domain": "bbiz.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dabagirl.co.kr",
+    "domain": "dabagirl.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ebizcom.kr",
+    "domain": "ebizcom.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.klid.or.kr",
+    "domain": "klid.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.sbiz24.kr",
+    "domain": "sbiz24.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.autobuff.co.kr",
+    "domain": "autobuff.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.insight.co.kr",
+    "domain": "insight.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kma.go.kr",
+    "domain": "kma.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.ifdo.co.kr",
+    "domain": "ifdo.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dnews.co.kr",
+    "domain": "dnews.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.kotsa.or.kr",
+    "domain": "kotsa.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.newsprime.co.kr",
+    "domain": "newsprime.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.newsway.co.kr",
+    "domain": "newsway.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.nutrione.co.kr",
+    "domain": "nutrione.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.redprinting.co.kr",
+    "domain": "redprinting.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.haegin.kr",
+    "domain": "haegin.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mtgroup.kr",
+    "domain": "mtgroup.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.use.go.kr",
+    "domain": "use.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.ai.kr",
+    "domain": "ai.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.brainmedia.co.kr",
+    "domain": "brainmedia.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.iris.go.kr",
+    "domain": "iris.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.amano.co.kr",
+    "domain": "amano.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.serve.co.kr",
+    "domain": "serve.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.quv.kr",
+    "domain": "quv.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.foresttrip.go.kr",
+    "domain": "foresttrip.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.soanet.kr",
+    "domain": "soanet.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.lotte.co.kr",
+    "domain": "lotte.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.syrup.co.kr",
+    "domain": "syrup.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.delivered.co.kr",
+    "domain": "delivered.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.c01.kr",
+    "domain": "c01.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.1365.go.kr",
+    "domain": "1365.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.allbaro.or.kr",
+    "domain": "allbaro.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.automart.co.kr",
+    "domain": "automart.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bikesell.co.kr",
+    "domain": "bikesell.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.braincube.kr",
+    "domain": "braincube.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cardpoint.or.kr",
+    "domain": "cardpoint.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.couponwallet.co.kr",
+    "domain": "couponwallet.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cpq.co.kr",
+    "domain": "cpq.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cvsnet.co.kr",
+    "domain": "cvsnet.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.daytv.kr",
+    "domain": "daytv.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dmtu.kr",
+    "domain": "dmtu.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.doctorville.co.kr",
+    "domain": "doctorville.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dschool.co.kr",
+    "domain": "dschool.co.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.e-health.go.kr",
+    "domain": "e-health.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.ebestflower.co.kr",
+    "domain": "ebestflower.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.efine.go.kr",
+    "domain": "efine.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.englishplatform.co.kr",
+    "domain": "englishplatform.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.fileman.co.kr",
+    "domain": "fileman.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.gdoc.go.kr",
+    "domain": "gdoc.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.greencomics.kr",
+    "domain": "greencomics.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hwgi.kr",
+    "domain": "hwgi.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.icoop.or.kr",
+    "domain": "icoop.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.imhealth.co.kr",
+    "domain": "imhealth.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.joongangart.kr",
+    "domain": "joongangart.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.keywordlab.kr",
+    "domain": "keywordlab.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kobay.co.kr",
+    "domain": "kobay.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kocea.or.kr",
+    "domain": "kocea.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.kuksiwon.or.kr",
+    "domain": "kuksiwon.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.longtermcare.or.kr",
+    "domain": "longtermcare.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.meet2.kr",
+    "domain": "meet2.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nstation.co.kr",
+    "domain": "nstation.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.onnurishop.co.kr",
+    "domain": "onnurishop.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.patent.go.kr",
+    "domain": "patent.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.quickstar.co.kr",
+    "domain": "quickstar.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.rewardpick.kr",
+    "domain": "rewardpick.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.safedriving.or.kr",
+    "domain": "safedriving.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.safemyinfo.kr",
+    "domain": "safemyinfo.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.sktuniverse.co.kr",
+    "domain": "sktuniverse.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.swadpia.co.kr",
+    "domain": "swadpia.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.the-relay.kr",
+    "domain": "the-relay.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.upos.kr",
+    "domain": "upos.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.wepoll.kr",
+    "domain": "wepoll.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.woojincopolymer.co.kr",
+    "domain": "woojincopolymer.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.chaoscube.co.kr",
+    "domain": "chaoscube.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kau.ac.kr",
+    "domain": "kau.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.dealsite.co.kr",
+    "domain": "dealsite.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.jeonmae.co.kr",
+    "domain": "jeonmae.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.filmmakers.co.kr",
+    "domain": "filmmakers.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.freelancer.co.kr",
+    "domain": "freelancer.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.koreanfriends.co.kr",
+    "domain": "koreanfriends.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.adinc.kr",
+    "domain": "adinc.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.black-up.kr",
+    "domain": "black-up.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.prizm.co.kr",
+    "domain": "prizm.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hptech.co.kr",
+    "domain": "hptech.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.pathwel.co.kr",
+    "domain": "pathwel.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dokidokigoods.co.kr",
+    "domain": "dokidokigoods.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.theinvestor.co.kr",
+    "domain": "theinvestor.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.inpock.co.kr",
+    "domain": "inpock.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ks.ac.kr",
+    "domain": "ks.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.kbinsure.co.kr",
+    "domain": "kbinsure.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dotname.co.kr",
+    "domain": "dotname.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bookcube.co.kr",
+    "domain": "bookcube.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.thewiki.kr",
+    "domain": "thewiki.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mimint.co.kr",
+    "domain": "mimint.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.recruiter.co.kr",
+    "domain": "recruiter.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.findall.co.kr",
+    "domain": "findall.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.i-boss.co.kr",
+    "domain": "i-boss.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.koreasarang.co.kr",
+    "domain": "koreasarang.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cafe24dns.kr",
+    "domain": "cafe24dns.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.neonet.co.kr",
+    "domain": "neonet.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.luatic.co.kr",
+    "domain": "luatic.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.web-planet.co.kr",
+    "domain": "web-planet.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mobwith.co.kr",
+    "domain": "mobwith.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.matalk.co.kr",
+    "domain": "matalk.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hidc.co.kr",
+    "domain": "hidc.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kyongbuk.co.kr",
+    "domain": "kyongbuk.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.i-scream.co.kr",
+    "domain": "i-scream.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.one-point.kr",
+    "domain": "one-point.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.fashionbiz.co.kr",
+    "domain": "fashionbiz.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.vans.co.kr",
+    "domain": "vans.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dinak.co.kr",
+    "domain": "dinak.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.idksoft.co.kr",
+    "domain": "idksoft.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.evape.kr",
+    "domain": "evape.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nayana.kr",
+    "domain": "nayana.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.joongdo.co.kr",
+    "domain": "joongdo.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dongguk.ac.kr",
+    "domain": "dongguk.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.bizwatch.co.kr",
+    "domain": "bizwatch.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bkeye.co.kr",
+    "domain": "bkeye.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.neople.co.kr",
+    "domain": "neople.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hallym.ac.kr",
+    "domain": "hallym.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.ebn.co.kr",
+    "domain": "ebn.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.psynet.co.kr",
+    "domain": "psynet.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.lemonery.co.kr",
+    "domain": "lemonery.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.pokemonkorea.co.kr",
+    "domain": "pokemonkorea.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mustit.co.kr",
+    "domain": "mustit.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.thecompanystore.co.kr",
+    "domain": "thecompanystore.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.daara.co.kr",
+    "domain": "daara.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.we-class.kr",
+    "domain": "we-class.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.history.go.kr",
+    "domain": "history.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.intipia.co.kr",
+    "domain": "intipia.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.rinnai.co.kr",
+    "domain": "rinnai.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kwnews.co.kr",
+    "domain": "kwnews.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.gosi.kr",
+    "domain": "gosi.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.weeklywine.co.kr",
+    "domain": "weeklywine.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.digikey.kr",
+    "domain": "digikey.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.deu.ac.kr",
+    "domain": "deu.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.rda.go.kr",
+    "domain": "rda.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.istarbucks.co.kr",
+    "domain": "istarbucks.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.busanbank.co.kr",
+    "domain": "busanbank.co.kr",
+    "category": "finance"
+  },
+  {
+    "url": "https://www.ilyo.co.kr",
+    "domain": "ilyo.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.soosan.kr",
+    "domain": "soosan.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bethelean.kr",
+    "domain": "bethelean.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bokjiro.go.kr",
+    "domain": "bokjiro.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.dailyplaza.co.kr",
+    "domain": "dailyplaza.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.itranslate.co.kr",
+    "domain": "itranslate.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.changwon.ac.kr",
+    "domain": "changwon.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.scout.co.kr",
+    "domain": "scout.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.wisaidc.co.kr",
+    "domain": "wisaidc.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bizhost.kr",
+    "domain": "bizhost.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.gcomin.co.kr",
+    "domain": "gcomin.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.play123.co.kr",
+    "domain": "play123.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.itworld.co.kr",
+    "domain": "itworld.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hjmembers.co.kr",
+    "domain": "hjmembers.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.xn--o39akk533b75wnga.kr",
+    "domain": "xn--o39akk533b75wnga.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.i-plan.co.kr",
+    "domain": "i-plan.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.windowsforum.kr",
+    "domain": "windowsforum.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dint.co.kr",
+    "domain": "dint.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.r-e.kr",
+    "domain": "r-e.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cctoday.co.kr",
+    "domain": "cctoday.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ussoft.kr",
+    "domain": "ussoft.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.infodu.co.kr",
+    "domain": "infodu.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.metanet.co.kr",
+    "domain": "metanet.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.byapps.co.kr",
+    "domain": "byapps.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.univ100.kr",
+    "domain": "univ100.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.goe.go.kr",
+    "domain": "goe.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.economist.co.kr",
+    "domain": "economist.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ctee.kr",
+    "domain": "ctee.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.valorbet-kr.kr",
+    "domain": "valorbet-kr.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dongseo.ac.kr",
+    "domain": "dongseo.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.hostwhale.co.kr",
+    "domain": "hostwhale.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.winnen.co.kr",
+    "domain": "winnen.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.rememberapp.co.kr",
+    "domain": "rememberapp.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hgrid.kr",
+    "domain": "hgrid.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.intel.co.kr",
+    "domain": "intel.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.buly.kr",
+    "domain": "buly.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.yahoo.co.kr",
+    "domain": "yahoo.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hotsunglass.co.kr",
+    "domain": "hotsunglass.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.wonnews.kr",
+    "domain": "wonnews.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.p-e.kr",
+    "domain": "p-e.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cbnu.ac.kr",
+    "domain": "cbnu.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.2bn.co.kr",
+    "domain": "2bn.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hackers.co.kr",
+    "domain": "hackers.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.familynet.or.kr",
+    "domain": "familynet.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.bigtree.co.kr",
+    "domain": "bigtree.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.woosuk.ac.kr",
+    "domain": "woosuk.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.neov.co.kr",
+    "domain": "neov.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.inodea.co.kr",
+    "domain": "inodea.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.sentv.co.kr",
+    "domain": "sentv.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.iacstatic.co.kr",
+    "domain": "iacstatic.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.n-e.kr",
+    "domain": "n-e.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kimc.co.kr",
+    "domain": "kimc.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.chaega.co.kr",
+    "domain": "chaega.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cju.ac.kr",
+    "domain": "cju.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.gjit.kr",
+    "domain": "gjit.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.industrynews.co.kr",
+    "domain": "industrynews.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.gmate.co.kr",
+    "domain": "gmate.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kyunghee.ac.kr",
+    "domain": "kyunghee.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.asahe-korea.co.kr",
+    "domain": "asahe-korea.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.catch.co.kr",
+    "domain": "catch.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ctr.co.kr",
+    "domain": "ctr.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mediamixer.co.kr",
+    "domain": "mediamixer.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kbcapital.co.kr",
+    "domain": "kbcapital.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.police.go.kr",
+    "domain": "police.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.simpol.co.kr",
+    "domain": "simpol.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.khug.or.kr",
+    "domain": "khug.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.revedesign.co.kr",
+    "domain": "revedesign.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.pulsenews.co.kr",
+    "domain": "pulsenews.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.d2b.go.kr",
+    "domain": "d2b.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.earcell.co.kr",
+    "domain": "earcell.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.eduf.co.kr",
+    "domain": "eduf.co.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.epeople.go.kr",
+    "domain": "epeople.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.eum.go.kr",
+    "domain": "eum.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.ev.or.kr",
+    "domain": "ev.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.eventportal.co.kr",
+    "domain": "eventportal.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.gosims.go.kr",
+    "domain": "gosims.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.hearzen.co.kr",
+    "domain": "hearzen.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hikorea.go.kr",
+    "domain": "hikorea.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.kifin.or.kr",
+    "domain": "kifin.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.kinfa.or.kr",
+    "domain": "kinfa.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.mozaiq.co.kr",
+    "domain": "mozaiq.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.onbrix.co.kr",
+    "domain": "onbrix.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.peti.go.kr",
+    "domain": "peti.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.shopling.co.kr",
+    "domain": "shopling.co.kr",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.yogizogi.kr",
+    "domain": "yogizogi.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.apti.co.kr",
+    "domain": "apti.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.valor-casino.kr",
+    "domain": "valor-casino.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kongju.ac.kr",
+    "domain": "kongju.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.hotelscombined.co.kr",
+    "domain": "hotelscombined.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mdtoday.co.kr",
+    "domain": "mdtoday.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.littlemom.co.kr",
+    "domain": "littlemom.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.pubnetplus.ne.kr",
+    "domain": "pubnetplus.ne.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.flexcloud.co.kr",
+    "domain": "flexcloud.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bbsi.co.kr",
+    "domain": "bbsi.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hunet.co.kr",
+    "domain": "hunet.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.azb.co.kr",
+    "domain": "azb.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.modooclean.co.kr",
+    "domain": "modooclean.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bosa.co.kr",
+    "domain": "bosa.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.snu.kr",
+    "domain": "snu.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.myip.co.kr",
+    "domain": "myip.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.theminjoo.kr",
+    "domain": "theminjoo.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.themedicube.co.kr",
+    "domain": "themedicube.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.newsya.co.kr",
+    "domain": "newsya.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.kdischool.ac.kr",
+    "domain": "kdischool.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.coex.co.kr",
+    "domain": "coex.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.afteredu.kr",
+    "domain": "afteredu.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.kytti.or.kr",
+    "domain": "kytti.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.youthculturepass.or.kr",
+    "domain": "youthculturepass.or.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.drsbook.co.kr",
+    "domain": "drsbook.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.moyiza.kr",
+    "domain": "moyiza.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.korean.go.kr",
+    "domain": "korean.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.2cpu.co.kr",
+    "domain": "2cpu.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kcm.co.kr",
+    "domain": "kcm.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.docdocdoc.co.kr",
+    "domain": "docdocdoc.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.utohouse.co.kr",
+    "domain": "utohouse.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.tenping.kr",
+    "domain": "tenping.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.gamgokbiz.co.kr",
+    "domain": "gamgokbiz.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.pulmuone.co.kr",
+    "domain": "pulmuone.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.altodesign.co.kr",
+    "domain": "altodesign.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.slist.kr",
+    "domain": "slist.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ut.ac.kr",
+    "domain": "ut.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.silla.ac.kr",
+    "domain": "silla.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.geoweb.kr",
+    "domain": "geoweb.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ice.go.kr",
+    "domain": "ice.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.pacific.co.kr",
+    "domain": "pacific.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.homecuisine.co.kr",
+    "domain": "homecuisine.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.intellicenter.co.kr",
+    "domain": "intellicenter.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cfc.kr",
+    "domain": "cfc.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.agentsoft.co.kr",
+    "domain": "agentsoft.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dnsever.co.kr",
+    "domain": "dnsever.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.newstown.co.kr",
+    "domain": "newstown.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.pinpointnews.co.kr",
+    "domain": "pinpointnews.co.kr",
+    "category": "news"
+  },
+  {
+    "url": "https://www.greened.kr",
+    "domain": "greened.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.gen.go.kr",
+    "domain": "gen.go.kr",
+    "category": "government"
+  },
+  {
+    "url": "https://www.yju.ac.kr",
+    "domain": "yju.ac.kr",
+    "category": "education"
+  },
+  {
+    "url": "https://www.seoulmetro.co.kr",
+    "domain": "seoulmetro.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nipa.kr",
+    "domain": "nipa.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.skylife.co.kr",
+    "domain": "skylife.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kayak.co.kr",
+    "domain": "kayak.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.sunbrand.co.kr",
+    "domain": "sunbrand.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.38.co.kr",
+    "domain": "38.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.croket.co.kr",
+    "domain": "croket.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.viewus.co.kr",
+    "domain": "viewus.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.boribori.co.kr",
+    "domain": "boribori.co.kr",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsung.com\r",
+    "domain": "samsung.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.azurewebsites.net\r",
+    "domain": "azurewebsites.net\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.autodesk.com\r",
+    "domain": "autodesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungcloud.com\r",
+    "domain": "samsungcloud.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungqbe.com\r",
+    "domain": "samsungqbe.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungcloudsolution.com\r",
+    "domain": "samsungcloudsolution.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.plesk.com\r",
+    "domain": "plesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.zendesk.com\r",
+    "domain": "zendesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungapps.com\r",
+    "domain": "samsungapps.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.merriam-webster.com\r",
+    "domain": "merriam-webster.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.anydesk.com\r",
+    "domain": "anydesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungacr.com\r",
+    "domain": "samsungacr.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bugsnag.com\r",
+    "domain": "bugsnag.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungosp.com\r",
+    "domain": "samsungosp.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungcloudsolution.net\r",
+    "domain": "samsungcloudsolution.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.websitewelcome.com\r",
+    "domain": "websitewelcome.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.coupang.com\r",
+    "domain": "coupang.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.samsungcloud.tv\r",
+    "domain": "samsungcloud.tv\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.rustdesk.com\r",
+    "domain": "rustdesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.spankbang.com\r",
+    "domain": "spankbang.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.spankbang.party\r",
+    "domain": "spankbang.party\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bazos.sk\r",
+    "domain": "bazos.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.lotterysambadresult.in\r",
+    "domain": "lotterysambadresult.in\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungknox.com\r",
+    "domain": "samsungknox.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.porkbun.com\r",
+    "domain": "porkbun.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungiotcloud.com\r",
+    "domain": "samsungiotcloud.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.freebsd.org\r",
+    "domain": "freebsd.org\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsungelectronics.com\r",
+    "domain": "samsungelectronics.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.metamask.io\r",
+    "domain": "metamask.io\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ltwebstatic.com\r",
+    "domain": "ltwebstatic.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.khanacademy.org\r",
+    "domain": "khanacademy.org\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsungdm.com\r",
+    "domain": "samsungdm.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kinopoisk.ru\r",
+    "domain": "kinopoisk.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungads.com\r",
+    "domain": "samsungads.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.wikia.com\r",
+    "domain": "wikia.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.slackb.com\r",
+    "domain": "slackb.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.visualwebsiteoptimizer.com\r",
+    "domain": "visualwebsiteoptimizer.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.webs.com\r",
+    "domain": "webs.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsungnyc.com\r",
+    "domain": "samsungnyc.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.lg.com\r",
+    "domain": "lg.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nokia.com\r",
+    "domain": "nokia.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.rocketmoney.dev\r",
+    "domain": "rocketmoney.dev\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.e5.sk\r",
+    "domain": "e5.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungconsent.com\r",
+    "domain": "samsungconsent.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.blackberry.com\r",
+    "domain": "blackberry.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.freshdesk.com\r",
+    "domain": "freshdesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.website-files.com\r",
+    "domain": "website-files.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsunghealth.com\r",
+    "domain": "samsunghealth.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.websupport.sk\r",
+    "domain": "websupport.sk\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.kbz0pwvxmv.com\r",
+    "domain": "kbz0pwvxmv.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungpositioning.com\r",
+    "domain": "samsungpositioning.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungcloudcdn.com\r",
+    "domain": "samsungcloudcdn.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.keydisk.ru\r",
+    "domain": "keydisk.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.chosun.com\r",
+    "domain": "chosun.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.ask.com\r",
+    "domain": "ask.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungrs.com\r",
+    "domain": "samsungrs.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.backblaze.com\r",
+    "domain": "backblaze.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kia.com\r",
+    "domain": "kia.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.coindesk.com\r",
+    "domain": "coindesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.backblazeb2.com\r",
+    "domain": "backblazeb2.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.eastmoney.com\r",
+    "domain": "eastmoney.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.gmarket.co.kr\r",
+    "domain": "gmarket.co.kr\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.hyundai.com\r",
+    "domain": "hyundai.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsung-gamelauncher.com\r",
+    "domain": "samsung-gamelauncher.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungotn.net\r",
+    "domain": "samsungotn.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kbb.com\r",
+    "domain": "kbb.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.blackberry.net\r",
+    "domain": "blackberry.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.donga.com\r",
+    "domain": "donga.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.ebsco.com\r",
+    "domain": "ebsco.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.skbkontur.ru\r",
+    "domain": "skbkontur.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.blackboard.com\r",
+    "domain": "blackboard.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.webshare.io\r",
+    "domain": "webshare.io\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.ebscohost.com\r",
+    "domain": "ebscohost.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.sbs.com.au\r",
+    "domain": "sbs.com.au\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.sme.sk\r",
+    "domain": "sme.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.webstaurantstore.com\r",
+    "domain": "webstaurantstore.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.coupangcdn.com\r",
+    "domain": "coupangcdn.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.msk.ru\r",
+    "domain": "msk.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.devicetask.com\r",
+    "domain": "devicetask.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ghanaweb.com\r",
+    "domain": "ghanaweb.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cleverwebserver.com\r",
+    "domain": "cleverwebserver.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsungmobile.com\r",
+    "domain": "samsungmobile.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.google.sk\r",
+    "domain": "google.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.freewebs.com\r",
+    "domain": "freewebs.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.ladesk.com\r",
+    "domain": "ladesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.maersk.com\r",
+    "domain": "maersk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.aktuality.sk\r",
+    "domain": "aktuality.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.blesk.cz\r",
+    "domain": "blesk.cz\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.klikbca.com\r",
+    "domain": "klikbca.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.smbcnikko.co.jp\r",
+    "domain": "smbcnikko.co.jp\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.joongang.co.kr\r",
+    "domain": "joongang.co.kr\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.clickbank.net\r",
+    "domain": "clickbank.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kiabi.com\r",
+    "domain": "kiabi.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsunghrm.com\r",
+    "domain": "samsunghrm.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mbc.net\r",
+    "domain": "mbc.net\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.websitedemos.net\r",
+    "domain": "websitedemos.net\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.dennikn.sk\r",
+    "domain": "dennikn.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.11st.co.kr\r",
+    "domain": "11st.co.kr\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.unh.edu\r",
+    "domain": "unh.edu\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bki-okb.ru\r",
+    "domain": "bki-okb.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungmax.com\r",
+    "domain": "samsungmax.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.azet.sk\r",
+    "domain": "azet.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.topky.sk\r",
+    "domain": "topky.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bankbazaar.com\r",
+    "domain": "bankbazaar.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.xhwebsite5.com\r",
+    "domain": "xhwebsite5.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.plesk.page\r",
+    "domain": "plesk.page\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hostmonster.com\r",
+    "domain": "hostmonster.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.melonstube.com\r",
+    "domain": "melonstube.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.lotterypost.com\r",
+    "domain": "lotterypost.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.videocelebs.net\r",
+    "domain": "videocelebs.net\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.okbet.com\r",
+    "domain": "okbet.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.chunkbase.com\r",
+    "domain": "chunkbase.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.tokyo.lg.jp\r",
+    "domain": "tokyo.lg.jp\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsung-dict.com\r",
+    "domain": "samsung-dict.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cmbchina.com\r",
+    "domain": "cmbchina.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.dienmayxanh.com\r",
+    "domain": "dienmayxanh.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.profesia.sk\r",
+    "domain": "profesia.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.yadi.sk\r",
+    "domain": "yadi.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.zoznam.sk\r",
+    "domain": "zoznam.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cdn-website.com\r",
+    "domain": "cdn-website.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.mydesi.sbs\r",
+    "domain": "mydesi.sbs\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsungpass.com\r",
+    "domain": "samsungpass.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.listrakbi.com\r",
+    "domain": "listrakbi.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.melb.website\r",
+    "domain": "melb.website\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.ondisk.co.kr\r",
+    "domain": "ondisk.co.kr\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.flashscore.sk\r",
+    "domain": "flashscore.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungmdec.com\r",
+    "domain": "samsungmdec.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.uubb.website\r",
+    "domain": "uubb.website\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.3esk.onl\r",
+    "domain": "3esk.onl\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.johnpyeauctions.co.uk\r",
+    "domain": "johnpyeauctions.co.uk\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.ethiolottery.et\r",
+    "domain": "ethiolottery.et\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.keralalotterytoday.com\r",
+    "domain": "keralalotterytoday.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungdive.com\r",
+    "domain": "samsungdive.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.keralalotteries.net\r",
+    "domain": "keralalotteries.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.lotterysambad.one\r",
+    "domain": "lotterysambad.one\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.66lottery.vip\r",
+    "domain": "66lottery.vip\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.melon.com\r",
+    "domain": "melon.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungdis.com\r",
+    "domain": "samsungdis.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.smbc-card.com\r",
+    "domain": "smbc-card.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsungweather.com\r",
+    "domain": "samsungweather.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kemdikbud.go.id\r",
+    "domain": "kemdikbud.go.id\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.amnh.org\r",
+    "domain": "amnh.org\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.umbc.edu\r",
+    "domain": "umbc.edu\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.blackbox.ai\r",
+    "domain": "blackbox.ai\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungdmroute.com\r",
+    "domain": "samsungdmroute.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungvisioncloud.com\r",
+    "domain": "samsungvisioncloud.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.optimumdesk.com\r",
+    "domain": "optimumdesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.auction.co.kr\r",
+    "domain": "auction.co.kr\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.krebson.ru\r",
+    "domain": "krebson.ru\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsungsds.com\r",
+    "domain": "samsungsds.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.national-lottery.co.uk\r",
+    "domain": "national-lottery.co.uk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.wikia-services.com\r",
+    "domain": "wikia-services.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.usask.ca\r",
+    "domain": "usask.ca\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.tld.sk\r",
+    "domain": "tld.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.tomsk.ru\r",
+    "domain": "tomsk.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsung.com.cn\r",
+    "domain": "samsung.com.cn\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nh.gov\r",
+    "domain": "nh.gov\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dhlottery.co.kr\r",
+    "domain": "dhlottery.co.kr\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.musinsa.com\r",
+    "domain": "musinsa.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.mynewsdesk.com\r",
+    "domain": "mynewsdesk.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.cp.sk\r",
+    "domain": "cp.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nagalandstatelottery.in\r",
+    "domain": "nagalandstatelottery.in\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.gsk.com\r",
+    "domain": "gsk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.websense.com\r",
+    "domain": "websense.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.krebsonsecurity.com\r",
+    "domain": "krebsonsecurity.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.azurewebsites.us\r",
+    "domain": "azurewebsites.us\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsungrm.net\r",
+    "domain": "samsungrm.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dongao.com\r",
+    "domain": "dongao.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.sandisk.com\r",
+    "domain": "sandisk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.liveauctioneers.com\r",
+    "domain": "liveauctioneers.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.xhwebsite.com\r",
+    "domain": "xhwebsite.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.takbet.com\r",
+    "domain": "takbet.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.tokbox.com\r",
+    "domain": "tokbox.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.webhouse.sk\r",
+    "domain": "webhouse.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.khan.co.kr\r",
+    "domain": "khan.co.kr\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.inkbunny.net\r",
+    "domain": "inkbunny.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.stockbit.com\r",
+    "domain": "stockbit.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.onclckbn.net\r",
+    "domain": "onclckbn.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungenergydr.com\r",
+    "domain": "samsungenergydr.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kbs.co.kr\r",
+    "domain": "kbs.co.kr\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.melonbooks.co.jp\r",
+    "domain": "melonbooks.co.jp\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.celuapuestas.sbs\r",
+    "domain": "celuapuestas.sbs\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsungdiroute.net\r",
+    "domain": "samsungdiroute.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mediamelon.com\r",
+    "domain": "mediamelon.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ydtour28.sbs\r",
+    "domain": "ydtour28.sbs\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.uibk.ac.at\r",
+    "domain": "uibk.ac.at\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.koreaherald.com\r",
+    "domain": "koreaherald.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.shmu.sk\r",
+    "domain": "shmu.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.blackbaud.com\r",
+    "domain": "blackbaud.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mhanational.org\r",
+    "domain": "mhanational.org\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hostgatorwebservers.com\r",
+    "domain": "hostgatorwebservers.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.pkb.ru\r",
+    "domain": "pkb.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.charlotteobserver.com\r",
+    "domain": "charlotteobserver.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.smbc.co.jp\r",
+    "domain": "smbc.co.jp\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.prochepetsk.ru\r",
+    "domain": "prochepetsk.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.xervcwfsk.com\r",
+    "domain": "xervcwfsk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.biisk.ru\r",
+    "domain": "biisk.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.framer.website\r",
+    "domain": "framer.website\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsung.co.kr\r",
+    "domain": "samsung.co.kr\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.xn--l3cb1eaaa2dkbbb.net\r",
+    "domain": "xn--l3cb1eaaa2dkbbb.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dear-lottery.in\r",
+    "domain": "dear-lottery.in\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsung-news.com\r",
+    "domain": "samsung-news.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.webshots.com\r",
+    "domain": "webshots.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.flodesk.com\r",
+    "domain": "flodesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hananet.net\r",
+    "domain": "hananet.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.asuswebstorage.com\r",
+    "domain": "asuswebstorage.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.trekbikes.com\r",
+    "domain": "trekbikes.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.pravda.sk\r",
+    "domain": "pravda.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.jharkhand.gov.in\r",
+    "domain": "jharkhand.gov.in\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.lotteon.com\r",
+    "domain": "lotteon.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungcloudplatform.com\r",
+    "domain": "samsungcloudplatform.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.webspace.uz\r",
+    "domain": "webspace.uz\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.blackboardcdn.com\r",
+    "domain": "blackboardcdn.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.halykbank.kz\r",
+    "domain": "halykbank.kz\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.wikiart.org\r",
+    "domain": "wikiart.org\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.codeblackbelt.com\r",
+    "domain": "codeblackbelt.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.allegro.sk\r",
+    "domain": "allegro.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hyundaiusa.com\r",
+    "domain": "hyundaiusa.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hnonline.sk\r",
+    "domain": "hnonline.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.easyliveauction.com\r",
+    "domain": "easyliveauction.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.msk-ix.ru\r",
+    "domain": "msk-ix.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.jysk.de\r",
+    "domain": "jysk.de\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cas.sk\r",
+    "domain": "cas.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nh-hotels.com\r",
+    "domain": "nh-hotels.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bumbcdn.com\r",
+    "domain": "bumbcdn.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.quickbase.com\r",
+    "domain": "quickbase.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ifortuna.sk\r",
+    "domain": "ifortuna.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.floridalottery.com\r",
+    "domain": "floridalottery.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.z-library.sk\r",
+    "domain": "z-library.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nay.sk\r",
+    "domain": "nay.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nclottery.com\r",
+    "domain": "nclottery.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.imhd.sk\r",
+    "domain": "imhd.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.blackbaud.net\r",
+    "domain": "blackbaud.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kb4compliance.com\r",
+    "domain": "kb4compliance.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.alza.sk\r",
+    "domain": "alza.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.webshopapp.com\r",
+    "domain": "webshopapp.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.nike.sk\r",
+    "domain": "nike.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.libking.ru\r",
+    "domain": "libking.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.stvr.sk\r",
+    "domain": "stvr.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.akbars.ru\r",
+    "domain": "akbars.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.lotteryusa.com\r",
+    "domain": "lotteryusa.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.websitesource.com\r",
+    "domain": "websitesource.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.galottery.com\r",
+    "domain": "galottery.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.auctionninja.com\r",
+    "domain": "auctionninja.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.texaslottery.com\r",
+    "domain": "texaslottery.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.tvnoviny.sk\r",
+    "domain": "tvnoviny.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.webserversystems.com\r",
+    "domain": "webserversystems.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.clickbus.com.br\r",
+    "domain": "clickbus.com.br\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.sbs.co.kr\r",
+    "domain": "sbs.co.kr\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.interpark.com\r",
+    "domain": "interpark.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.website-editor.net\r",
+    "domain": "website-editor.net\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.stuba.sk\r",
+    "domain": "stuba.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.99kia.com\r",
+    "domain": "99kia.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.quickbooks.com\r",
+    "domain": "quickbooks.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.frebsite.nl\r",
+    "domain": "frebsite.nl\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.bki-okb.com\r",
+    "domain": "bki-okb.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.sibkray.ru\r",
+    "domain": "sibkray.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.olg.ca\r",
+    "domain": "olg.ca\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.usedesk.ru\r",
+    "domain": "usedesk.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsunggsl.com\r",
+    "domain": "samsunggsl.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bookbub.com\r",
+    "domain": "bookbub.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.akbank.com.tr\r",
+    "domain": "akbank.com.tr\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.lexisnexisrisk.com\r",
+    "domain": "lexisnexisrisk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.autotask.net\r",
+    "domain": "autotask.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.task.com.br\r",
+    "domain": "task.com.br\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.website.com\r",
+    "domain": "website.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.jysk.pl\r",
+    "domain": "jysk.pl\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.blockboardtech.com\r",
+    "domain": "blockboardtech.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bangkokbiznews.com\r",
+    "domain": "bangkokbiznews.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.lotteryextreme.com\r",
+    "domain": "lotteryextreme.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.charlotte.edu\r",
+    "domain": "charlotte.edu\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.interez.sk\r",
+    "domain": "interez.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsung-sm-ds.com\r",
+    "domain": "samsung-sm-ds.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.wiselg.com\r",
+    "domain": "wiselg.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.baidustatic.com\r",
+    "domain": "baidustatic.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.alcopa-auction.fr\r",
+    "domain": "alcopa-auction.fr\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.minhchinh.com\r",
+    "domain": "minhchinh.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.towebs.com\r",
+    "domain": "towebs.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.middleeastmonitor.com\r",
+    "domain": "middleeastmonitor.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.pohonemas33.website\r",
+    "domain": "pohonemas33.website\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.novonordisk.com\r",
+    "domain": "novonordisk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.osaka.lg.jp\r",
+    "domain": "osaka.lg.jp\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.eauctionsindia.com\r",
+    "domain": "eauctionsindia.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.amaterky.sk\r",
+    "domain": "amaterky.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.eventmonitoringpro.com\r",
+    "domain": "eventmonitoringpro.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.ydtour27.sbs\r",
+    "domain": "ydtour27.sbs\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsungknowledge.com\r",
+    "domain": "samsungknowledge.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.uniba.sk\r",
+    "domain": "uniba.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.3isk.info\r",
+    "domain": "3isk.info\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.playindialottery.com\r",
+    "domain": "playindialottery.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.websense.net\r",
+    "domain": "websense.net\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.kkb.kz\r",
+    "domain": "kkb.kz\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.getmonero.org\r",
+    "domain": "getmonero.org\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.yes24.com\r",
+    "domain": "yes24.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.mkb.ru\r",
+    "domain": "mkb.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.imbc.com\r",
+    "domain": "imbc.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.kb.se\r",
+    "domain": "kb.se\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.pikbest.com\r",
+    "domain": "pikbest.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.billdesk.com\r",
+    "domain": "billdesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.50webs.com\r",
+    "domain": "50webs.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.kbos.net\r",
+    "domain": "kbos.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.yokohama.lg.jp\r",
+    "domain": "yokohama.lg.jp\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.orange.sk\r",
+    "domain": "orange.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.webspellchecker.net\r",
+    "domain": "webspellchecker.net\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.webstarts.com\r",
+    "domain": "webstarts.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.fsk-ees.ru\r",
+    "domain": "fsk-ees.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hkbu.edu.hk\r",
+    "domain": "hkbu.edu.hk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ynh.fr\r",
+    "domain": "ynh.fr\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bachhoaxanh.com\r",
+    "domain": "bachhoaxanh.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kebhana.mx\r",
+    "domain": "kebhana.mx\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.wdesk.com\r",
+    "domain": "wdesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hongkiat.com\r",
+    "domain": "hongkiat.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.live-website.com\r",
+    "domain": "live-website.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.gurudesk.app\r",
+    "domain": "gurudesk.app\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nic.sbs\r",
+    "domain": "nic.sbs\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.webself.net\r",
+    "domain": "webself.net\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.pinkbike.com\r",
+    "domain": "pinkbike.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.sbsub.com\r",
+    "domain": "sbsub.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.ydtour25.sbs\r",
+    "domain": "ydtour25.sbs\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.ydtour26.sbs\r",
+    "domain": "ydtour26.sbs\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.kbzpay.com\r",
+    "domain": "kbzpay.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kkbox.com\r",
+    "domain": "kkbox.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mlg.ru\r",
+    "domain": "mlg.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.khanoumi.com\r",
+    "domain": "khanoumi.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.geekbench.com\r",
+    "domain": "geekbench.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.movidesk.com\r",
+    "domain": "movidesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kbstar.com\r",
+    "domain": "kbstar.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.ask.fm\r",
+    "domain": "ask.fm\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.heureka.sk\r",
+    "domain": "heureka.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.saitama.lg.jp\r",
+    "domain": "saitama.lg.jp\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.networkbench.com\r",
+    "domain": "networkbench.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsunggeopush.com\r",
+    "domain": "samsunggeopush.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.taiwanlottery.com\r",
+    "domain": "taiwanlottery.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.yourwebsite.com\r",
+    "domain": "yourwebsite.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.ulg.ac.be\r",
+    "domain": "ulg.ac.be\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.udesk.cn\r",
+    "domain": "udesk.cn\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.webspace-verkauf.de\r",
+    "domain": "webspace-verkauf.de\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.charlottetilbury.com\r",
+    "domain": "charlottetilbury.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.jackbox.tv\r",
+    "domain": "jackbox.tv\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.1-av.sbs\r",
+    "domain": "1-av.sbs\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.nask.pl\r",
+    "domain": "nask.pl\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hkbnes.net.hk\r",
+    "domain": "hkbnes.net.hk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.fukuoka.lg.jp\r",
+    "domain": "fukuoka.lg.jp\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.tving.com\r",
+    "domain": "tving.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kbanknow.com\r",
+    "domain": "kbanknow.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.websupport.cz\r",
+    "domain": "websupport.cz\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.websiteplanet.com\r",
+    "domain": "websiteplanet.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.dickblick.com\r",
+    "domain": "dickblick.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.pilotauctionfacility.org\r",
+    "domain": "pilotauctionfacility.org\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.akbank.com\r",
+    "domain": "akbank.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nsk.su\r",
+    "domain": "nsk.su\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.playmelonpg.com\r",
+    "domain": "playmelonpg.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.websocket.org\r",
+    "domain": "websocket.org\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsungdms.net\r",
+    "domain": "samsungdms.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.smbc-comics.com\r",
+    "domain": "smbc-comics.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.bunjang.co.kr\r",
+    "domain": "bunjang.co.kr\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bet30.sbs\r",
+    "domain": "bet30.sbs\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.fuckoffstoplookinghere.sbs\r",
+    "domain": "fuckoffstoplookinghere.sbs\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.baleping.sbs\r",
+    "domain": "baleping.sbs\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.larozza.website\r",
+    "domain": "larozza.website\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.mrsk-1.ru\r",
+    "domain": "mrsk-1.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bookbeat.com\r",
+    "domain": "bookbeat.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungglobalgoals.com\r",
+    "domain": "samsungglobalgoals.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.pkbonline.ru\r",
+    "domain": "pkbonline.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.clickbank.com\r",
+    "domain": "clickbank.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.websiteservername.com\r",
+    "domain": "websiteservername.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.wavevid.website\r",
+    "domain": "wavevid.website\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.seoul.co.kr\r",
+    "domain": "seoul.co.kr\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.webstroy.ru\r",
+    "domain": "webstroy.ru\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.website3.me\r",
+    "domain": "website3.me\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.samsungcloudcn.com\r",
+    "domain": "samsungcloudcn.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kbhgames.com\r",
+    "domain": "kbhgames.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.todesk.com\r",
+    "domain": "todesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kyoto.lg.jp\r",
+    "domain": "kyoto.lg.jp\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ekb.eg\r",
+    "domain": "ekb.eg\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.bankbsi.co.id\r",
+    "domain": "bankbsi.co.id\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.thetradedesk.com\r",
+    "domain": "thetradedesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ilmakiage.com\r",
+    "domain": "ilmakiage.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.webglobe.sk\r",
+    "domain": "webglobe.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.my-free.website\r",
+    "domain": "my-free.website\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.jysk.com\r",
+    "domain": "jysk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.chat2desk.com\r",
+    "domain": "chat2desk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.antik.sk\r",
+    "domain": "antik.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.wtnh.com\r",
+    "domain": "wtnh.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.auction.com\r",
+    "domain": "auction.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.stackblitz.com\r",
+    "domain": "stackblitz.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.securewebsystems.net\r",
+    "domain": "securewebsystems.net\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.zigzag.kr\r",
+    "domain": "zigzag.kr\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.tusk-casino.org\r",
+    "domain": "tusk-casino.org\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungmembers.com\r",
+    "domain": "samsungmembers.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungconnectivity.com\r",
+    "domain": "samsungconnectivity.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.wooribank.com\r",
+    "domain": "wooribank.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.websaversdns.com\r",
+    "domain": "websaversdns.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.kaufland.sk\r",
+    "domain": "kaufland.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.nameserver.sk\r",
+    "domain": "nameserver.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kiabi.es\r",
+    "domain": "kiabi.es\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.financnasprava.sk\r",
+    "domain": "financnasprava.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.playerauctions.com\r",
+    "domain": "playerauctions.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.websupport.se\r",
+    "domain": "websupport.se\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.wkbn.com\r",
+    "domain": "wkbn.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.linkbrasil.srv.br\r",
+    "domain": "linkbrasil.srv.br\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.linkbio.co\r",
+    "domain": "linkbio.co\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.doubleclickbygoogle.com\r",
+    "domain": "doubleclickbygoogle.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mywebsite-editor.com\r",
+    "domain": "mywebsite-editor.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.rockbitegames.com\r",
+    "domain": "rockbitegames.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.chiba.lg.jp\r",
+    "domain": "chiba.lg.jp\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungtvplus.com\r",
+    "domain": "samsungtvplus.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.auctionzip.com\r",
+    "domain": "auctionzip.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.markiza.sk\r",
+    "domain": "markiza.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.cnh.com\r",
+    "domain": "cnh.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ohiolottery.com\r",
+    "domain": "ohiolottery.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.pluska.sk\r",
+    "domain": "pluska.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.ugsk.ru\r",
+    "domain": "ugsk.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.thenationaldesk.com\r",
+    "domain": "thenationaldesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.maersk.io\r",
+    "domain": "maersk.io\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.verisk.com\r",
+    "domain": "verisk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungtv.plus\r",
+    "domain": "samsungtv.plus\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.samsungpay.com\r",
+    "domain": "samsungpay.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.zendesk-staging.com\r",
+    "domain": "zendesk-staging.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.oohdesk.ru\r",
+    "domain": "oohdesk.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.hiroshima.lg.jp\r",
+    "domain": "hiroshima.lg.jp\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.calottery.com\r",
+    "domain": "calottery.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dns-shop.sk\r",
+    "domain": "dns-shop.sk\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.autodesk.net\r",
+    "domain": "autodesk.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.jackboxgames.com\r",
+    "domain": "jackboxgames.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mytemp.website\r",
+    "domain": "mytemp.website\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.sk.ru\r",
+    "domain": "sk.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kidswebservices.com\r",
+    "domain": "kidswebservices.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.aktsk.com\r",
+    "domain": "aktsk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.dnh.net\r",
+    "domain": "dnh.net\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.trackdesk.com\r",
+    "domain": "trackdesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.omnidesk.ru\r",
+    "domain": "omnidesk.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.modernghana.com\r",
+    "domain": "modernghana.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.asterisk.org\r",
+    "domain": "asterisk.org\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.mytalkdesk.com\r",
+    "domain": "mytalkdesk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.websummit.com\r",
+    "domain": "websummit.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.auctionet.com\r",
+    "domain": "auctionet.com\r",
+    "category": "commerce"
+  },
+  {
+    "url": "https://www.joj.sk\r",
+    "domain": "joj.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.kiasuo.ru\r",
+    "domain": "kiasuo.ru\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.clearwebstats.com\r",
+    "domain": "clearwebstats.com\r",
+    "category": "news"
+  },
+  {
+    "url": "https://www.rsk.co\r",
+    "domain": "rsk.co\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.sportisimo.sk\r",
+    "domain": "sportisimo.sk\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.zoosk.com\r",
+    "domain": "zoosk.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.logtrackback.com\r",
+    "domain": "logtrackback.com\r",
+    "category": "general"
+  },
+  {
+    "url": "https://www.videoask.com\r",
+    "domain": "videoask.com\r",
+    "category": "general"
+  }
+]

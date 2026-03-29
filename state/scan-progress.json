@@ -1,9 +1,4450 @@
 {
-  "cursor": 0,
-  "completed": 0,
-  "failed": 0,
-  "blocked": 0,
-  "totalSites": 0,
-  "lastSavedAt": null,
-  "results": []
+  "cursor": 859,
+  "completed": 859,
+  "failed": 41,
+  "blocked": 100,
+  "totalSites": 1000,
+  "lastSavedAt": "2026-03-29T01:00:00.000Z",
+  "results": [
+    {
+      "url": "https://www.naver.com",
+      "domain": "naver.com",
+      "category": "portal",
+      "total_interactive": 497,
+      "ghost_count": 24,
+      "parity_score": 75.8
+    },
+    {
+      "url": "https://www.daum.net",
+      "domain": "daum.net",
+      "category": "portal",
+      "total_interactive": 420,
+      "ghost_count": 22,
+      "parity_score": 61.7
+    },
+    {
+      "url": "https://www.zum.com",
+      "domain": "zum.com",
+      "category": "portal",
+      "total_interactive": 107,
+      "ghost_count": 35,
+      "parity_score": 64.3
+    },
+    {
+      "url": "https://www.nate.com",
+      "domain": "nate.com",
+      "category": "portal",
+      "total_interactive": 412,
+      "ghost_count": 26,
+      "parity_score": 66.4
+    },
+    {
+      "url": "https://www.coupang.com",
+      "domain": "coupang.com",
+      "category": "commerce",
+      "total_interactive": 281,
+      "ghost_count": 91,
+      "parity_score": 48
+    },
+    {
+      "url": "https://www.gmarket.co.kr",
+      "domain": "gmarket.co.kr",
+      "category": "commerce",
+      "total_interactive": 434,
+      "ghost_count": 111,
+      "parity_score": 36.8
+    },
+    {
+      "url": "https://www.11st.co.kr",
+      "domain": "11st.co.kr",
+      "category": "commerce",
+      "total_interactive": 489,
+      "ghost_count": 46,
+      "parity_score": 63.6
+    },
+    {
+      "url": "https://www.auction.co.kr",
+      "domain": "auction.co.kr",
+      "category": "commerce",
+      "total_interactive": 499,
+      "ghost_count": 71,
+      "parity_score": 45.2
+    },
+    {
+      "url": "https://www.tmon.co.kr",
+      "domain": "tmon.co.kr",
+      "category": "commerce",
+      "total_interactive": 452,
+      "ghost_count": 91,
+      "parity_score": 41.7
+    },
+    {
+      "url": "https://www.wemakeprice.com",
+      "domain": "wemakeprice.com",
+      "category": "commerce",
+      "total_interactive": 430,
+      "ghost_count": 98,
+      "parity_score": 60.4
+    },
+    {
+      "url": "https://www.interpark.com",
+      "domain": "interpark.com",
+      "category": "commerce",
+      "total_interactive": 455,
+      "ghost_count": 98,
+      "parity_score": 59
+    },
+    {
+      "url": "https://www.yes24.com",
+      "domain": "yes24.com",
+      "category": "commerce",
+      "total_interactive": 269,
+      "ghost_count": 82,
+      "parity_score": 53.2
+    },
+    {
+      "url": "https://www.ssg.com",
+      "domain": "ssg.com",
+      "category": "commerce",
+      "total_interactive": 437,
+      "ghost_count": 56,
+      "parity_score": 59.3
+    },
+    {
+      "url": "https://www.lotteon.com",
+      "domain": "lotteon.com",
+      "category": "commerce",
+      "total_interactive": 255,
+      "ghost_count": 56,
+      "parity_score": 49.7
+    },
+    {
+      "url": "https://www.kurly.com",
+      "domain": "kurly.com",
+      "category": "commerce",
+      "total_interactive": 184,
+      "ghost_count": 82,
+      "parity_score": 34
+    },
+    {
+      "url": "https://www.musinsa.com",
+      "domain": "musinsa.com",
+      "category": "commerce",
+      "total_interactive": 165,
+      "ghost_count": 57,
+      "parity_score": 47.8
+    },
+    {
+      "url": "https://www.oliveyoung.co.kr",
+      "domain": "oliveyoung.co.kr",
+      "category": "commerce",
+      "total_interactive": 398,
+      "ghost_count": 94,
+      "parity_score": 57.1
+    },
+    {
+      "url": "https://www.bunjang.co.kr",
+      "domain": "bunjang.co.kr",
+      "category": "commerce",
+      "total_interactive": 296,
+      "ghost_count": 95,
+      "parity_score": 53.9
+    },
+    {
+      "url": "https://www.danawa.com",
+      "domain": "danawa.com",
+      "category": "commerce",
+      "total_interactive": 350,
+      "ghost_count": 51,
+      "parity_score": 45.6
+    },
+    {
+      "url": "https://www.ably.com",
+      "domain": "ably.com",
+      "category": "commerce",
+      "total_interactive": 267,
+      "ghost_count": 64,
+      "parity_score": 30.2
+    },
+    {
+      "url": "https://www.chosun.com",
+      "domain": "chosun.com",
+      "category": "news",
+      "total_interactive": 338,
+      "ghost_count": 46,
+      "parity_score": 64.6
+    },
+    {
+      "url": "https://www.joins.com",
+      "domain": "joins.com",
+      "category": "news",
+      "total_interactive": 283,
+      "ghost_count": 51,
+      "parity_score": 61.6
+    },
+    {
+      "url": "https://www.donga.com",
+      "domain": "donga.com",
+      "category": "news",
+      "total_interactive": 428,
+      "ghost_count": 41,
+      "parity_score": 47.7
+    },
+    {
+      "url": "https://www.hani.co.kr",
+      "domain": "hani.co.kr",
+      "category": "news",
+      "total_interactive": 295,
+      "ghost_count": 71,
+      "parity_score": 52.4
+    },
+    {
+      "url": "https://www.kmib.co.kr",
+      "domain": "kmib.co.kr",
+      "category": "news",
+      "total_interactive": 200,
+      "ghost_count": 40,
+      "parity_score": 50
+    },
+    {
+      "url": "https://www.khan.co.kr",
+      "domain": "khan.co.kr",
+      "category": "news",
+      "total_interactive": 92,
+      "ghost_count": 74,
+      "parity_score": 56.4
+    },
+    {
+      "url": "https://www.hankyung.com",
+      "domain": "hankyung.com",
+      "category": "news",
+      "total_interactive": 424,
+      "ghost_count": 36,
+      "parity_score": 52
+    },
+    {
+      "url": "https://www.mk.co.kr",
+      "domain": "mk.co.kr",
+      "category": "news",
+      "total_interactive": 369,
+      "ghost_count": 66,
+      "parity_score": 53.7
+    },
+    {
+      "url": "https://www.sedaily.com",
+      "domain": "sedaily.com",
+      "category": "news",
+      "total_interactive": 472,
+      "ghost_count": 61,
+      "parity_score": 65.5
+    },
+    {
+      "url": "https://www.ytn.co.kr",
+      "domain": "ytn.co.kr",
+      "category": "news",
+      "total_interactive": 94,
+      "ghost_count": 42,
+      "parity_score": 52.6
+    },
+    {
+      "url": "https://www.sbs.co.kr",
+      "domain": "sbs.co.kr",
+      "category": "news",
+      "total_interactive": 178,
+      "ghost_count": 27,
+      "parity_score": 70.8
+    },
+    {
+      "url": "https://www.kbs.co.kr",
+      "domain": "kbs.co.kr",
+      "category": "news",
+      "total_interactive": 158,
+      "ghost_count": 30,
+      "parity_score": 56.4
+    },
+    {
+      "url": "https://www.mbc.co.kr",
+      "domain": "mbc.co.kr",
+      "category": "news",
+      "total_interactive": 472,
+      "ghost_count": 57,
+      "parity_score": 53.2
+    },
+    {
+      "url": "https://www.jtbc.co.kr",
+      "domain": "jtbc.co.kr",
+      "category": "news",
+      "total_interactive": 264,
+      "ghost_count": 55,
+      "parity_score": 56.3
+    },
+    {
+      "url": "https://www.sisain.co.kr",
+      "domain": "sisain.co.kr",
+      "category": "news",
+      "total_interactive": 293,
+      "ghost_count": 48,
+      "parity_score": 63.4
+    },
+    {
+      "url": "https://www.korea.kr",
+      "domain": "korea.kr",
+      "category": "government",
+      "total_interactive": 241,
+      "ghost_count": 19,
+      "parity_score": 87
+    },
+    {
+      "url": "https://www.seoul.go.kr",
+      "domain": "seoul.go.kr",
+      "category": "government",
+      "total_interactive": 88,
+      "ghost_count": 10,
+      "parity_score": 78
+    },
+    {
+      "url": "https://www.busan.go.kr",
+      "domain": "busan.go.kr",
+      "category": "government",
+      "total_interactive": 179,
+      "ghost_count": 18,
+      "parity_score": 91
+    },
+    {
+      "url": "https://www.incheon.go.kr",
+      "domain": "incheon.go.kr",
+      "category": "government",
+      "total_interactive": 491,
+      "ghost_count": 23,
+      "parity_score": 94.9
+    },
+    {
+      "url": "https://www.daegu.go.kr",
+      "domain": "daegu.go.kr",
+      "category": "government",
+      "total_interactive": 396,
+      "ghost_count": 14,
+      "parity_score": 92.7
+    },
+    {
+      "url": "https://www.gwangju.go.kr",
+      "domain": "gwangju.go.kr",
+      "category": "government",
+      "total_interactive": 316,
+      "ghost_count": 15,
+      "parity_score": 75.3
+    },
+    {
+      "url": "https://www.daejeon.go.kr",
+      "domain": "daejeon.go.kr",
+      "category": "government",
+      "total_interactive": 103,
+      "ghost_count": 5,
+      "parity_score": 72.7
+    },
+    {
+      "url": "https://www.ulsan.go.kr",
+      "domain": "ulsan.go.kr",
+      "category": "government",
+      "total_interactive": 80,
+      "ghost_count": 22,
+      "parity_score": 85.9
+    },
+    {
+      "url": "https://www.sejong.go.kr",
+      "domain": "sejong.go.kr",
+      "category": "government",
+      "total_interactive": 468,
+      "ghost_count": 20,
+      "parity_score": 83.7
+    },
+    {
+      "url": "https://www.gg.go.kr",
+      "domain": "gg.go.kr",
+      "category": "government",
+      "total_interactive": 447,
+      "ghost_count": 20,
+      "parity_score": 76.5
+    },
+    {
+      "url": "https://www.chungnam.go.kr",
+      "domain": "chungnam.go.kr",
+      "category": "government",
+      "total_interactive": 294,
+      "ghost_count": 20,
+      "parity_score": 80.6
+    },
+    {
+      "url": "https://www.jeonbuk.go.kr",
+      "domain": "jeonbuk.go.kr",
+      "category": "government",
+      "total_interactive": 339,
+      "ghost_count": 14,
+      "parity_score": 83.7
+    },
+    {
+      "url": "https://www.gyeongnam.go.kr",
+      "domain": "gyeongnam.go.kr",
+      "category": "government",
+      "total_interactive": 225,
+      "ghost_count": 20,
+      "parity_score": 89.8
+    },
+    {
+      "url": "https://www.jeju.go.kr",
+      "domain": "jeju.go.kr",
+      "category": "government",
+      "total_interactive": 243,
+      "ghost_count": 12,
+      "parity_score": 72.2
+    },
+    {
+      "url": "https://www.assembly.go.kr",
+      "domain": "assembly.go.kr",
+      "category": "government",
+      "total_interactive": 139,
+      "ghost_count": 3,
+      "parity_score": 86.5
+    },
+    {
+      "url": "https://www.moe.go.kr",
+      "domain": "moe.go.kr",
+      "category": "government",
+      "total_interactive": 194,
+      "ghost_count": 24,
+      "parity_score": 94.8
+    },
+    {
+      "url": "https://www.mohw.go.kr",
+      "domain": "mohw.go.kr",
+      "category": "government",
+      "total_interactive": 148,
+      "ghost_count": 3,
+      "parity_score": 78.3
+    },
+    {
+      "url": "https://www.mois.go.kr",
+      "domain": "mois.go.kr",
+      "category": "government",
+      "total_interactive": 298,
+      "ghost_count": 11,
+      "parity_score": 78.4
+    },
+    {
+      "url": "https://www.mofa.go.kr",
+      "domain": "mofa.go.kr",
+      "category": "government",
+      "total_interactive": 119,
+      "ghost_count": 4,
+      "parity_score": 85.4
+    },
+    {
+      "url": "https://www.nts.go.kr",
+      "domain": "nts.go.kr",
+      "category": "government",
+      "total_interactive": 438,
+      "ghost_count": 21,
+      "parity_score": 72.2
+    },
+    {
+      "url": "https://www.snu.ac.kr",
+      "domain": "snu.ac.kr",
+      "category": "education",
+      "total_interactive": 309,
+      "ghost_count": 31,
+      "parity_score": 68.7
+    },
+    {
+      "url": "https://www.yonsei.ac.kr",
+      "domain": "yonsei.ac.kr",
+      "category": "education",
+      "total_interactive": 237,
+      "ghost_count": 13,
+      "parity_score": 65.8
+    },
+    {
+      "url": "https://www.korea.ac.kr",
+      "domain": "korea.ac.kr",
+      "category": "education",
+      "total_interactive": 473,
+      "ghost_count": 31,
+      "parity_score": 76.2
+    },
+    {
+      "url": "https://www.kaist.ac.kr",
+      "domain": "kaist.ac.kr",
+      "category": "education",
+      "total_interactive": 318,
+      "ghost_count": 12,
+      "parity_score": 69.3
+    },
+    {
+      "url": "https://www.postech.ac.kr",
+      "domain": "postech.ac.kr",
+      "category": "education",
+      "total_interactive": 433,
+      "ghost_count": 33,
+      "parity_score": 77.6
+    },
+    {
+      "url": "https://www.skku.edu",
+      "domain": "skku.edu",
+      "category": "education",
+      "total_interactive": 374,
+      "ghost_count": 28,
+      "parity_score": 74.8
+    },
+    {
+      "url": "https://www.hanyang.ac.kr",
+      "domain": "hanyang.ac.kr",
+      "category": "education",
+      "total_interactive": 240,
+      "ghost_count": 20,
+      "parity_score": 87.5
+    },
+    {
+      "url": "https://www.sogang.ac.kr",
+      "domain": "sogang.ac.kr",
+      "category": "education",
+      "total_interactive": 368,
+      "ghost_count": 17,
+      "parity_score": 88.6
+    },
+    {
+      "url": "https://www.cau.ac.kr",
+      "domain": "cau.ac.kr",
+      "category": "education",
+      "total_interactive": 462,
+      "ghost_count": 23,
+      "parity_score": 69.6
+    },
+    {
+      "url": "https://www.ewha.ac.kr",
+      "domain": "ewha.ac.kr",
+      "category": "education",
+      "total_interactive": 453,
+      "ghost_count": 34,
+      "parity_score": 81.7
+    },
+    {
+      "url": "https://www.khu.ac.kr",
+      "domain": "khu.ac.kr",
+      "category": "education",
+      "total_interactive": 154,
+      "ghost_count": 20,
+      "parity_score": 82.7
+    },
+    {
+      "url": "https://www.konkuk.ac.kr",
+      "domain": "konkuk.ac.kr",
+      "category": "education",
+      "total_interactive": 191,
+      "ghost_count": 15,
+      "parity_score": 90.7
+    },
+    {
+      "url": "https://www.pusan.ac.kr",
+      "domain": "pusan.ac.kr",
+      "category": "education",
+      "total_interactive": 282,
+      "ghost_count": 26,
+      "parity_score": 75.7
+    },
+    {
+      "url": "https://www.gnu.ac.kr",
+      "domain": "gnu.ac.kr",
+      "category": "education",
+      "total_interactive": 436,
+      "ghost_count": 23,
+      "parity_score": 83.7
+    },
+    {
+      "url": "https://www.jnu.ac.kr",
+      "domain": "jnu.ac.kr",
+      "category": "education",
+      "total_interactive": 347,
+      "ghost_count": 16,
+      "parity_score": 87.5
+    },
+    {
+      "url": "https://www.kbstar.com",
+      "domain": "kbstar.com",
+      "category": "finance",
+      "total_interactive": 364,
+      "ghost_count": 38,
+      "parity_score": 67
+    },
+    {
+      "url": "https://www.shinhan.com",
+      "domain": "shinhan.com",
+      "category": "finance",
+      "total_interactive": 240,
+      "ghost_count": 20,
+      "parity_score": 61.1
+    },
+    {
+      "url": "https://www.wooribank.com",
+      "domain": "wooribank.com",
+      "category": "finance",
+      "total_interactive": 423,
+      "ghost_count": 21,
+      "parity_score": 75.3
+    },
+    {
+      "url": "https://www.hanabank.com",
+      "domain": "hanabank.com",
+      "category": "finance",
+      "total_interactive": 93,
+      "ghost_count": 40,
+      "parity_score": 78.8
+    },
+    {
+      "url": "https://www.nhbank.com",
+      "domain": "nhbank.com",
+      "category": "finance",
+      "total_interactive": 480,
+      "ghost_count": 33,
+      "parity_score": 73.5
+    },
+    {
+      "url": "https://www.ibk.co.kr",
+      "domain": "ibk.co.kr",
+      "category": "finance",
+      "total_interactive": 405,
+      "ghost_count": 31,
+      "parity_score": 68.5
+    },
+    {
+      "url": "https://www.kbsec.com",
+      "domain": "kbsec.com",
+      "category": "finance",
+      "total_interactive": 137,
+      "ghost_count": 15,
+      "parity_score": 62.6
+    },
+    {
+      "url": "https://www.samsunglife.com",
+      "domain": "samsunglife.com",
+      "category": "finance",
+      "total_interactive": 296,
+      "ghost_count": 35,
+      "parity_score": 64.2
+    },
+    {
+      "url": "https://www.toss.im",
+      "domain": "toss.im",
+      "category": "finance",
+      "total_interactive": 308,
+      "ghost_count": 34,
+      "parity_score": 63.3
+    },
+    {
+      "url": "https://www.kakaobank.com",
+      "domain": "kakaobank.com",
+      "category": "finance",
+      "total_interactive": 451,
+      "ghost_count": 35,
+      "parity_score": 83.2
+    },
+    {
+      "url": "https://www.kakaocorp.com",
+      "domain": "kakaocorp.com",
+      "category": "general",
+      "total_interactive": 314,
+      "ghost_count": 33,
+      "parity_score": 79.9
+    },
+    {
+      "url": "https://www.kakao.com",
+      "domain": "kakao.com",
+      "category": "general",
+      "total_interactive": 285,
+      "ghost_count": 24,
+      "parity_score": 74.5
+    },
+    {
+      "url": "https://www.linecorp.com",
+      "domain": "linecorp.com",
+      "category": "general",
+      "total_interactive": 466,
+      "ghost_count": 47,
+      "parity_score": 55
+    },
+    {
+      "url": "https://www.watcha.com",
+      "domain": "watcha.com",
+      "category": "entertainment",
+      "total_interactive": 191,
+      "ghost_count": 40,
+      "parity_score": 61.2
+    },
+    {
+      "url": "https://www.laftel.net",
+      "domain": "laftel.net",
+      "category": "entertainment",
+      "total_interactive": 440,
+      "ghost_count": 18,
+      "parity_score": 66.3
+    },
+    {
+      "url": "https://www.melon.com",
+      "domain": "melon.com",
+      "category": "entertainment",
+      "total_interactive": 360,
+      "ghost_count": 40,
+      "parity_score": 77.8
+    },
+    {
+      "url": "https://www.bugs.co.kr",
+      "domain": "bugs.co.kr",
+      "category": "entertainment",
+      "total_interactive": 360,
+      "ghost_count": 48,
+      "parity_score": 52.2
+    },
+    {
+      "url": "https://www.afreecatv.com",
+      "domain": "afreecatv.com",
+      "category": "entertainment",
+      "total_interactive": 351,
+      "ghost_count": 46,
+      "parity_score": 69.9
+    },
+    {
+      "url": "https://www.yanolja.com",
+      "domain": "yanolja.com",
+      "category": "travel",
+      "total_interactive": 462,
+      "ghost_count": 40,
+      "parity_score": 49.6
+    },
+    {
+      "url": "https://www.goodchoice.kr",
+      "domain": "goodchoice.kr",
+      "category": "travel",
+      "total_interactive": 465,
+      "ghost_count": 62,
+      "parity_score": 70.3
+    },
+    {
+      "url": "https://www.yogiyo.co.kr",
+      "domain": "yogiyo.co.kr",
+      "category": "food",
+      "total_interactive": 442,
+      "ghost_count": 53,
+      "parity_score": 64.9
+    },
+    {
+      "url": "https://www.baemin.com",
+      "domain": "baemin.com",
+      "category": "food",
+      "total_interactive": 212,
+      "ghost_count": 19,
+      "parity_score": 70.8
+    },
+    {
+      "url": "https://www.samsung.com",
+      "domain": "samsung.com",
+      "category": "general",
+      "total_interactive": 105,
+      "ghost_count": 42,
+      "parity_score": 56.3
+    },
+    {
+      "url": "https://www.lge.co.kr",
+      "domain": "lge.co.kr",
+      "category": "general",
+      "total_interactive": 325,
+      "ghost_count": 48,
+      "parity_score": 53.5
+    },
+    {
+      "url": "https://www.hyundai.com",
+      "domain": "hyundai.com",
+      "category": "general",
+      "total_interactive": 240,
+      "ghost_count": 18,
+      "parity_score": 54.3
+    },
+    {
+      "url": "https://www.sk.com",
+      "domain": "sk.com",
+      "category": "general",
+      "total_interactive": 399,
+      "ghost_count": 13,
+      "parity_score": 78.9
+    },
+    {
+      "url": "https://www.snuh.org",
+      "domain": "snuh.org",
+      "category": "medical",
+      "total_interactive": 289,
+      "ghost_count": 33,
+      "parity_score": 68
+    },
+    {
+      "url": "https://www.amc.seoul.kr",
+      "domain": "amc.seoul.kr",
+      "category": "medical",
+      "total_interactive": 241,
+      "ghost_count": 27,
+      "parity_score": 68.5
+    },
+    {
+      "url": "https://www.samsunghospital.com",
+      "domain": "samsunghospital.com",
+      "category": "medical",
+      "total_interactive": 271,
+      "ghost_count": 15,
+      "parity_score": 60.9
+    },
+    {
+      "url": "https://www.severance.healthcare",
+      "domain": "severance.healthcare",
+      "category": "medical",
+      "total_interactive": 176,
+      "ghost_count": 44,
+      "parity_score": 59.9
+    },
+    {
+      "url": "https://www.saramin.co.kr",
+      "domain": "saramin.co.kr",
+      "category": "general",
+      "total_interactive": 134,
+      "ghost_count": 36,
+      "parity_score": 55.4
+    },
+    {
+      "url": "https://www.jobkorea.co.kr",
+      "domain": "jobkorea.co.kr",
+      "category": "general",
+      "total_interactive": 236,
+      "ghost_count": 19,
+      "parity_score": 65
+    },
+    {
+      "url": "https://www.aladin.co.kr",
+      "domain": "aladin.co.kr",
+      "category": "commerce",
+      "total_interactive": 137,
+      "ghost_count": 129,
+      "parity_score": 61.3
+    },
+    {
+      "url": "https://www.kyobobook.co.kr",
+      "domain": "kyobobook.co.kr",
+      "category": "commerce",
+      "total_interactive": 262,
+      "ghost_count": 124,
+      "parity_score": 44.6
+    },
+    {
+      "url": "https://www.ridibooks.com",
+      "domain": "ridibooks.com",
+      "category": "commerce",
+      "total_interactive": 455,
+      "ghost_count": 101,
+      "parity_score": 55.1
+    },
+    {
+      "url": "https://www.avsubs.co.kr",
+      "domain": "avsubs.co.kr",
+      "category": "general",
+      "total_interactive": 155,
+      "ghost_count": 43,
+      "parity_score": 75.2
+    },
+    {
+      "url": "https://www.idpaper.co.kr",
+      "domain": "idpaper.co.kr",
+      "category": "general",
+      "total_interactive": 126,
+      "ghost_count": 22,
+      "parity_score": 65.9
+    },
+    {
+      "url": "https://www.lopec.kr",
+      "domain": "lopec.kr",
+      "category": "general",
+      "total_interactive": 478,
+      "ghost_count": 27,
+      "parity_score": 65.1
+    },
+    {
+      "url": "https://www.ororo.co.kr",
+      "domain": "ororo.co.kr",
+      "category": "general",
+      "total_interactive": 153,
+      "ghost_count": 42,
+      "parity_score": 76
+    },
+    {
+      "url": "https://www.mashop.kr",
+      "domain": "mashop.kr",
+      "category": "commerce",
+      "total_interactive": 394,
+      "ghost_count": 104,
+      "parity_score": 56.8
+    },
+    {
+      "url": "https://www.sweettracker.co.kr",
+      "domain": "sweettracker.co.kr",
+      "category": "general",
+      "total_interactive": 104,
+      "ghost_count": 34,
+      "parity_score": 62.4
+    },
+    {
+      "url": "https://www.foodrecipe.co.kr",
+      "domain": "foodrecipe.co.kr",
+      "category": "general",
+      "total_interactive": 266,
+      "ghost_count": 50,
+      "parity_score": 51
+    },
+    {
+      "url": "https://www.hidoc.co.kr",
+      "domain": "hidoc.co.kr",
+      "category": "general",
+      "total_interactive": 86,
+      "ghost_count": 41,
+      "parity_score": 66.9
+    },
+    {
+      "url": "https://www.epost.go.kr",
+      "domain": "epost.go.kr",
+      "category": "government",
+      "total_interactive": 415,
+      "ghost_count": 7,
+      "parity_score": 91.2
+    },
+    {
+      "url": "https://www.talkstation.co.kr",
+      "domain": "talkstation.co.kr",
+      "category": "general",
+      "total_interactive": 372,
+      "ghost_count": 26,
+      "parity_score": 63.1
+    },
+    {
+      "url": "https://www.dailian.co.kr",
+      "domain": "dailian.co.kr",
+      "category": "general",
+      "total_interactive": 226,
+      "ghost_count": 21,
+      "parity_score": 70.2
+    },
+    {
+      "url": "https://www.homeplus.co.kr",
+      "domain": "homeplus.co.kr",
+      "category": "general",
+      "total_interactive": 320,
+      "ghost_count": 37,
+      "parity_score": 64.2
+    },
+    {
+      "url": "https://www.dotal.or.kr",
+      "domain": "dotal.or.kr",
+      "category": "government",
+      "total_interactive": 100,
+      "ghost_count": 9,
+      "parity_score": 94.8
+    },
+    {
+      "url": "https://www.q-net.or.kr",
+      "domain": "q-net.or.kr",
+      "category": "government",
+      "total_interactive": 178,
+      "ghost_count": 25,
+      "parity_score": 76.6
+    },
+    {
+      "url": "https://www.eps.go.kr",
+      "domain": "eps.go.kr",
+      "category": "government",
+      "total_interactive": 213,
+      "ghost_count": 15,
+      "parity_score": 84.9
+    },
+    {
+      "url": "https://www.4insure.or.kr",
+      "domain": "4insure.or.kr",
+      "category": "government",
+      "total_interactive": 169,
+      "ghost_count": 6,
+      "parity_score": 73.6
+    },
+    {
+      "url": "https://www.blingkeyword.kr",
+      "domain": "blingkeyword.kr",
+      "category": "general",
+      "total_interactive": 463,
+      "ghost_count": 19,
+      "parity_score": 76.5
+    },
+    {
+      "url": "https://www.clickmate.kr",
+      "domain": "clickmate.kr",
+      "category": "general",
+      "total_interactive": 260,
+      "ghost_count": 24,
+      "parity_score": 80.2
+    },
+    {
+      "url": "https://www.gold-rain.co.kr",
+      "domain": "gold-rain.co.kr",
+      "category": "general",
+      "total_interactive": 226,
+      "ghost_count": 37,
+      "parity_score": 53
+    },
+    {
+      "url": "https://www.hangloo.co.kr",
+      "domain": "hangloo.co.kr",
+      "category": "general",
+      "total_interactive": 428,
+      "ghost_count": 17,
+      "parity_score": 81.2
+    },
+    {
+      "url": "https://www.jeomsinpf1.co.kr",
+      "domain": "jeomsinpf1.co.kr",
+      "category": "general",
+      "total_interactive": 151,
+      "ghost_count": 36,
+      "parity_score": 63.5
+    },
+    {
+      "url": "https://www.mocation.co.kr",
+      "domain": "mocation.co.kr",
+      "category": "general",
+      "total_interactive": 278,
+      "ghost_count": 38,
+      "parity_score": 65.3
+    },
+    {
+      "url": "https://www.onnuri-mall.co.kr",
+      "domain": "onnuri-mall.co.kr",
+      "category": "commerce",
+      "total_interactive": 132,
+      "ghost_count": 83,
+      "parity_score": 37.7
+    },
+    {
+      "url": "https://www.svote.kr",
+      "domain": "svote.kr",
+      "category": "general",
+      "total_interactive": 398,
+      "ghost_count": 35,
+      "parity_score": 77.1
+    },
+    {
+      "url": "https://www.about.co.kr",
+      "domain": "about.co.kr",
+      "category": "general",
+      "total_interactive": 122,
+      "ghost_count": 43,
+      "parity_score": 79.6
+    },
+    {
+      "url": "https://www.dcinside.co.kr",
+      "domain": "dcinside.co.kr",
+      "category": "general",
+      "total_interactive": 464,
+      "ghost_count": 43,
+      "parity_score": 61.5
+    },
+    {
+      "url": "https://www.waemok.co.kr",
+      "domain": "waemok.co.kr",
+      "category": "general",
+      "total_interactive": 353,
+      "ghost_count": 33,
+      "parity_score": 53.1
+    },
+    {
+      "url": "https://www.hufs.ac.kr",
+      "domain": "hufs.ac.kr",
+      "category": "education",
+      "total_interactive": 471,
+      "ghost_count": 27,
+      "parity_score": 91.7
+    },
+    {
+      "url": "https://www.tokenpost.kr",
+      "domain": "tokenpost.kr",
+      "category": "general",
+      "total_interactive": 132,
+      "ghost_count": 26,
+      "parity_score": 61.4
+    },
+    {
+      "url": "https://www.yonhapnewstv.co.kr",
+      "domain": "yonhapnewstv.co.kr",
+      "category": "news",
+      "total_interactive": 322,
+      "ghost_count": 80,
+      "parity_score": 53.7
+    },
+    {
+      "url": "https://www.flexcdn.kr",
+      "domain": "flexcdn.kr",
+      "category": "general",
+      "total_interactive": 141,
+      "ghost_count": 43,
+      "parity_score": 53.7
+    },
+    {
+      "url": "https://www.kepco.co.kr",
+      "domain": "kepco.co.kr",
+      "category": "general",
+      "total_interactive": 477,
+      "ghost_count": 41,
+      "parity_score": 58.1
+    },
+    {
+      "url": "https://www.kotra.or.kr",
+      "domain": "kotra.or.kr",
+      "category": "government",
+      "total_interactive": 285,
+      "ghost_count": 12,
+      "parity_score": 73
+    },
+    {
+      "url": "https://www.mtpolice.kr",
+      "domain": "mtpolice.kr",
+      "category": "general",
+      "total_interactive": 152,
+      "ghost_count": 26,
+      "parity_score": 63.9
+    },
+    {
+      "url": "https://www.mailplug.co.kr",
+      "domain": "mailplug.co.kr",
+      "category": "general",
+      "total_interactive": 481,
+      "ghost_count": 17,
+      "parity_score": 54.8
+    },
+    {
+      "url": "https://www.tf.co.kr",
+      "domain": "tf.co.kr",
+      "category": "general",
+      "total_interactive": 408,
+      "ghost_count": 29,
+      "parity_score": 71.9
+    },
+    {
+      "url": "https://www.cninet.co.kr",
+      "domain": "cninet.co.kr",
+      "category": "general",
+      "total_interactive": 347,
+      "ghost_count": 26,
+      "parity_score": 71.5
+    },
+    {
+      "url": "https://www.cnu.ac.kr",
+      "domain": "cnu.ac.kr",
+      "category": "education",
+      "total_interactive": 242,
+      "ghost_count": 17,
+      "parity_score": 84.6
+    },
+    {
+      "url": "https://www.makeshop.kr",
+      "domain": "makeshop.kr",
+      "category": "commerce",
+      "total_interactive": 348,
+      "ghost_count": 84,
+      "parity_score": 48.9
+    },
+    {
+      "url": "https://www.ticketlink.co.kr",
+      "domain": "ticketlink.co.kr",
+      "category": "general",
+      "total_interactive": 480,
+      "ghost_count": 28,
+      "parity_score": 74.5
+    },
+    {
+      "url": "https://www.coinone.co.kr",
+      "domain": "coinone.co.kr",
+      "category": "general",
+      "total_interactive": 283,
+      "ghost_count": 16,
+      "parity_score": 55.4
+    },
+    {
+      "url": "https://www.cbs.co.kr",
+      "domain": "cbs.co.kr",
+      "category": "general",
+      "total_interactive": 340,
+      "ghost_count": 43,
+      "parity_score": 50.9
+    },
+    {
+      "url": "https://www.kreonet.re.kr",
+      "domain": "kreonet.re.kr",
+      "category": "general",
+      "total_interactive": 106,
+      "ghost_count": 20,
+      "parity_score": 65.8
+    },
+    {
+      "url": "https://www.kosaf.go.kr",
+      "domain": "kosaf.go.kr",
+      "category": "government",
+      "total_interactive": 82,
+      "ghost_count": 18,
+      "parity_score": 73.1
+    },
+    {
+      "url": "https://www.lululemon.co.kr",
+      "domain": "lululemon.co.kr",
+      "category": "general",
+      "total_interactive": 312,
+      "ghost_count": 46,
+      "parity_score": 52.8
+    },
+    {
+      "url": "https://www.wowtv.co.kr",
+      "domain": "wowtv.co.kr",
+      "category": "general",
+      "total_interactive": 226,
+      "ghost_count": 50,
+      "parity_score": 78.6
+    },
+    {
+      "url": "https://www.i-web.kr",
+      "domain": "i-web.kr",
+      "category": "general",
+      "total_interactive": 320,
+      "ghost_count": 17,
+      "parity_score": 66.7
+    },
+    {
+      "url": "https://www.cafe24dns.co.kr",
+      "domain": "cafe24dns.co.kr",
+      "category": "general",
+      "total_interactive": 365,
+      "ghost_count": 16,
+      "parity_score": 62.1
+    },
+    {
+      "url": "https://www.ok-name.co.kr",
+      "domain": "ok-name.co.kr",
+      "category": "general",
+      "total_interactive": 349,
+      "ghost_count": 45,
+      "parity_score": 59.7
+    },
+    {
+      "url": "https://www.comics-art.co.kr",
+      "domain": "comics-art.co.kr",
+      "category": "general",
+      "total_interactive": 317,
+      "ghost_count": 28,
+      "parity_score": 75.2
+    },
+    {
+      "url": "https://www.afreecatv.co.kr",
+      "domain": "afreecatv.co.kr",
+      "category": "general",
+      "total_interactive": 257,
+      "ghost_count": 34,
+      "parity_score": 57.8
+    },
+    {
+      "url": "https://www.marketb.kr",
+      "domain": "marketb.kr",
+      "category": "commerce",
+      "total_interactive": 227,
+      "ghost_count": 56,
+      "parity_score": 62.8
+    },
+    {
+      "url": "https://www.ssu.ac.kr",
+      "domain": "ssu.ac.kr",
+      "category": "education",
+      "total_interactive": 484,
+      "ghost_count": 19,
+      "parity_score": 88.6
+    },
+    {
+      "url": "https://www.sch.ac.kr",
+      "domain": "sch.ac.kr",
+      "category": "education",
+      "total_interactive": 273,
+      "ghost_count": 29,
+      "parity_score": 86.6
+    },
+    {
+      "url": "https://www.lfmall.co.kr",
+      "domain": "lfmall.co.kr",
+      "category": "commerce",
+      "total_interactive": 267,
+      "ghost_count": 52,
+      "parity_score": 64.9
+    },
+    {
+      "url": "https://www.adinsight.co.kr",
+      "domain": "adinsight.co.kr",
+      "category": "general",
+      "total_interactive": 449,
+      "ghost_count": 45,
+      "parity_score": 68.5
+    },
+    {
+      "url": "https://www.megabox.co.kr",
+      "domain": "megabox.co.kr",
+      "category": "general",
+      "total_interactive": 474,
+      "ghost_count": 12,
+      "parity_score": 51.6
+    },
+    {
+      "url": "https://www.gyeongshin.co.kr",
+      "domain": "gyeongshin.co.kr",
+      "category": "general",
+      "total_interactive": 205,
+      "ghost_count": 41,
+      "parity_score": 70.1
+    },
+    {
+      "url": "https://www.ppomppu1.co.kr",
+      "domain": "ppomppu1.co.kr",
+      "category": "general",
+      "total_interactive": 300,
+      "ghost_count": 40,
+      "parity_score": 75.6
+    },
+    {
+      "url": "https://www.webmaker21.kr",
+      "domain": "webmaker21.kr",
+      "category": "general",
+      "total_interactive": 357,
+      "ghost_count": 48,
+      "parity_score": 79.9
+    },
+    {
+      "url": "https://www.alphasquare.co.kr",
+      "domain": "alphasquare.co.kr",
+      "category": "general",
+      "total_interactive": 409,
+      "ghost_count": 20,
+      "parity_score": 80.6
+    },
+    {
+      "url": "https://www.tmoney.co.kr",
+      "domain": "tmoney.co.kr",
+      "category": "general",
+      "total_interactive": 108,
+      "ghost_count": 21,
+      "parity_score": 60.4
+    },
+    {
+      "url": "https://www.chonnam.ac.kr",
+      "domain": "chonnam.ac.kr",
+      "category": "education",
+      "total_interactive": 326,
+      "ghost_count": 6,
+      "parity_score": 68.3
+    },
+    {
+      "url": "https://www.doctornow.co.kr",
+      "domain": "doctornow.co.kr",
+      "category": "general",
+      "total_interactive": 154,
+      "ghost_count": 42,
+      "parity_score": 55.1
+    },
+    {
+      "url": "https://www.bmw.co.kr",
+      "domain": "bmw.co.kr",
+      "category": "general",
+      "total_interactive": 243,
+      "ghost_count": 29,
+      "parity_score": 58.4
+    },
+    {
+      "url": "https://www.hotge.co.kr",
+      "domain": "hotge.co.kr",
+      "category": "general",
+      "total_interactive": 460,
+      "ghost_count": 14,
+      "parity_score": 57.4
+    },
+    {
+      "url": "https://www.mugungfit.co.kr",
+      "domain": "mugungfit.co.kr",
+      "category": "general",
+      "total_interactive": 165,
+      "ghost_count": 36,
+      "parity_score": 55.5
+    },
+    {
+      "url": "https://www.jpg3.kr",
+      "domain": "jpg3.kr",
+      "category": "general",
+      "total_interactive": 292,
+      "ghost_count": 35,
+      "parity_score": 73.2
+    },
+    {
+      "url": "https://www.newswire.co.kr",
+      "domain": "newswire.co.kr",
+      "category": "news",
+      "total_interactive": 325,
+      "ghost_count": 30,
+      "parity_score": 55.8
+    },
+    {
+      "url": "https://www.hiworks.co.kr",
+      "domain": "hiworks.co.kr",
+      "category": "general",
+      "total_interactive": 347,
+      "ghost_count": 37,
+      "parity_score": 57.4
+    },
+    {
+      "url": "https://www.fromkorea.kr",
+      "domain": "fromkorea.kr",
+      "category": "general",
+      "total_interactive": 308,
+      "ghost_count": 22,
+      "parity_score": 72.2
+    },
+    {
+      "url": "https://www.donga.ac.kr",
+      "domain": "donga.ac.kr",
+      "category": "education",
+      "total_interactive": 356,
+      "ghost_count": 28,
+      "parity_score": 75.2
+    },
+    {
+      "url": "https://www.slnk.kr",
+      "domain": "slnk.kr",
+      "category": "general",
+      "total_interactive": 409,
+      "ghost_count": 22,
+      "parity_score": 79.5
+    },
+    {
+      "url": "https://www.gist.ac.kr",
+      "domain": "gist.ac.kr",
+      "category": "education",
+      "total_interactive": 490,
+      "ghost_count": 35,
+      "parity_score": 88.6
+    },
+    {
+      "url": "https://www.iwinv.kr",
+      "domain": "iwinv.kr",
+      "category": "general",
+      "total_interactive": 137,
+      "ghost_count": 28,
+      "parity_score": 53.8
+    },
+    {
+      "url": "https://www.racers.co.kr",
+      "domain": "racers.co.kr",
+      "category": "general",
+      "total_interactive": 419,
+      "ghost_count": 15,
+      "parity_score": 59.9
+    },
+    {
+      "url": "https://www.thebell.co.kr",
+      "domain": "thebell.co.kr",
+      "category": "general",
+      "total_interactive": 214,
+      "ghost_count": 13,
+      "parity_score": 56.3
+    },
+    {
+      "url": "https://www.s-golflex.kr",
+      "domain": "s-golflex.kr",
+      "category": "general",
+      "total_interactive": 149,
+      "ghost_count": 13,
+      "parity_score": 70.3
+    },
+    {
+      "url": "https://www.jjan.kr",
+      "domain": "jjan.kr",
+      "category": "general",
+      "total_interactive": 393,
+      "ghost_count": 13,
+      "parity_score": 65.9
+    },
+    {
+      "url": "https://www.egreef.kr",
+      "domain": "egreef.kr",
+      "category": "general",
+      "total_interactive": 327,
+      "ghost_count": 45,
+      "parity_score": 59.8
+    },
+    {
+      "url": "https://www.asianmate.kr",
+      "domain": "asianmate.kr",
+      "category": "general",
+      "total_interactive": 372,
+      "ghost_count": 15,
+      "parity_score": 72.7
+    },
+    {
+      "url": "https://www.hcmp.co.kr",
+      "domain": "hcmp.co.kr",
+      "category": "general",
+      "total_interactive": 111,
+      "ghost_count": 32,
+      "parity_score": 79.5
+    },
+    {
+      "url": "https://www.cb.or.kr",
+      "domain": "cb.or.kr",
+      "category": "government",
+      "total_interactive": 369,
+      "ghost_count": 13,
+      "parity_score": 83.6
+    },
+    {
+      "url": "https://www.kshosting.co.kr",
+      "domain": "kshosting.co.kr",
+      "category": "general",
+      "total_interactive": 256,
+      "ghost_count": 49,
+      "parity_score": 75.2
+    },
+    {
+      "url": "https://www.ralphlauren.co.kr",
+      "domain": "ralphlauren.co.kr",
+      "category": "general",
+      "total_interactive": 500,
+      "ghost_count": 27,
+      "parity_score": 81.3
+    },
+    {
+      "url": "https://www.issuelink.co.kr",
+      "domain": "issuelink.co.kr",
+      "category": "general",
+      "total_interactive": 371,
+      "ghost_count": 48,
+      "parity_score": 81.4
+    },
+    {
+      "url": "https://www.nic.or.kr",
+      "domain": "nic.or.kr",
+      "category": "government",
+      "total_interactive": 467,
+      "ghost_count": 7,
+      "parity_score": 87.1
+    },
+    {
+      "url": "https://www.woodwell.co.kr",
+      "domain": "woodwell.co.kr",
+      "category": "general",
+      "total_interactive": 198,
+      "ghost_count": 28,
+      "parity_score": 74.1
+    },
+    {
+      "url": "https://www.peoplead.kr",
+      "domain": "peoplead.kr",
+      "category": "general",
+      "total_interactive": 84,
+      "ghost_count": 41,
+      "parity_score": 79.6
+    },
+    {
+      "url": "https://www.inlive.co.kr",
+      "domain": "inlive.co.kr",
+      "category": "general",
+      "total_interactive": 402,
+      "ghost_count": 34,
+      "parity_score": 56.5
+    },
+    {
+      "url": "https://www.blockmedia.co.kr",
+      "domain": "blockmedia.co.kr",
+      "category": "general",
+      "total_interactive": 98,
+      "ghost_count": 23,
+      "parity_score": 59.9
+    },
+    {
+      "url": "https://www.cbci.co.kr",
+      "domain": "cbci.co.kr",
+      "category": "general",
+      "total_interactive": 187,
+      "ghost_count": 29,
+      "parity_score": 61.1
+    },
+    {
+      "url": "https://www.maniahouse.co.kr",
+      "domain": "maniahouse.co.kr",
+      "category": "general",
+      "total_interactive": 344,
+      "ghost_count": 23,
+      "parity_score": 56.1
+    },
+    {
+      "url": "https://www.sen.go.kr",
+      "domain": "sen.go.kr",
+      "category": "government",
+      "total_interactive": 251,
+      "ghost_count": 12,
+      "parity_score": 76.7
+    },
+    {
+      "url": "https://www.webhard.co.kr",
+      "domain": "webhard.co.kr",
+      "category": "general",
+      "total_interactive": 280,
+      "ghost_count": 29,
+      "parity_score": 75.5
+    },
+    {
+      "url": "https://www.tium.co.kr",
+      "domain": "tium.co.kr",
+      "category": "general",
+      "total_interactive": 168,
+      "ghost_count": 21,
+      "parity_score": 76.2
+    },
+    {
+      "url": "https://www.devicemart.co.kr",
+      "domain": "devicemart.co.kr",
+      "category": "general",
+      "total_interactive": 112,
+      "ghost_count": 39,
+      "parity_score": 74.6
+    },
+    {
+      "url": "https://www.suto.co.kr",
+      "domain": "suto.co.kr",
+      "category": "general",
+      "total_interactive": 221,
+      "ghost_count": 44,
+      "parity_score": 72.6
+    },
+    {
+      "url": "https://www.sejong.ac.kr",
+      "domain": "sejong.ac.kr",
+      "category": "education",
+      "total_interactive": 488,
+      "ghost_count": 29,
+      "parity_score": 82.1
+    },
+    {
+      "url": "https://www.elandmall.co.kr",
+      "domain": "elandmall.co.kr",
+      "category": "commerce",
+      "total_interactive": 165,
+      "ghost_count": 43,
+      "parity_score": 61
+    },
+    {
+      "url": "https://www.virtusize.kr",
+      "domain": "virtusize.kr",
+      "category": "general",
+      "total_interactive": 179,
+      "ghost_count": 43,
+      "parity_score": 71
+    },
+    {
+      "url": "https://www.clickmon.co.kr",
+      "domain": "clickmon.co.kr",
+      "category": "general",
+      "total_interactive": 262,
+      "ghost_count": 32,
+      "parity_score": 52.9
+    },
+    {
+      "url": "https://www.koreagoldx.co.kr",
+      "domain": "koreagoldx.co.kr",
+      "category": "general",
+      "total_interactive": 409,
+      "ghost_count": 40,
+      "parity_score": 69.8
+    },
+    {
+      "url": "https://www.haegin.co.kr",
+      "domain": "haegin.co.kr",
+      "category": "general",
+      "total_interactive": 447,
+      "ghost_count": 42,
+      "parity_score": 77.9
+    },
+    {
+      "url": "https://www.skku.ac.kr",
+      "domain": "skku.ac.kr",
+      "category": "education",
+      "total_interactive": 436,
+      "ghost_count": 14,
+      "parity_score": 91.3
+    },
+    {
+      "url": "https://www.kcp.co.kr",
+      "domain": "kcp.co.kr",
+      "category": "general",
+      "total_interactive": 478,
+      "ghost_count": 50,
+      "parity_score": 62.8
+    },
+    {
+      "url": "https://www.e-arrivalcard.go.kr",
+      "domain": "e-arrivalcard.go.kr",
+      "category": "government",
+      "total_interactive": 136,
+      "ghost_count": 6,
+      "parity_score": 75
+    },
+    {
+      "url": "https://www.medik.co.kr",
+      "domain": "medik.co.kr",
+      "category": "general",
+      "total_interactive": 310,
+      "ghost_count": 45,
+      "parity_score": 81.2
+    },
+    {
+      "url": "https://www.xplant.co.kr",
+      "domain": "xplant.co.kr",
+      "category": "general",
+      "total_interactive": 365,
+      "ghost_count": 34,
+      "parity_score": 55.2
+    },
+    {
+      "url": "https://www.ulsan.ac.kr",
+      "domain": "ulsan.ac.kr",
+      "category": "education",
+      "total_interactive": 263,
+      "ghost_count": 9,
+      "parity_score": 73.2
+    },
+    {
+      "url": "https://www.cu.ac.kr",
+      "domain": "cu.ac.kr",
+      "category": "education",
+      "total_interactive": 472,
+      "ghost_count": 15,
+      "parity_score": 82.9
+    },
+    {
+      "url": "https://www.supple.kr",
+      "domain": "supple.kr",
+      "category": "general",
+      "total_interactive": 380,
+      "ghost_count": 14,
+      "parity_score": 52.6
+    },
+    {
+      "url": "https://www.chungbuk.ac.kr",
+      "domain": "chungbuk.ac.kr",
+      "category": "education",
+      "total_interactive": 109,
+      "ghost_count": 35,
+      "parity_score": 72.2
+    },
+    {
+      "url": "https://www.booked.kr",
+      "domain": "booked.kr",
+      "category": "general",
+      "total_interactive": 257,
+      "ghost_count": 26,
+      "parity_score": 53
+    },
+    {
+      "url": "https://www.lawtimes.co.kr",
+      "domain": "lawtimes.co.kr",
+      "category": "news",
+      "total_interactive": 193,
+      "ghost_count": 30,
+      "parity_score": 72.7
+    },
+    {
+      "url": "https://www.1004114.co.kr",
+      "domain": "1004114.co.kr",
+      "category": "general",
+      "total_interactive": 372,
+      "ghost_count": 23,
+      "parity_score": 67.1
+    },
+    {
+      "url": "https://www.gnj.kr",
+      "domain": "gnj.kr",
+      "category": "general",
+      "total_interactive": 136,
+      "ghost_count": 50,
+      "parity_score": 70.4
+    },
+    {
+      "url": "https://www.mtrc.co.kr",
+      "domain": "mtrc.co.kr",
+      "category": "general",
+      "total_interactive": 222,
+      "ghost_count": 17,
+      "parity_score": 55.8
+    },
+    {
+      "url": "https://www.schoolmusic.co.kr",
+      "domain": "schoolmusic.co.kr",
+      "category": "education",
+      "total_interactive": 283,
+      "ghost_count": 18,
+      "parity_score": 65.7
+    },
+    {
+      "url": "https://www.jbnu.ac.kr",
+      "domain": "jbnu.ac.kr",
+      "category": "education",
+      "total_interactive": 445,
+      "ghost_count": 5,
+      "parity_score": 81.4
+    },
+    {
+      "url": "https://www.kmu.ac.kr",
+      "domain": "kmu.ac.kr",
+      "category": "education",
+      "total_interactive": 379,
+      "ghost_count": 15,
+      "parity_score": 76.4
+    },
+    {
+      "url": "https://www.z00.kr",
+      "domain": "z00.kr",
+      "category": "general",
+      "total_interactive": 462,
+      "ghost_count": 18,
+      "parity_score": 66.9
+    },
+    {
+      "url": "https://www.uu.co.kr",
+      "domain": "uu.co.kr",
+      "category": "general",
+      "total_interactive": 105,
+      "ghost_count": 15,
+      "parity_score": 69.7
+    },
+    {
+      "url": "https://www.cosmopolitan.co.kr",
+      "domain": "cosmopolitan.co.kr",
+      "category": "general",
+      "total_interactive": 492,
+      "ghost_count": 39,
+      "parity_score": 80.1
+    },
+    {
+      "url": "https://www.career.co.kr",
+      "domain": "career.co.kr",
+      "category": "general",
+      "total_interactive": 349,
+      "ghost_count": 48,
+      "parity_score": 58.9
+    },
+    {
+      "url": "https://www.korea-pass.kr",
+      "domain": "korea-pass.kr",
+      "category": "general",
+      "total_interactive": 238,
+      "ghost_count": 43,
+      "parity_score": 72.7
+    },
+    {
+      "url": "https://www.kw.ac.kr",
+      "domain": "kw.ac.kr",
+      "category": "education",
+      "total_interactive": 93,
+      "ghost_count": 23,
+      "parity_score": 69.7
+    },
+    {
+      "url": "https://www.gachon.ac.kr",
+      "domain": "gachon.ac.kr",
+      "category": "education",
+      "total_interactive": 487,
+      "ghost_count": 22,
+      "parity_score": 89.5
+    },
+    {
+      "url": "https://www.kaeri.re.kr",
+      "domain": "kaeri.re.kr",
+      "category": "general",
+      "total_interactive": 185,
+      "ghost_count": 43,
+      "parity_score": 77.6
+    },
+    {
+      "url": "https://www.genebiotech.co.kr",
+      "domain": "genebiotech.co.kr",
+      "category": "general",
+      "total_interactive": 193,
+      "ghost_count": 12,
+      "parity_score": 60.2
+    },
+    {
+      "url": "https://www.onch3.co.kr",
+      "domain": "onch3.co.kr",
+      "category": "general",
+      "total_interactive": 194,
+      "ghost_count": 21,
+      "parity_score": 51.6
+    },
+    {
+      "url": "https://www.10x10.co.kr",
+      "domain": "10x10.co.kr",
+      "category": "general",
+      "total_interactive": 470,
+      "ghost_count": 19,
+      "parity_score": 81.9
+    },
+    {
+      "url": "https://www.uni-fy.kr",
+      "domain": "uni-fy.kr",
+      "category": "general",
+      "total_interactive": 334,
+      "ghost_count": 46,
+      "parity_score": 80.6
+    },
+    {
+      "url": "https://www.daegu.ac.kr",
+      "domain": "daegu.ac.kr",
+      "category": "education",
+      "total_interactive": 190,
+      "ghost_count": 12,
+      "parity_score": 69.5
+    },
+    {
+      "url": "https://www.knou.ac.kr",
+      "domain": "knou.ac.kr",
+      "category": "education",
+      "total_interactive": 358,
+      "ghost_count": 6,
+      "parity_score": 71.1
+    },
+    {
+      "url": "https://www.silichem.co.kr",
+      "domain": "silichem.co.kr",
+      "category": "general",
+      "total_interactive": 365,
+      "ghost_count": 34,
+      "parity_score": 55.2
+    },
+    {
+      "url": "https://www.helpstart.co.kr",
+      "domain": "helpstart.co.kr",
+      "category": "general",
+      "total_interactive": 266,
+      "ghost_count": 13,
+      "parity_score": 69.2
+    },
+    {
+      "url": "https://www.hipass.co.kr",
+      "domain": "hipass.co.kr",
+      "category": "general",
+      "total_interactive": 198,
+      "ghost_count": 42,
+      "parity_score": 77.2
+    },
+    {
+      "url": "https://www.theguru.co.kr",
+      "domain": "theguru.co.kr",
+      "category": "general",
+      "total_interactive": 449,
+      "ghost_count": 20,
+      "parity_score": 82
+    },
+    {
+      "url": "https://www.ktnet.co.kr",
+      "domain": "ktnet.co.kr",
+      "category": "general",
+      "total_interactive": 427,
+      "ghost_count": 42,
+      "parity_score": 57.4
+    },
+    {
+      "url": "https://www.rhaon.co.kr",
+      "domain": "rhaon.co.kr",
+      "category": "general",
+      "total_interactive": 376,
+      "ghost_count": 39,
+      "parity_score": 70
+    },
+    {
+      "url": "https://www.cultureland.co.kr",
+      "domain": "cultureland.co.kr",
+      "category": "general",
+      "total_interactive": 323,
+      "ghost_count": 26,
+      "parity_score": 71.5
+    },
+    {
+      "url": "https://www.mamentor.co.kr",
+      "domain": "mamentor.co.kr",
+      "category": "general",
+      "total_interactive": 86,
+      "ghost_count": 31,
+      "parity_score": 69.7
+    },
+    {
+      "url": "https://www.programmers.co.kr",
+      "domain": "programmers.co.kr",
+      "category": "general",
+      "total_interactive": 472,
+      "ghost_count": 22,
+      "parity_score": 81.5
+    },
+    {
+      "url": "https://www.planetad.co.kr",
+      "domain": "planetad.co.kr",
+      "category": "general",
+      "total_interactive": 182,
+      "ghost_count": 24,
+      "parity_score": 66.3
+    },
+    {
+      "url": "https://www.wku.ac.kr",
+      "domain": "wku.ac.kr",
+      "category": "education",
+      "total_interactive": 433,
+      "ghost_count": 31,
+      "parity_score": 81.9
+    },
+    {
+      "url": "https://www.e9pay.co.kr",
+      "domain": "e9pay.co.kr",
+      "category": "general",
+      "total_interactive": 495,
+      "ghost_count": 25,
+      "parity_score": 74.2
+    },
+    {
+      "url": "https://www.axa.co.kr",
+      "domain": "axa.co.kr",
+      "category": "general",
+      "total_interactive": 415,
+      "ghost_count": 50,
+      "parity_score": 81.4
+    },
+    {
+      "url": "https://www.kisa.or.kr",
+      "domain": "kisa.or.kr",
+      "category": "government",
+      "total_interactive": 489,
+      "ghost_count": 23,
+      "parity_score": 72.3
+    },
+    {
+      "url": "https://www.heydaily.kr",
+      "domain": "heydaily.kr",
+      "category": "news",
+      "total_interactive": 349,
+      "ghost_count": 38,
+      "parity_score": 70.4
+    },
+    {
+      "url": "https://www.etri.re.kr",
+      "domain": "etri.re.kr",
+      "category": "general",
+      "total_interactive": 368,
+      "ghost_count": 47,
+      "parity_score": 74.9
+    },
+    {
+      "url": "https://www.event-us.kr",
+      "domain": "event-us.kr",
+      "category": "general",
+      "total_interactive": 474,
+      "ghost_count": 28,
+      "parity_score": 71.8
+    },
+    {
+      "url": "https://www.koreagrandsale.co.kr",
+      "domain": "koreagrandsale.co.kr",
+      "category": "general",
+      "total_interactive": 125,
+      "ghost_count": 44,
+      "parity_score": 66.1
+    },
+    {
+      "url": "https://www.holybible.or.kr",
+      "domain": "holybible.or.kr",
+      "category": "government",
+      "total_interactive": 105,
+      "ghost_count": 12,
+      "parity_score": 82.8
+    },
+    {
+      "url": "https://www.cbckl.kr",
+      "domain": "cbckl.kr",
+      "category": "general",
+      "total_interactive": 104,
+      "ghost_count": 44,
+      "parity_score": 72.5
+    },
+    {
+      "url": "https://www.milkt.co.kr",
+      "domain": "milkt.co.kr",
+      "category": "general",
+      "total_interactive": 203,
+      "ghost_count": 37,
+      "parity_score": 64.7
+    },
+    {
+      "url": "https://www.airport.co.kr",
+      "domain": "airport.co.kr",
+      "category": "general",
+      "total_interactive": 115,
+      "ghost_count": 27,
+      "parity_score": 55.9
+    },
+    {
+      "url": "https://www.kyonggi.ac.kr",
+      "domain": "kyonggi.ac.kr",
+      "category": "education",
+      "total_interactive": 391,
+      "ghost_count": 23,
+      "parity_score": 90.6
+    },
+    {
+      "url": "https://www.kimyoung.co.kr",
+      "domain": "kimyoung.co.kr",
+      "category": "general",
+      "total_interactive": 285,
+      "ghost_count": 49,
+      "parity_score": 51.3
+    },
+    {
+      "url": "https://www.tple.co.kr",
+      "domain": "tple.co.kr",
+      "category": "general",
+      "total_interactive": 421,
+      "ghost_count": 20,
+      "parity_score": 68.6
+    },
+    {
+      "url": "https://www.yeoshin.co.kr",
+      "domain": "yeoshin.co.kr",
+      "category": "general",
+      "total_interactive": 165,
+      "ghost_count": 19,
+      "parity_score": 62.2
+    },
+    {
+      "url": "https://www.thekorea.kr",
+      "domain": "thekorea.kr",
+      "category": "general",
+      "total_interactive": 476,
+      "ghost_count": 38,
+      "parity_score": 74.6
+    },
+    {
+      "url": "https://www.battlegroundsmobile.kr",
+      "domain": "battlegroundsmobile.kr",
+      "category": "general",
+      "total_interactive": 411,
+      "ghost_count": 29,
+      "parity_score": 75.6
+    },
+    {
+      "url": "https://www.kornet.ne.kr",
+      "domain": "kornet.ne.kr",
+      "category": "general",
+      "total_interactive": 252,
+      "ghost_count": 38,
+      "parity_score": 51.3
+    },
+    {
+      "url": "https://www.my-auction.co.kr",
+      "domain": "my-auction.co.kr",
+      "category": "commerce",
+      "total_interactive": 446,
+      "ghost_count": 75,
+      "parity_score": 42.1
+    },
+    {
+      "url": "https://www.wordrow.kr",
+      "domain": "wordrow.kr",
+      "category": "general",
+      "total_interactive": 457,
+      "ghost_count": 29,
+      "parity_score": 68.3
+    },
+    {
+      "url": "https://www.freet.co.kr",
+      "domain": "freet.co.kr",
+      "category": "general",
+      "total_interactive": 375,
+      "ghost_count": 29,
+      "parity_score": 75.6
+    },
+    {
+      "url": "https://www.bbiz.kr",
+      "domain": "bbiz.kr",
+      "category": "general",
+      "total_interactive": 474,
+      "ghost_count": 45,
+      "parity_score": 75.8
+    },
+    {
+      "url": "https://www.dabagirl.co.kr",
+      "domain": "dabagirl.co.kr",
+      "category": "general",
+      "total_interactive": 105,
+      "ghost_count": 26,
+      "parity_score": 81.5
+    },
+    {
+      "url": "https://www.ebizcom.kr",
+      "domain": "ebizcom.kr",
+      "category": "general",
+      "total_interactive": 456,
+      "ghost_count": 21,
+      "parity_score": 51.4
+    },
+    {
+      "url": "https://www.klid.or.kr",
+      "domain": "klid.or.kr",
+      "category": "government",
+      "total_interactive": 407,
+      "ghost_count": 14,
+      "parity_score": 76.8
+    },
+    {
+      "url": "https://www.sbiz24.kr",
+      "domain": "sbiz24.kr",
+      "category": "general",
+      "total_interactive": 180,
+      "ghost_count": 30,
+      "parity_score": 55.5
+    },
+    {
+      "url": "https://www.autobuff.co.kr",
+      "domain": "autobuff.co.kr",
+      "category": "general",
+      "total_interactive": 263,
+      "ghost_count": 43,
+      "parity_score": 70.4
+    },
+    {
+      "url": "https://www.insight.co.kr",
+      "domain": "insight.co.kr",
+      "category": "general",
+      "total_interactive": 181,
+      "ghost_count": 36,
+      "parity_score": 76.1
+    },
+    {
+      "url": "https://www.kma.go.kr",
+      "domain": "kma.go.kr",
+      "category": "government",
+      "total_interactive": 462,
+      "ghost_count": 18,
+      "parity_score": 87.8
+    },
+    {
+      "url": "https://www.ifdo.co.kr",
+      "domain": "ifdo.co.kr",
+      "category": "general",
+      "total_interactive": 107,
+      "ghost_count": 49,
+      "parity_score": 75.4
+    },
+    {
+      "url": "https://www.dnews.co.kr",
+      "domain": "dnews.co.kr",
+      "category": "news",
+      "total_interactive": 239,
+      "ghost_count": 79,
+      "parity_score": 70.8
+    },
+    {
+      "url": "https://www.kotsa.or.kr",
+      "domain": "kotsa.or.kr",
+      "category": "government",
+      "total_interactive": 152,
+      "ghost_count": 24,
+      "parity_score": 84
+    },
+    {
+      "url": "https://www.newsprime.co.kr",
+      "domain": "newsprime.co.kr",
+      "category": "news",
+      "total_interactive": 372,
+      "ghost_count": 42,
+      "parity_score": 74.7
+    },
+    {
+      "url": "https://www.newsway.co.kr",
+      "domain": "newsway.co.kr",
+      "category": "news",
+      "total_interactive": 162,
+      "ghost_count": 69,
+      "parity_score": 71.6
+    },
+    {
+      "url": "https://www.nutrione.co.kr",
+      "domain": "nutrione.co.kr",
+      "category": "general",
+      "total_interactive": 115,
+      "ghost_count": 35,
+      "parity_score": 75.5
+    },
+    {
+      "url": "https://www.redprinting.co.kr",
+      "domain": "redprinting.co.kr",
+      "category": "general",
+      "total_interactive": 244,
+      "ghost_count": 47,
+      "parity_score": 78.3
+    },
+    {
+      "url": "https://www.haegin.kr",
+      "domain": "haegin.kr",
+      "category": "general",
+      "total_interactive": 250,
+      "ghost_count": 20,
+      "parity_score": 66.6
+    },
+    {
+      "url": "https://www.mtgroup.kr",
+      "domain": "mtgroup.kr",
+      "category": "general",
+      "total_interactive": 94,
+      "ghost_count": 17,
+      "parity_score": 59.3
+    },
+    {
+      "url": "https://www.use.go.kr",
+      "domain": "use.go.kr",
+      "category": "government",
+      "total_interactive": 243,
+      "ghost_count": 12,
+      "parity_score": 91.8
+    },
+    {
+      "url": "https://www.ai.kr",
+      "domain": "ai.kr",
+      "category": "general",
+      "total_interactive": 128,
+      "ghost_count": 38,
+      "parity_score": 73.5
+    },
+    {
+      "url": "https://www.brainmedia.co.kr",
+      "domain": "brainmedia.co.kr",
+      "category": "general",
+      "total_interactive": 92,
+      "ghost_count": 41,
+      "parity_score": 67.9
+    },
+    {
+      "url": "https://www.iris.go.kr",
+      "domain": "iris.go.kr",
+      "category": "government",
+      "total_interactive": 155,
+      "ghost_count": 19,
+      "parity_score": 87.7
+    },
+    {
+      "url": "https://www.amano.co.kr",
+      "domain": "amano.co.kr",
+      "category": "general",
+      "total_interactive": 273,
+      "ghost_count": 31,
+      "parity_score": 74.8
+    },
+    {
+      "url": "https://www.serve.co.kr",
+      "domain": "serve.co.kr",
+      "category": "general",
+      "total_interactive": 475,
+      "ghost_count": 43,
+      "parity_score": 58.8
+    },
+    {
+      "url": "https://www.quv.kr",
+      "domain": "quv.kr",
+      "category": "general",
+      "total_interactive": 169,
+      "ghost_count": 48,
+      "parity_score": 75.9
+    },
+    {
+      "url": "https://www.foresttrip.go.kr",
+      "domain": "foresttrip.go.kr",
+      "category": "government",
+      "total_interactive": 295,
+      "ghost_count": 18,
+      "parity_score": 79.6
+    },
+    {
+      "url": "https://www.soanet.kr",
+      "domain": "soanet.kr",
+      "category": "general",
+      "total_interactive": 456,
+      "ghost_count": 19,
+      "parity_score": 70.7
+    },
+    {
+      "url": "https://www.lotte.co.kr",
+      "domain": "lotte.co.kr",
+      "category": "general",
+      "total_interactive": 409,
+      "ghost_count": 17,
+      "parity_score": 51.7
+    },
+    {
+      "url": "https://www.syrup.co.kr",
+      "domain": "syrup.co.kr",
+      "category": "general",
+      "total_interactive": 423,
+      "ghost_count": 14,
+      "parity_score": 57
+    },
+    {
+      "url": "https://www.delivered.co.kr",
+      "domain": "delivered.co.kr",
+      "category": "general",
+      "total_interactive": 114,
+      "ghost_count": 27,
+      "parity_score": 59.2
+    },
+    {
+      "url": "https://www.c01.kr",
+      "domain": "c01.kr",
+      "category": "general",
+      "total_interactive": 307,
+      "ghost_count": 18,
+      "parity_score": 53.4
+    },
+    {
+      "url": "https://www.1365.go.kr",
+      "domain": "1365.go.kr",
+      "category": "government",
+      "total_interactive": 162,
+      "ghost_count": 10,
+      "parity_score": 82
+    },
+    {
+      "url": "https://www.allbaro.or.kr",
+      "domain": "allbaro.or.kr",
+      "category": "government",
+      "total_interactive": 468,
+      "ghost_count": 6,
+      "parity_score": 80
+    },
+    {
+      "url": "https://www.automart.co.kr",
+      "domain": "automart.co.kr",
+      "category": "general",
+      "total_interactive": 219,
+      "ghost_count": 36,
+      "parity_score": 60.6
+    },
+    {
+      "url": "https://www.bikesell.co.kr",
+      "domain": "bikesell.co.kr",
+      "category": "general",
+      "total_interactive": 274,
+      "ghost_count": 32,
+      "parity_score": 65.5
+    },
+    {
+      "url": "https://www.braincube.kr",
+      "domain": "braincube.kr",
+      "category": "general",
+      "total_interactive": 296,
+      "ghost_count": 22,
+      "parity_score": 73
+    },
+    {
+      "url": "https://www.cardpoint.or.kr",
+      "domain": "cardpoint.or.kr",
+      "category": "government",
+      "total_interactive": 129,
+      "ghost_count": 5,
+      "parity_score": 90.2
+    },
+    {
+      "url": "https://www.couponwallet.co.kr",
+      "domain": "couponwallet.co.kr",
+      "category": "general",
+      "total_interactive": 149,
+      "ghost_count": 41,
+      "parity_score": 69.6
+    },
+    {
+      "url": "https://www.cpq.co.kr",
+      "domain": "cpq.co.kr",
+      "category": "general",
+      "total_interactive": 338,
+      "ghost_count": 40,
+      "parity_score": 73.3
+    },
+    {
+      "url": "https://www.cvsnet.co.kr",
+      "domain": "cvsnet.co.kr",
+      "category": "general",
+      "total_interactive": 394,
+      "ghost_count": 43,
+      "parity_score": 67.2
+    },
+    {
+      "url": "https://www.daytv.kr",
+      "domain": "daytv.kr",
+      "category": "general",
+      "total_interactive": 368,
+      "ghost_count": 39,
+      "parity_score": 60.8
+    },
+    {
+      "url": "https://www.dmtu.kr",
+      "domain": "dmtu.kr",
+      "category": "general",
+      "total_interactive": 84,
+      "ghost_count": 50,
+      "parity_score": 68.8
+    },
+    {
+      "url": "https://www.doctorville.co.kr",
+      "domain": "doctorville.co.kr",
+      "category": "general",
+      "total_interactive": 127,
+      "ghost_count": 35,
+      "parity_score": 81.1
+    },
+    {
+      "url": "https://www.dschool.co.kr",
+      "domain": "dschool.co.kr",
+      "category": "education",
+      "total_interactive": 95,
+      "ghost_count": 11,
+      "parity_score": 77.5
+    },
+    {
+      "url": "https://www.e-health.go.kr",
+      "domain": "e-health.go.kr",
+      "category": "government",
+      "total_interactive": 136,
+      "ghost_count": 18,
+      "parity_score": 78
+    },
+    {
+      "url": "https://www.ebestflower.co.kr",
+      "domain": "ebestflower.co.kr",
+      "category": "general",
+      "total_interactive": 387,
+      "ghost_count": 33,
+      "parity_score": 52.8
+    },
+    {
+      "url": "https://www.efine.go.kr",
+      "domain": "efine.go.kr",
+      "category": "government",
+      "total_interactive": 342,
+      "ghost_count": 18,
+      "parity_score": 82.3
+    },
+    {
+      "url": "https://www.englishplatform.co.kr",
+      "domain": "englishplatform.co.kr",
+      "category": "general",
+      "total_interactive": 228,
+      "ghost_count": 15,
+      "parity_score": 51.5
+    },
+    {
+      "url": "https://www.fileman.co.kr",
+      "domain": "fileman.co.kr",
+      "category": "general",
+      "total_interactive": 104,
+      "ghost_count": 39,
+      "parity_score": 65.7
+    },
+    {
+      "url": "https://www.gdoc.go.kr",
+      "domain": "gdoc.go.kr",
+      "category": "government",
+      "total_interactive": 95,
+      "ghost_count": 15,
+      "parity_score": 79.6
+    },
+    {
+      "url": "https://www.greencomics.kr",
+      "domain": "greencomics.kr",
+      "category": "general",
+      "total_interactive": 170,
+      "ghost_count": 36,
+      "parity_score": 61.5
+    },
+    {
+      "url": "https://www.hwgi.kr",
+      "domain": "hwgi.kr",
+      "category": "general",
+      "total_interactive": 332,
+      "ghost_count": 14,
+      "parity_score": 52.1
+    },
+    {
+      "url": "https://www.icoop.or.kr",
+      "domain": "icoop.or.kr",
+      "category": "government",
+      "total_interactive": 94,
+      "ghost_count": 3,
+      "parity_score": 74.9
+    },
+    {
+      "url": "https://www.imhealth.co.kr",
+      "domain": "imhealth.co.kr",
+      "category": "general",
+      "total_interactive": 255,
+      "ghost_count": 23,
+      "parity_score": 69.3
+    },
+    {
+      "url": "https://www.joongangart.kr",
+      "domain": "joongangart.kr",
+      "category": "news",
+      "total_interactive": 446,
+      "ghost_count": 73,
+      "parity_score": 63.2
+    },
+    {
+      "url": "https://www.keywordlab.kr",
+      "domain": "keywordlab.kr",
+      "category": "general",
+      "total_interactive": 327,
+      "ghost_count": 28,
+      "parity_score": 79.4
+    },
+    {
+      "url": "https://www.kobay.co.kr",
+      "domain": "kobay.co.kr",
+      "category": "general",
+      "total_interactive": 267,
+      "ghost_count": 21,
+      "parity_score": 78.2
+    },
+    {
+      "url": "https://www.kocea.or.kr",
+      "domain": "kocea.or.kr",
+      "category": "government",
+      "total_interactive": 140,
+      "ghost_count": 8,
+      "parity_score": 82.6
+    },
+    {
+      "url": "https://www.kuksiwon.or.kr",
+      "domain": "kuksiwon.or.kr",
+      "category": "government",
+      "total_interactive": 173,
+      "ghost_count": 4,
+      "parity_score": 79.8
+    },
+    {
+      "url": "https://www.longtermcare.or.kr",
+      "domain": "longtermcare.or.kr",
+      "category": "government",
+      "total_interactive": 230,
+      "ghost_count": 9,
+      "parity_score": 86.4
+    },
+    {
+      "url": "https://www.meet2.kr",
+      "domain": "meet2.kr",
+      "category": "general",
+      "total_interactive": 332,
+      "ghost_count": 22,
+      "parity_score": 55
+    },
+    {
+      "url": "https://www.nstation.co.kr",
+      "domain": "nstation.co.kr",
+      "category": "general",
+      "total_interactive": 345,
+      "ghost_count": 23,
+      "parity_score": 71.1
+    },
+    {
+      "url": "https://www.onnurishop.co.kr",
+      "domain": "onnurishop.co.kr",
+      "category": "commerce",
+      "total_interactive": 138,
+      "ghost_count": 44,
+      "parity_score": 63.6
+    },
+    {
+      "url": "https://www.patent.go.kr",
+      "domain": "patent.go.kr",
+      "category": "government",
+      "total_interactive": 296,
+      "ghost_count": 15,
+      "parity_score": 82.2
+    },
+    {
+      "url": "https://www.quickstar.co.kr",
+      "domain": "quickstar.co.kr",
+      "category": "general",
+      "total_interactive": 239,
+      "ghost_count": 38,
+      "parity_score": 70.3
+    },
+    {
+      "url": "https://www.rewardpick.kr",
+      "domain": "rewardpick.kr",
+      "category": "general",
+      "total_interactive": 141,
+      "ghost_count": 16,
+      "parity_score": 68.6
+    },
+    {
+      "url": "https://www.safedriving.or.kr",
+      "domain": "safedriving.or.kr",
+      "category": "government",
+      "total_interactive": 488,
+      "ghost_count": 24,
+      "parity_score": 92.4
+    },
+    {
+      "url": "https://www.safemyinfo.kr",
+      "domain": "safemyinfo.kr",
+      "category": "general",
+      "total_interactive": 488,
+      "ghost_count": 14,
+      "parity_score": 58.1
+    },
+    {
+      "url": "https://www.sktuniverse.co.kr",
+      "domain": "sktuniverse.co.kr",
+      "category": "general",
+      "total_interactive": 307,
+      "ghost_count": 19,
+      "parity_score": 57.9
+    },
+    {
+      "url": "https://www.swadpia.co.kr",
+      "domain": "swadpia.co.kr",
+      "category": "general",
+      "total_interactive": 179,
+      "ghost_count": 18,
+      "parity_score": 52.3
+    },
+    {
+      "url": "https://www.the-relay.kr",
+      "domain": "the-relay.kr",
+      "category": "general",
+      "total_interactive": 264,
+      "ghost_count": 15,
+      "parity_score": 52.7
+    },
+    {
+      "url": "https://www.upos.kr",
+      "domain": "upos.kr",
+      "category": "general",
+      "total_interactive": 359,
+      "ghost_count": 18,
+      "parity_score": 78.1
+    },
+    {
+      "url": "https://www.wepoll.kr",
+      "domain": "wepoll.kr",
+      "category": "general",
+      "total_interactive": 182,
+      "ghost_count": 41,
+      "parity_score": 58.9
+    },
+    {
+      "url": "https://www.woojincopolymer.co.kr",
+      "domain": "woojincopolymer.co.kr",
+      "category": "general",
+      "total_interactive": 485,
+      "ghost_count": 22,
+      "parity_score": 70
+    },
+    {
+      "url": "https://www.chaoscube.co.kr",
+      "domain": "chaoscube.co.kr",
+      "category": "general",
+      "total_interactive": 218,
+      "ghost_count": 24,
+      "parity_score": 67.5
+    },
+    {
+      "url": "https://www.kau.ac.kr",
+      "domain": "kau.ac.kr",
+      "category": "education",
+      "total_interactive": 288,
+      "ghost_count": 18,
+      "parity_score": 68.6
+    },
+    {
+      "url": "https://www.dealsite.co.kr",
+      "domain": "dealsite.co.kr",
+      "category": "general",
+      "total_interactive": 296,
+      "ghost_count": 39,
+      "parity_score": 62.9
+    },
+    {
+      "url": "https://www.jeonmae.co.kr",
+      "domain": "jeonmae.co.kr",
+      "category": "general",
+      "total_interactive": 377,
+      "ghost_count": 22,
+      "parity_score": 67
+    },
+    {
+      "url": "https://www.filmmakers.co.kr",
+      "domain": "filmmakers.co.kr",
+      "category": "general",
+      "total_interactive": 220,
+      "ghost_count": 33,
+      "parity_score": 69.1
+    },
+    {
+      "url": "https://www.freelancer.co.kr",
+      "domain": "freelancer.co.kr",
+      "category": "general",
+      "total_interactive": 107,
+      "ghost_count": 19,
+      "parity_score": 74.7
+    },
+    {
+      "url": "https://www.koreanfriends.co.kr",
+      "domain": "koreanfriends.co.kr",
+      "category": "general",
+      "total_interactive": 105,
+      "ghost_count": 21,
+      "parity_score": 79.1
+    },
+    {
+      "url": "https://www.adinc.kr",
+      "domain": "adinc.kr",
+      "category": "general",
+      "total_interactive": 416,
+      "ghost_count": 28,
+      "parity_score": 72.4
+    },
+    {
+      "url": "https://www.black-up.kr",
+      "domain": "black-up.kr",
+      "category": "general",
+      "total_interactive": 432,
+      "ghost_count": 34,
+      "parity_score": 64
+    },
+    {
+      "url": "https://www.prizm.co.kr",
+      "domain": "prizm.co.kr",
+      "category": "general",
+      "total_interactive": 198,
+      "ghost_count": 15,
+      "parity_score": 64.1
+    },
+    {
+      "url": "https://www.hptech.co.kr",
+      "domain": "hptech.co.kr",
+      "category": "general",
+      "total_interactive": 412,
+      "ghost_count": 45,
+      "parity_score": 53
+    },
+    {
+      "url": "https://www.pathwel.co.kr",
+      "domain": "pathwel.co.kr",
+      "category": "general",
+      "total_interactive": 339,
+      "ghost_count": 35,
+      "parity_score": 68.5
+    },
+    {
+      "url": "https://www.dokidokigoods.co.kr",
+      "domain": "dokidokigoods.co.kr",
+      "category": "general",
+      "total_interactive": 116,
+      "ghost_count": 43,
+      "parity_score": 80.4
+    },
+    {
+      "url": "https://www.theinvestor.co.kr",
+      "domain": "theinvestor.co.kr",
+      "category": "general",
+      "total_interactive": 239,
+      "ghost_count": 28,
+      "parity_score": 77.1
+    },
+    {
+      "url": "https://www.inpock.co.kr",
+      "domain": "inpock.co.kr",
+      "category": "general",
+      "total_interactive": 351,
+      "ghost_count": 12,
+      "parity_score": 75.2
+    },
+    {
+      "url": "https://www.ks.ac.kr",
+      "domain": "ks.ac.kr",
+      "category": "education",
+      "total_interactive": 398,
+      "ghost_count": 14,
+      "parity_score": 91.2
+    },
+    {
+      "url": "https://www.kbinsure.co.kr",
+      "domain": "kbinsure.co.kr",
+      "category": "general",
+      "total_interactive": 436,
+      "ghost_count": 39,
+      "parity_score": 70
+    },
+    {
+      "url": "https://www.dotname.co.kr",
+      "domain": "dotname.co.kr",
+      "category": "general",
+      "total_interactive": 87,
+      "ghost_count": 31,
+      "parity_score": 61.6
+    },
+    {
+      "url": "https://www.bookcube.co.kr",
+      "domain": "bookcube.co.kr",
+      "category": "general",
+      "total_interactive": 278,
+      "ghost_count": 39,
+      "parity_score": 71.9
+    },
+    {
+      "url": "https://www.thewiki.kr",
+      "domain": "thewiki.kr",
+      "category": "general",
+      "total_interactive": 257,
+      "ghost_count": 27,
+      "parity_score": 79
+    },
+    {
+      "url": "https://www.mimint.co.kr",
+      "domain": "mimint.co.kr",
+      "category": "general",
+      "total_interactive": 124,
+      "ghost_count": 33,
+      "parity_score": 75.5
+    },
+    {
+      "url": "https://www.recruiter.co.kr",
+      "domain": "recruiter.co.kr",
+      "category": "general",
+      "total_interactive": 92,
+      "ghost_count": 13,
+      "parity_score": 72.4
+    },
+    {
+      "url": "https://www.findall.co.kr",
+      "domain": "findall.co.kr",
+      "category": "general",
+      "total_interactive": 301,
+      "ghost_count": 18,
+      "parity_score": 53.3
+    },
+    {
+      "url": "https://www.i-boss.co.kr",
+      "domain": "i-boss.co.kr",
+      "category": "general",
+      "total_interactive": 464,
+      "ghost_count": 45,
+      "parity_score": 53.9
+    },
+    {
+      "url": "https://www.koreasarang.co.kr",
+      "domain": "koreasarang.co.kr",
+      "category": "general",
+      "total_interactive": 106,
+      "ghost_count": 28,
+      "parity_score": 56.4
+    },
+    {
+      "url": "https://www.cafe24dns.kr",
+      "domain": "cafe24dns.kr",
+      "category": "general",
+      "total_interactive": 82,
+      "ghost_count": 14,
+      "parity_score": 62.5
+    },
+    {
+      "url": "https://www.neonet.co.kr",
+      "domain": "neonet.co.kr",
+      "category": "general",
+      "total_interactive": 192,
+      "ghost_count": 15,
+      "parity_score": 68.8
+    },
+    {
+      "url": "https://www.luatic.co.kr",
+      "domain": "luatic.co.kr",
+      "category": "general",
+      "total_interactive": 150,
+      "ghost_count": 14,
+      "parity_score": 53.3
+    },
+    {
+      "url": "https://www.web-planet.co.kr",
+      "domain": "web-planet.co.kr",
+      "category": "general",
+      "total_interactive": 150,
+      "ghost_count": 29,
+      "parity_score": 69.9
+    },
+    {
+      "url": "https://www.mobwith.co.kr",
+      "domain": "mobwith.co.kr",
+      "category": "general",
+      "total_interactive": 403,
+      "ghost_count": 27,
+      "parity_score": 69.5
+    },
+    {
+      "url": "https://www.matalk.co.kr",
+      "domain": "matalk.co.kr",
+      "category": "general",
+      "total_interactive": 298,
+      "ghost_count": 36,
+      "parity_score": 61.8
+    },
+    {
+      "url": "https://www.hidc.co.kr",
+      "domain": "hidc.co.kr",
+      "category": "general",
+      "total_interactive": 166,
+      "ghost_count": 18,
+      "parity_score": 65.5
+    },
+    {
+      "url": "https://www.kyongbuk.co.kr",
+      "domain": "kyongbuk.co.kr",
+      "category": "general",
+      "total_interactive": 188,
+      "ghost_count": 35,
+      "parity_score": 69.7
+    },
+    {
+      "url": "https://www.i-scream.co.kr",
+      "domain": "i-scream.co.kr",
+      "category": "general",
+      "total_interactive": 473,
+      "ghost_count": 34,
+      "parity_score": 60
+    },
+    {
+      "url": "https://www.one-point.kr",
+      "domain": "one-point.kr",
+      "category": "general",
+      "total_interactive": 434,
+      "ghost_count": 33,
+      "parity_score": 59.5
+    },
+    {
+      "url": "https://www.fashionbiz.co.kr",
+      "domain": "fashionbiz.co.kr",
+      "category": "general",
+      "total_interactive": 270,
+      "ghost_count": 19,
+      "parity_score": 67.2
+    },
+    {
+      "url": "https://www.vans.co.kr",
+      "domain": "vans.co.kr",
+      "category": "general",
+      "total_interactive": 427,
+      "ghost_count": 49,
+      "parity_score": 71.6
+    },
+    {
+      "url": "https://www.dinak.co.kr",
+      "domain": "dinak.co.kr",
+      "category": "general",
+      "total_interactive": 240,
+      "ghost_count": 34,
+      "parity_score": 55.1
+    },
+    {
+      "url": "https://www.idksoft.co.kr",
+      "domain": "idksoft.co.kr",
+      "category": "general",
+      "total_interactive": 402,
+      "ghost_count": 13,
+      "parity_score": 60.9
+    },
+    {
+      "url": "https://www.evape.kr",
+      "domain": "evape.kr",
+      "category": "general",
+      "total_interactive": 118,
+      "ghost_count": 38,
+      "parity_score": 58.9
+    },
+    {
+      "url": "https://www.nayana.kr",
+      "domain": "nayana.kr",
+      "category": "general",
+      "total_interactive": 369,
+      "ghost_count": 43,
+      "parity_score": 69.5
+    },
+    {
+      "url": "https://www.joongdo.co.kr",
+      "domain": "joongdo.co.kr",
+      "category": "general",
+      "total_interactive": 100,
+      "ghost_count": 20,
+      "parity_score": 63.5
+    },
+    {
+      "url": "https://www.dongguk.ac.kr",
+      "domain": "dongguk.ac.kr",
+      "category": "education",
+      "total_interactive": 232,
+      "ghost_count": 13,
+      "parity_score": 67.9
+    },
+    {
+      "url": "https://www.bizwatch.co.kr",
+      "domain": "bizwatch.co.kr",
+      "category": "general",
+      "total_interactive": 351,
+      "ghost_count": 33,
+      "parity_score": 66.3
+    },
+    {
+      "url": "https://www.bkeye.co.kr",
+      "domain": "bkeye.co.kr",
+      "category": "general",
+      "total_interactive": 81,
+      "ghost_count": 23,
+      "parity_score": 80.1
+    },
+    {
+      "url": "https://www.neople.co.kr",
+      "domain": "neople.co.kr",
+      "category": "general",
+      "total_interactive": 210,
+      "ghost_count": 24,
+      "parity_score": 66.8
+    },
+    {
+      "url": "https://www.hallym.ac.kr",
+      "domain": "hallym.ac.kr",
+      "category": "education",
+      "total_interactive": 138,
+      "ghost_count": 29,
+      "parity_score": 84.5
+    },
+    {
+      "url": "https://www.ebn.co.kr",
+      "domain": "ebn.co.kr",
+      "category": "general",
+      "total_interactive": 184,
+      "ghost_count": 27,
+      "parity_score": 57.5
+    },
+    {
+      "url": "https://www.psynet.co.kr",
+      "domain": "psynet.co.kr",
+      "category": "general",
+      "total_interactive": 311,
+      "ghost_count": 15,
+      "parity_score": 71
+    },
+    {
+      "url": "https://www.lemonery.co.kr",
+      "domain": "lemonery.co.kr",
+      "category": "general",
+      "total_interactive": 192,
+      "ghost_count": 38,
+      "parity_score": 53.7
+    },
+    {
+      "url": "https://www.pokemonkorea.co.kr",
+      "domain": "pokemonkorea.co.kr",
+      "category": "general",
+      "total_interactive": 397,
+      "ghost_count": 19,
+      "parity_score": 62.3
+    },
+    {
+      "url": "https://www.mustit.co.kr",
+      "domain": "mustit.co.kr",
+      "category": "general",
+      "total_interactive": 335,
+      "ghost_count": 42,
+      "parity_score": 69.1
+    },
+    {
+      "url": "https://www.thecompanystore.co.kr",
+      "domain": "thecompanystore.co.kr",
+      "category": "commerce",
+      "total_interactive": 492,
+      "ghost_count": 124,
+      "parity_score": 53.1
+    },
+    {
+      "url": "https://www.daara.co.kr",
+      "domain": "daara.co.kr",
+      "category": "general",
+      "total_interactive": 146,
+      "ghost_count": 23,
+      "parity_score": 57.3
+    },
+    {
+      "url": "https://www.we-class.kr",
+      "domain": "we-class.kr",
+      "category": "general",
+      "total_interactive": 263,
+      "ghost_count": 39,
+      "parity_score": 67.7
+    },
+    {
+      "url": "https://www.history.go.kr",
+      "domain": "history.go.kr",
+      "category": "government",
+      "total_interactive": 475,
+      "ghost_count": 6,
+      "parity_score": 89
+    },
+    {
+      "url": "https://www.intipia.co.kr",
+      "domain": "intipia.co.kr",
+      "category": "general",
+      "total_interactive": 478,
+      "ghost_count": 37,
+      "parity_score": 72.1
+    },
+    {
+      "url": "https://www.rinnai.co.kr",
+      "domain": "rinnai.co.kr",
+      "category": "general",
+      "total_interactive": 232,
+      "ghost_count": 29,
+      "parity_score": 68.6
+    },
+    {
+      "url": "https://www.kwnews.co.kr",
+      "domain": "kwnews.co.kr",
+      "category": "news",
+      "total_interactive": 176,
+      "ghost_count": 26,
+      "parity_score": 65.9
+    },
+    {
+      "url": "https://www.gosi.kr",
+      "domain": "gosi.kr",
+      "category": "general",
+      "total_interactive": 270,
+      "ghost_count": 38,
+      "parity_score": 70.6
+    },
+    {
+      "url": "https://www.weeklywine.co.kr",
+      "domain": "weeklywine.co.kr",
+      "category": "general",
+      "total_interactive": 206,
+      "ghost_count": 12,
+      "parity_score": 81.3
+    },
+    {
+      "url": "https://www.digikey.kr",
+      "domain": "digikey.kr",
+      "category": "general",
+      "total_interactive": 326,
+      "ghost_count": 37,
+      "parity_score": 79.9
+    },
+    {
+      "url": "https://www.deu.ac.kr",
+      "domain": "deu.ac.kr",
+      "category": "education",
+      "total_interactive": 296,
+      "ghost_count": 14,
+      "parity_score": 84.8
+    },
+    {
+      "url": "https://www.rda.go.kr",
+      "domain": "rda.go.kr",
+      "category": "government",
+      "total_interactive": 240,
+      "ghost_count": 23,
+      "parity_score": 80.2
+    },
+    {
+      "url": "https://www.istarbucks.co.kr",
+      "domain": "istarbucks.co.kr",
+      "category": "general",
+      "total_interactive": 101,
+      "ghost_count": 12,
+      "parity_score": 68.2
+    },
+    {
+      "url": "https://www.busanbank.co.kr",
+      "domain": "busanbank.co.kr",
+      "category": "finance",
+      "total_interactive": 302,
+      "ghost_count": 28,
+      "parity_score": 60.7
+    },
+    {
+      "url": "https://www.ilyo.co.kr",
+      "domain": "ilyo.co.kr",
+      "category": "general",
+      "total_interactive": 300,
+      "ghost_count": 44,
+      "parity_score": 70.8
+    },
+    {
+      "url": "https://www.soosan.kr",
+      "domain": "soosan.kr",
+      "category": "general",
+      "total_interactive": 90,
+      "ghost_count": 21,
+      "parity_score": 64.1
+    },
+    {
+      "url": "https://www.bethelean.kr",
+      "domain": "bethelean.kr",
+      "category": "general",
+      "total_interactive": 314,
+      "ghost_count": 19,
+      "parity_score": 59.7
+    },
+    {
+      "url": "https://www.bokjiro.go.kr",
+      "domain": "bokjiro.go.kr",
+      "category": "government",
+      "total_interactive": 439,
+      "ghost_count": 3,
+      "parity_score": 84.4
+    },
+    {
+      "url": "https://www.dailyplaza.co.kr",
+      "domain": "dailyplaza.co.kr",
+      "category": "news",
+      "total_interactive": 280,
+      "ghost_count": 51,
+      "parity_score": 74.8
+    },
+    {
+      "url": "https://www.itranslate.co.kr",
+      "domain": "itranslate.co.kr",
+      "category": "general",
+      "total_interactive": 374,
+      "ghost_count": 16,
+      "parity_score": 74.2
+    },
+    {
+      "url": "https://www.changwon.ac.kr",
+      "domain": "changwon.ac.kr",
+      "category": "education",
+      "total_interactive": 334,
+      "ghost_count": 19,
+      "parity_score": 77.5
+    },
+    {
+      "url": "https://www.scout.co.kr",
+      "domain": "scout.co.kr",
+      "category": "general",
+      "total_interactive": 364,
+      "ghost_count": 28,
+      "parity_score": 67.1
+    },
+    {
+      "url": "https://www.wisaidc.co.kr",
+      "domain": "wisaidc.co.kr",
+      "category": "general",
+      "total_interactive": 155,
+      "ghost_count": 37,
+      "parity_score": 69.1
+    },
+    {
+      "url": "https://www.bizhost.kr",
+      "domain": "bizhost.kr",
+      "category": "general",
+      "total_interactive": 421,
+      "ghost_count": 26,
+      "parity_score": 50.8
+    },
+    {
+      "url": "https://www.gcomin.co.kr",
+      "domain": "gcomin.co.kr",
+      "category": "general",
+      "total_interactive": 382,
+      "ghost_count": 22,
+      "parity_score": 61.8
+    },
+    {
+      "url": "https://www.play123.co.kr",
+      "domain": "play123.co.kr",
+      "category": "general",
+      "total_interactive": 319,
+      "ghost_count": 16,
+      "parity_score": 57.8
+    },
+    {
+      "url": "https://www.itworld.co.kr",
+      "domain": "itworld.co.kr",
+      "category": "general",
+      "total_interactive": 80,
+      "ghost_count": 21,
+      "parity_score": 62.1
+    },
+    {
+      "url": "https://www.hjmembers.co.kr",
+      "domain": "hjmembers.co.kr",
+      "category": "general",
+      "total_interactive": 121,
+      "ghost_count": 35,
+      "parity_score": 62.3
+    },
+    {
+      "url": "https://www.xn--o39akk533b75wnga.kr",
+      "domain": "xn--o39akk533b75wnga.kr",
+      "category": "general",
+      "total_interactive": 112,
+      "ghost_count": 23,
+      "parity_score": 68.1
+    },
+    {
+      "url": "https://www.i-plan.co.kr",
+      "domain": "i-plan.co.kr",
+      "category": "general",
+      "total_interactive": 310,
+      "ghost_count": 43,
+      "parity_score": 74.7
+    },
+    {
+      "url": "https://www.windowsforum.kr",
+      "domain": "windowsforum.kr",
+      "category": "general",
+      "total_interactive": 195,
+      "ghost_count": 27,
+      "parity_score": 58.9
+    },
+    {
+      "url": "https://www.dint.co.kr",
+      "domain": "dint.co.kr",
+      "category": "general",
+      "total_interactive": 188,
+      "ghost_count": 26,
+      "parity_score": 60.9
+    },
+    {
+      "url": "https://www.r-e.kr",
+      "domain": "r-e.kr",
+      "category": "general",
+      "total_interactive": 208,
+      "ghost_count": 42,
+      "parity_score": 62.6
+    },
+    {
+      "url": "https://www.cctoday.co.kr",
+      "domain": "cctoday.co.kr",
+      "category": "general",
+      "total_interactive": 491,
+      "ghost_count": 42,
+      "parity_score": 68.5
+    },
+    {
+      "url": "https://www.ussoft.kr",
+      "domain": "ussoft.kr",
+      "category": "general",
+      "total_interactive": 140,
+      "ghost_count": 45,
+      "parity_score": 76.7
+    },
+    {
+      "url": "https://www.infodu.co.kr",
+      "domain": "infodu.co.kr",
+      "category": "general",
+      "total_interactive": 201,
+      "ghost_count": 49,
+      "parity_score": 68.9
+    },
+    {
+      "url": "https://www.metanet.co.kr",
+      "domain": "metanet.co.kr",
+      "category": "general",
+      "total_interactive": 347,
+      "ghost_count": 14,
+      "parity_score": 68.4
+    },
+    {
+      "url": "https://www.byapps.co.kr",
+      "domain": "byapps.co.kr",
+      "category": "general",
+      "total_interactive": 496,
+      "ghost_count": 33,
+      "parity_score": 57
+    },
+    {
+      "url": "https://www.univ100.kr",
+      "domain": "univ100.kr",
+      "category": "general",
+      "total_interactive": 494,
+      "ghost_count": 16,
+      "parity_score": 72.2
+    },
+    {
+      "url": "https://www.goe.go.kr",
+      "domain": "goe.go.kr",
+      "category": "government",
+      "total_interactive": 144,
+      "ghost_count": 13,
+      "parity_score": 83.3
+    },
+    {
+      "url": "https://www.economist.co.kr",
+      "domain": "economist.co.kr",
+      "category": "general",
+      "total_interactive": 210,
+      "ghost_count": 38,
+      "parity_score": 60.9
+    },
+    {
+      "url": "https://www.ctee.kr",
+      "domain": "ctee.kr",
+      "category": "general",
+      "total_interactive": 482,
+      "ghost_count": 18,
+      "parity_score": 62.3
+    },
+    {
+      "url": "https://www.valorbet-kr.kr",
+      "domain": "valorbet-kr.kr",
+      "category": "general",
+      "total_interactive": 282,
+      "ghost_count": 41,
+      "parity_score": 73.6
+    },
+    {
+      "url": "https://www.dongseo.ac.kr",
+      "domain": "dongseo.ac.kr",
+      "category": "education",
+      "total_interactive": 422,
+      "ghost_count": 8,
+      "parity_score": 69.8
+    },
+    {
+      "url": "https://www.hostwhale.co.kr",
+      "domain": "hostwhale.co.kr",
+      "category": "general",
+      "total_interactive": 457,
+      "ghost_count": 39,
+      "parity_score": 67.9
+    },
+    {
+      "url": "https://www.winnen.co.kr",
+      "domain": "winnen.co.kr",
+      "category": "general",
+      "total_interactive": 204,
+      "ghost_count": 16,
+      "parity_score": 75.5
+    },
+    {
+      "url": "https://www.rememberapp.co.kr",
+      "domain": "rememberapp.co.kr",
+      "category": "general",
+      "total_interactive": 250,
+      "ghost_count": 48,
+      "parity_score": 55.3
+    },
+    {
+      "url": "https://www.hgrid.kr",
+      "domain": "hgrid.kr",
+      "category": "general",
+      "total_interactive": 139,
+      "ghost_count": 25,
+      "parity_score": 69.4
+    },
+    {
+      "url": "https://www.intel.co.kr",
+      "domain": "intel.co.kr",
+      "category": "general",
+      "total_interactive": 235,
+      "ghost_count": 42,
+      "parity_score": 76.5
+    },
+    {
+      "url": "https://www.buly.kr",
+      "domain": "buly.kr",
+      "category": "general",
+      "total_interactive": 443,
+      "ghost_count": 36,
+      "parity_score": 66.8
+    },
+    {
+      "url": "https://www.yahoo.co.kr",
+      "domain": "yahoo.co.kr",
+      "category": "general",
+      "total_interactive": 187,
+      "ghost_count": 26,
+      "parity_score": 70.3
+    },
+    {
+      "url": "https://www.hotsunglass.co.kr",
+      "domain": "hotsunglass.co.kr",
+      "category": "general",
+      "total_interactive": 263,
+      "ghost_count": 28,
+      "parity_score": 76.1
+    },
+    {
+      "url": "https://www.wonnews.kr",
+      "domain": "wonnews.kr",
+      "category": "news",
+      "total_interactive": 122,
+      "ghost_count": 57,
+      "parity_score": 64.1
+    },
+    {
+      "url": "https://www.p-e.kr",
+      "domain": "p-e.kr",
+      "category": "general",
+      "total_interactive": 323,
+      "ghost_count": 27,
+      "parity_score": 58.9
+    },
+    {
+      "url": "https://www.cbnu.ac.kr",
+      "domain": "cbnu.ac.kr",
+      "category": "education",
+      "total_interactive": 127,
+      "ghost_count": 7,
+      "parity_score": 73.9
+    },
+    {
+      "url": "https://www.2bn.co.kr",
+      "domain": "2bn.co.kr",
+      "category": "general",
+      "total_interactive": 397,
+      "ghost_count": 50,
+      "parity_score": 75.2
+    },
+    {
+      "url": "https://www.hackers.co.kr",
+      "domain": "hackers.co.kr",
+      "category": "general",
+      "total_interactive": 365,
+      "ghost_count": 41,
+      "parity_score": 69.4
+    },
+    {
+      "url": "https://www.familynet.or.kr",
+      "domain": "familynet.or.kr",
+      "category": "government",
+      "total_interactive": 184,
+      "ghost_count": 21,
+      "parity_score": 93.7
+    },
+    {
+      "url": "https://www.bigtree.co.kr",
+      "domain": "bigtree.co.kr",
+      "category": "general",
+      "total_interactive": 210,
+      "ghost_count": 49,
+      "parity_score": 72.9
+    },
+    {
+      "url": "https://www.woosuk.ac.kr",
+      "domain": "woosuk.ac.kr",
+      "category": "education",
+      "total_interactive": 442,
+      "ghost_count": 13,
+      "parity_score": 84.7
+    },
+    {
+      "url": "https://www.neov.co.kr",
+      "domain": "neov.co.kr",
+      "category": "general",
+      "total_interactive": 415,
+      "ghost_count": 24,
+      "parity_score": 51.1
+    },
+    {
+      "url": "https://www.inodea.co.kr",
+      "domain": "inodea.co.kr",
+      "category": "general",
+      "total_interactive": 423,
+      "ghost_count": 31,
+      "parity_score": 71.6
+    },
+    {
+      "url": "https://www.sentv.co.kr",
+      "domain": "sentv.co.kr",
+      "category": "general",
+      "total_interactive": 351,
+      "ghost_count": 36,
+      "parity_score": 75.6
+    },
+    {
+      "url": "https://www.iacstatic.co.kr",
+      "domain": "iacstatic.co.kr",
+      "category": "general",
+      "total_interactive": 242,
+      "ghost_count": 31,
+      "parity_score": 57.1
+    },
+    {
+      "url": "https://www.n-e.kr",
+      "domain": "n-e.kr",
+      "category": "general",
+      "total_interactive": 308,
+      "ghost_count": 23,
+      "parity_score": 55.8
+    },
+    {
+      "url": "https://www.kimc.co.kr",
+      "domain": "kimc.co.kr",
+      "category": "general",
+      "total_interactive": 271,
+      "ghost_count": 26,
+      "parity_score": 75.2
+    },
+    {
+      "url": "https://www.chaega.co.kr",
+      "domain": "chaega.co.kr",
+      "category": "general",
+      "total_interactive": 242,
+      "ghost_count": 26,
+      "parity_score": 55.7
+    },
+    {
+      "url": "https://www.cju.ac.kr",
+      "domain": "cju.ac.kr",
+      "category": "education",
+      "total_interactive": 374,
+      "ghost_count": 24,
+      "parity_score": 67.8
+    },
+    {
+      "url": "https://www.gjit.kr",
+      "domain": "gjit.kr",
+      "category": "general",
+      "total_interactive": 329,
+      "ghost_count": 44,
+      "parity_score": 67
+    },
+    {
+      "url": "https://www.industrynews.co.kr",
+      "domain": "industrynews.co.kr",
+      "category": "news",
+      "total_interactive": 196,
+      "ghost_count": 51,
+      "parity_score": 51.8
+    },
+    {
+      "url": "https://www.gmate.co.kr",
+      "domain": "gmate.co.kr",
+      "category": "general",
+      "total_interactive": 359,
+      "ghost_count": 22,
+      "parity_score": 52.5
+    },
+    {
+      "url": "https://www.kyunghee.ac.kr",
+      "domain": "kyunghee.ac.kr",
+      "category": "education",
+      "total_interactive": 323,
+      "ghost_count": 32,
+      "parity_score": 91.1
+    },
+    {
+      "url": "https://www.asahe-korea.co.kr",
+      "domain": "asahe-korea.co.kr",
+      "category": "general",
+      "total_interactive": 361,
+      "ghost_count": 15,
+      "parity_score": 66.1
+    },
+    {
+      "url": "https://www.catch.co.kr",
+      "domain": "catch.co.kr",
+      "category": "general",
+      "total_interactive": 369,
+      "ghost_count": 40,
+      "parity_score": 63.4
+    },
+    {
+      "url": "https://www.ctr.co.kr",
+      "domain": "ctr.co.kr",
+      "category": "general",
+      "total_interactive": 170,
+      "ghost_count": 42,
+      "parity_score": 68.9
+    },
+    {
+      "url": "https://www.mediamixer.co.kr",
+      "domain": "mediamixer.co.kr",
+      "category": "general",
+      "total_interactive": 367,
+      "ghost_count": 33,
+      "parity_score": 80.2
+    },
+    {
+      "url": "https://www.kbcapital.co.kr",
+      "domain": "kbcapital.co.kr",
+      "category": "general",
+      "total_interactive": 90,
+      "ghost_count": 31,
+      "parity_score": 51.6
+    },
+    {
+      "url": "https://www.police.go.kr",
+      "domain": "police.go.kr",
+      "category": "government",
+      "total_interactive": 445,
+      "ghost_count": 22,
+      "parity_score": 92.8
+    },
+    {
+      "url": "https://www.simpol.co.kr",
+      "domain": "simpol.co.kr",
+      "category": "general",
+      "total_interactive": 406,
+      "ghost_count": 43,
+      "parity_score": 52.3
+    },
+    {
+      "url": "https://www.khug.or.kr",
+      "domain": "khug.or.kr",
+      "category": "government",
+      "total_interactive": 431,
+      "ghost_count": 12,
+      "parity_score": 93.3
+    },
+    {
+      "url": "https://www.revedesign.co.kr",
+      "domain": "revedesign.co.kr",
+      "category": "general",
+      "total_interactive": 332,
+      "ghost_count": 19,
+      "parity_score": 81.1
+    },
+    {
+      "url": "https://www.pulsenews.co.kr",
+      "domain": "pulsenews.co.kr",
+      "category": "news",
+      "total_interactive": 476,
+      "ghost_count": 35,
+      "parity_score": 59.2
+    },
+    {
+      "url": "https://www.d2b.go.kr",
+      "domain": "d2b.go.kr",
+      "category": "government",
+      "total_interactive": 392,
+      "ghost_count": 23,
+      "parity_score": 70.7
+    },
+    {
+      "url": "https://www.earcell.co.kr",
+      "domain": "earcell.co.kr",
+      "category": "general",
+      "total_interactive": 497,
+      "ghost_count": 23,
+      "parity_score": 81.2
+    },
+    {
+      "url": "https://www.eduf.co.kr",
+      "domain": "eduf.co.kr",
+      "category": "education",
+      "total_interactive": 145,
+      "ghost_count": 7,
+      "parity_score": 80.1
+    },
+    {
+      "url": "https://www.epeople.go.kr",
+      "domain": "epeople.go.kr",
+      "category": "government",
+      "total_interactive": 384,
+      "ghost_count": 8,
+      "parity_score": 85.9
+    },
+    {
+      "url": "https://www.eum.go.kr",
+      "domain": "eum.go.kr",
+      "category": "government",
+      "total_interactive": 199,
+      "ghost_count": 5,
+      "parity_score": 73.5
+    },
+    {
+      "url": "https://www.ev.or.kr",
+      "domain": "ev.or.kr",
+      "category": "government",
+      "total_interactive": 473,
+      "ghost_count": 24,
+      "parity_score": 80.4
+    },
+    {
+      "url": "https://www.eventportal.co.kr",
+      "domain": "eventportal.co.kr",
+      "category": "general",
+      "total_interactive": 228,
+      "ghost_count": 37,
+      "parity_score": 72.9
+    },
+    {
+      "url": "https://www.gosims.go.kr",
+      "domain": "gosims.go.kr",
+      "category": "government",
+      "total_interactive": 461,
+      "ghost_count": 4,
+      "parity_score": 79.1
+    },
+    {
+      "url": "https://www.hearzen.co.kr",
+      "domain": "hearzen.co.kr",
+      "category": "general",
+      "total_interactive": 203,
+      "ghost_count": 42,
+      "parity_score": 69.2
+    },
+    {
+      "url": "https://www.hikorea.go.kr",
+      "domain": "hikorea.go.kr",
+      "category": "government",
+      "total_interactive": 291,
+      "ghost_count": 25,
+      "parity_score": 79.5
+    },
+    {
+      "url": "https://www.kifin.or.kr",
+      "domain": "kifin.or.kr",
+      "category": "government",
+      "total_interactive": 396,
+      "ghost_count": 15,
+      "parity_score": 84
+    },
+    {
+      "url": "https://www.kinfa.or.kr",
+      "domain": "kinfa.or.kr",
+      "category": "government",
+      "total_interactive": 386,
+      "ghost_count": 14,
+      "parity_score": 83.3
+    },
+    {
+      "url": "https://www.mozaiq.co.kr",
+      "domain": "mozaiq.co.kr",
+      "category": "general",
+      "total_interactive": 310,
+      "ghost_count": 33,
+      "parity_score": 81.8
+    },
+    {
+      "url": "https://www.onbrix.co.kr",
+      "domain": "onbrix.co.kr",
+      "category": "general",
+      "total_interactive": 192,
+      "ghost_count": 47,
+      "parity_score": 78.8
+    },
+    {
+      "url": "https://www.peti.go.kr",
+      "domain": "peti.go.kr",
+      "category": "government",
+      "total_interactive": 437,
+      "ghost_count": 24,
+      "parity_score": 81.5
+    },
+    {
+      "url": "https://www.shopling.co.kr",
+      "domain": "shopling.co.kr",
+      "category": "commerce",
+      "total_interactive": 236,
+      "ghost_count": 112,
+      "parity_score": 34.3
+    },
+    {
+      "url": "https://www.yogizogi.kr",
+      "domain": "yogizogi.kr",
+      "category": "general",
+      "total_interactive": 327,
+      "ghost_count": 49,
+      "parity_score": 80.9
+    },
+    {
+      "url": "https://www.apti.co.kr",
+      "domain": "apti.co.kr",
+      "category": "general",
+      "total_interactive": 161,
+      "ghost_count": 50,
+      "parity_score": 80.2
+    },
+    {
+      "url": "https://www.valor-casino.kr",
+      "domain": "valor-casino.kr",
+      "category": "general",
+      "total_interactive": 212,
+      "ghost_count": 19,
+      "parity_score": 50.7
+    },
+    {
+      "url": "https://www.kongju.ac.kr",
+      "domain": "kongju.ac.kr",
+      "category": "education",
+      "total_interactive": 304,
+      "ghost_count": 29,
+      "parity_score": 84.7
+    },
+    {
+      "url": "https://www.hotelscombined.co.kr",
+      "domain": "hotelscombined.co.kr",
+      "category": "general",
+      "total_interactive": 472,
+      "ghost_count": 40,
+      "parity_score": 73.3
+    },
+    {
+      "url": "https://www.mdtoday.co.kr",
+      "domain": "mdtoday.co.kr",
+      "category": "general",
+      "total_interactive": 421,
+      "ghost_count": 23,
+      "parity_score": 54.3
+    },
+    {
+      "url": "https://www.littlemom.co.kr",
+      "domain": "littlemom.co.kr",
+      "category": "general",
+      "total_interactive": 223,
+      "ghost_count": 42,
+      "parity_score": 69.8
+    },
+    {
+      "url": "https://www.pubnetplus.ne.kr",
+      "domain": "pubnetplus.ne.kr",
+      "category": "general",
+      "total_interactive": 447,
+      "ghost_count": 36,
+      "parity_score": 76.6
+    },
+    {
+      "url": "https://www.flexcloud.co.kr",
+      "domain": "flexcloud.co.kr",
+      "category": "general",
+      "total_interactive": 214,
+      "ghost_count": 49,
+      "parity_score": 57.8
+    },
+    {
+      "url": "https://www.bbsi.co.kr",
+      "domain": "bbsi.co.kr",
+      "category": "general",
+      "total_interactive": 201,
+      "ghost_count": 48,
+      "parity_score": 74.6
+    },
+    {
+      "url": "https://www.hunet.co.kr",
+      "domain": "hunet.co.kr",
+      "category": "general",
+      "total_interactive": 432,
+      "ghost_count": 19,
+      "parity_score": 50.1
+    },
+    {
+      "url": "https://www.azb.co.kr",
+      "domain": "azb.co.kr",
+      "category": "general",
+      "total_interactive": 256,
+      "ghost_count": 21,
+      "parity_score": 68
+    },
+    {
+      "url": "https://www.modooclean.co.kr",
+      "domain": "modooclean.co.kr",
+      "category": "general",
+      "total_interactive": 452,
+      "ghost_count": 16,
+      "parity_score": 77.1
+    },
+    {
+      "url": "https://www.bosa.co.kr",
+      "domain": "bosa.co.kr",
+      "category": "general",
+      "total_interactive": 237,
+      "ghost_count": 12,
+      "parity_score": 52.2
+    },
+    {
+      "url": "https://www.snu.kr",
+      "domain": "snu.kr",
+      "category": "general",
+      "total_interactive": 352,
+      "ghost_count": 45,
+      "parity_score": 69.1
+    },
+    {
+      "url": "https://www.myip.co.kr",
+      "domain": "myip.co.kr",
+      "category": "general",
+      "total_interactive": 437,
+      "ghost_count": 19,
+      "parity_score": 65
+    },
+    {
+      "url": "https://www.theminjoo.kr",
+      "domain": "theminjoo.kr",
+      "category": "general",
+      "total_interactive": 365,
+      "ghost_count": 34,
+      "parity_score": 54.3
+    },
+    {
+      "url": "https://www.themedicube.co.kr",
+      "domain": "themedicube.co.kr",
+      "category": "general",
+      "total_interactive": 211,
+      "ghost_count": 30,
+      "parity_score": 65.6
+    },
+    {
+      "url": "https://www.newsya.co.kr",
+      "domain": "newsya.co.kr",
+      "category": "news",
+      "total_interactive": 432,
+      "ghost_count": 44,
+      "parity_score": 48.9
+    },
+    {
+      "url": "https://www.kdischool.ac.kr",
+      "domain": "kdischool.ac.kr",
+      "category": "education",
+      "total_interactive": 389,
+      "ghost_count": 28,
+      "parity_score": 82.3
+    },
+    {
+      "url": "https://www.coex.co.kr",
+      "domain": "coex.co.kr",
+      "category": "general",
+      "total_interactive": 146,
+      "ghost_count": 25,
+      "parity_score": 61.1
+    },
+    {
+      "url": "https://www.afteredu.kr",
+      "domain": "afteredu.kr",
+      "category": "education",
+      "total_interactive": 414,
+      "ghost_count": 25,
+      "parity_score": 67.5
+    },
+    {
+      "url": "https://www.kytti.or.kr",
+      "domain": "kytti.or.kr",
+      "category": "government",
+      "total_interactive": 489,
+      "ghost_count": 20,
+      "parity_score": 71.7
+    },
+    {
+      "url": "https://www.youthculturepass.or.kr",
+      "domain": "youthculturepass.or.kr",
+      "category": "government",
+      "total_interactive": 434,
+      "ghost_count": 25,
+      "parity_score": 77.3
+    },
+    {
+      "url": "https://www.drsbook.co.kr",
+      "domain": "drsbook.co.kr",
+      "category": "general",
+      "total_interactive": 392,
+      "ghost_count": 17,
+      "parity_score": 57.6
+    },
+    {
+      "url": "https://www.moyiza.kr",
+      "domain": "moyiza.kr",
+      "category": "general",
+      "total_interactive": 428,
+      "ghost_count": 33,
+      "parity_score": 72.6
+    },
+    {
+      "url": "https://www.korean.go.kr",
+      "domain": "korean.go.kr",
+      "category": "government",
+      "total_interactive": 163,
+      "ghost_count": 14,
+      "parity_score": 91.6
+    },
+    {
+      "url": "https://www.2cpu.co.kr",
+      "domain": "2cpu.co.kr",
+      "category": "general",
+      "total_interactive": 329,
+      "ghost_count": 14,
+      "parity_score": 73
+    },
+    {
+      "url": "https://www.kcm.co.kr",
+      "domain": "kcm.co.kr",
+      "category": "general",
+      "total_interactive": 369,
+      "ghost_count": 48,
+      "parity_score": 62.4
+    },
+    {
+      "url": "https://www.docdocdoc.co.kr",
+      "domain": "docdocdoc.co.kr",
+      "category": "general",
+      "total_interactive": 268,
+      "ghost_count": 14,
+      "parity_score": 61.2
+    },
+    {
+      "url": "https://www.utohouse.co.kr",
+      "domain": "utohouse.co.kr",
+      "category": "general",
+      "total_interactive": 237,
+      "ghost_count": 41,
+      "parity_score": 79.5
+    },
+    {
+      "url": "https://www.tenping.kr",
+      "domain": "tenping.kr",
+      "category": "general",
+      "total_interactive": 356,
+      "ghost_count": 21,
+      "parity_score": 72.4
+    },
+    {
+      "url": "https://www.gamgokbiz.co.kr",
+      "domain": "gamgokbiz.co.kr",
+      "category": "general",
+      "total_interactive": 366,
+      "ghost_count": 38,
+      "parity_score": 69.4
+    },
+    {
+      "url": "https://www.pulmuone.co.kr",
+      "domain": "pulmuone.co.kr",
+      "category": "general",
+      "total_interactive": 160,
+      "ghost_count": 34,
+      "parity_score": 67.7
+    },
+    {
+      "url": "https://www.altodesign.co.kr",
+      "domain": "altodesign.co.kr",
+      "category": "general",
+      "total_interactive": 269,
+      "ghost_count": 18,
+      "parity_score": 58.5
+    },
+    {
+      "url": "https://www.slist.kr",
+      "domain": "slist.kr",
+      "category": "general",
+      "total_interactive": 149,
+      "ghost_count": 50,
+      "parity_score": 69.3
+    },
+    {
+      "url": "https://www.ut.ac.kr",
+      "domain": "ut.ac.kr",
+      "category": "education",
+      "total_interactive": 97,
+      "ghost_count": 33,
+      "parity_score": 68.4
+    },
+    {
+      "url": "https://www.silla.ac.kr",
+      "domain": "silla.ac.kr",
+      "category": "education",
+      "total_interactive": 276,
+      "ghost_count": 20,
+      "parity_score": 81.5
+    },
+    {
+      "url": "https://www.geoweb.kr",
+      "domain": "geoweb.kr",
+      "category": "general",
+      "total_interactive": 372,
+      "ghost_count": 17,
+      "parity_score": 79.5
+    },
+    {
+      "url": "https://www.ice.go.kr",
+      "domain": "ice.go.kr",
+      "category": "government",
+      "total_interactive": 317,
+      "ghost_count": 21,
+      "parity_score": 94.7
+    },
+    {
+      "url": "https://www.pacific.co.kr",
+      "domain": "pacific.co.kr",
+      "category": "general",
+      "total_interactive": 245,
+      "ghost_count": 34,
+      "parity_score": 69.3
+    },
+    {
+      "url": "https://www.homecuisine.co.kr",
+      "domain": "homecuisine.co.kr",
+      "category": "general",
+      "total_interactive": 202,
+      "ghost_count": 50,
+      "parity_score": 71.8
+    },
+    {
+      "url": "https://www.intellicenter.co.kr",
+      "domain": "intellicenter.co.kr",
+      "category": "general",
+      "total_interactive": 354,
+      "ghost_count": 13,
+      "parity_score": 62
+    },
+    {
+      "url": "https://www.cfc.kr",
+      "domain": "cfc.kr",
+      "category": "general",
+      "total_interactive": 278,
+      "ghost_count": 38,
+      "parity_score": 51.4
+    },
+    {
+      "url": "https://www.agentsoft.co.kr",
+      "domain": "agentsoft.co.kr",
+      "category": "general",
+      "total_interactive": 173,
+      "ghost_count": 13,
+      "parity_score": 57.6
+    },
+    {
+      "url": "https://www.dnsever.co.kr",
+      "domain": "dnsever.co.kr",
+      "category": "general",
+      "total_interactive": 272,
+      "ghost_count": 39,
+      "parity_score": 79.7
+    },
+    {
+      "url": "https://www.newstown.co.kr",
+      "domain": "newstown.co.kr",
+      "category": "news",
+      "total_interactive": 487,
+      "ghost_count": 36,
+      "parity_score": 60.3
+    },
+    {
+      "url": "https://www.pinpointnews.co.kr",
+      "domain": "pinpointnews.co.kr",
+      "category": "news",
+      "total_interactive": 266,
+      "ghost_count": 41,
+      "parity_score": 73
+    },
+    {
+      "url": "https://www.greened.kr",
+      "domain": "greened.kr",
+      "category": "general",
+      "total_interactive": 144,
+      "ghost_count": 21,
+      "parity_score": 52.9
+    },
+    {
+      "url": "https://www.gen.go.kr",
+      "domain": "gen.go.kr",
+      "category": "government",
+      "total_interactive": 279,
+      "ghost_count": 8,
+      "parity_score": 73.2
+    },
+    {
+      "url": "https://www.yju.ac.kr",
+      "domain": "yju.ac.kr",
+      "category": "education",
+      "total_interactive": 377,
+      "ghost_count": 23,
+      "parity_score": 70
+    },
+    {
+      "url": "https://www.seoulmetro.co.kr",
+      "domain": "seoulmetro.co.kr",
+      "category": "general",
+      "total_interactive": 249,
+      "ghost_count": 31,
+      "parity_score": 53.1
+    },
+    {
+      "url": "https://www.nipa.kr",
+      "domain": "nipa.kr",
+      "category": "general",
+      "total_interactive": 359,
+      "ghost_count": 21,
+      "parity_score": 64.9
+    },
+    {
+      "url": "https://www.skylife.co.kr",
+      "domain": "skylife.co.kr",
+      "category": "general",
+      "total_interactive": 472,
+      "ghost_count": 33,
+      "parity_score": 53.3
+    },
+    {
+      "url": "https://www.kayak.co.kr",
+      "domain": "kayak.co.kr",
+      "category": "general",
+      "total_interactive": 157,
+      "ghost_count": 21,
+      "parity_score": 81.3
+    },
+    {
+      "url": "https://www.sunbrand.co.kr",
+      "domain": "sunbrand.co.kr",
+      "category": "general",
+      "total_interactive": 111,
+      "ghost_count": 41,
+      "parity_score": 76.6
+    },
+    {
+      "url": "https://www.38.co.kr",
+      "domain": "38.co.kr",
+      "category": "general",
+      "total_interactive": 154,
+      "ghost_count": 27,
+      "parity_score": 52.9
+    },
+    {
+      "url": "https://www.croket.co.kr",
+      "domain": "croket.co.kr",
+      "category": "general",
+      "total_interactive": 465,
+      "ghost_count": 48,
+      "parity_score": 73.1
+    },
+    {
+      "url": "https://www.viewus.co.kr",
+      "domain": "viewus.co.kr",
+      "category": "general",
+      "total_interactive": 255,
+      "ghost_count": 49,
+      "parity_score": 61.4
+    },
+    {
+      "url": "https://www.boribori.co.kr",
+      "domain": "boribori.co.kr",
+      "category": "general",
+      "total_interactive": 482,
+      "ghost_count": 46,
+      "parity_score": 67.2
+    }
+  ]
 }
