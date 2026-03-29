@@ -91,20 +91,20 @@ echo "[8/11] PR 머지..."
 "$SCRIPT_DIR/retry.sh" 3 gh pr merge "$PR_NUM" --squash --delete-branch
 git checkout develop && git pull origin develop
 
-# Step 8.5: Phase gate 자동 업데이트
+# Step 8.5: Phase gate 자동 업데이트 (로컬 전용 — git에 커밋하지 않음)
+# phase-gate.json을 git에 커밋하면 checkout/pull 시 덮어써져서 상태가 꼬임
 if [ -n "$PHASE_NUM" ] && [ -f "state/phase-gate.json" ]; then
-  echo "[8.5/11] Phase gate 업데이트..."
+  echo "[8.5/11] Phase gate 업데이트 (local only)..."
   node -e "
     const fs=require('fs');
     const g=JSON.parse(fs.readFileSync('state/phase-gate.json','utf8'));
-    g['phase${PHASE_NUM}']='complete';
+    // 단조 증가 보장: 이전 phase가 complete 아니면 같이 완료 처리
+    for(let i=0;i<=${PHASE_NUM};i++) g['phase'+i]='complete';
     const allDone=Object.entries(g).filter(([k])=>k.startsWith('phase')).every(([,v])=>v==='complete');
     if(allDone) g.completedAt=new Date().toISOString();
     fs.writeFileSync('state/phase-gate.json',JSON.stringify(g,null,2));
-    console.log('  phase${PHASE_NUM} → complete' + (allDone ? ' (ALL COMPLETE)' : ''));
+    console.log('  phase0~${PHASE_NUM} → complete' + (allDone ? ' (ALL COMPLETE)' : ''));
   "
-  git add state/phase-gate.json && git commit -m "chore: phase${PHASE_NUM} complete" --allow-empty 2>/dev/null
-  git push origin develop 2>/dev/null || true
 fi
 
 # Step 9: 이슈 종료

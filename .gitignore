@@ -11,6 +11,7 @@ config/env.json
 state/verify-log.json
 state/failures.json
 state/events.jsonl
+state/phase-gate.json
 node_modules/
 mcp/node_modules/
 mcp/dist/

@@ -1,4 +1,5 @@
 import { execSync } from 'child_process';
+import { readFileSync } from 'fs';
 import { join } from 'path';
 
 interface ExecResult {
@@ -56,8 +57,9 @@ export function ghIssueView(cwd: string, issue: number): { title: string; body: 
 
 export function readPhaseGate(cwd: string): Record<string, string> {
   try {
-    const raw = require(join(cwd, 'state', 'phase-gate.json'));
-    return raw;
+    // readFileSync — require() caches JSON, returning stale data on subsequent calls
+    const raw = readFileSync(join(cwd, 'state', 'phase-gate.json'), 'utf8');
+    return JSON.parse(raw);
   } catch {
     return {};
   }
