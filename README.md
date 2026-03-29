@@ -1,4 +1,4 @@
-# GhostView Ralphthon
+# GhostView Ralphthon - 웹개발의 자동화
 
 **AI가 보는 웹과 사람이 보는 웹의 차이를 시각화하는 접근성 감사 도구.**
 
