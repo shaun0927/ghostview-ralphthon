@@ -1,0 +1,1696 @@
+[
+  {
+    "id": 171,
+    "domain": "ably.com",
+    "url": "https://www.ably.com",
+    "parity_score": 30.2,
+    "ghost_count": 64,
+    "normal_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/ably.com-normal.png",
+    "blackhole_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/ably.com-blackhole.png",
+    "findings": [
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "라벨 없는 입력",
+          "en": "Ghost Inputs: No label"
+        },
+        "elementInfo": "input x 21",
+        "description": {
+          "ko": "label, aria-label, placeholder가 모두 없는 입력 필드",
+          "en": "Input fields have no label, aria-label, or placeholder, making their purpose unknown to machines."
+        },
+        "impact": {
+          "ko": "무엇을 입력해야 하는지 기계가 판단할 수 없음",
+          "en": "Machines cannot determine what input is expected in the field."
+        },
+        "fix": {
+          "code": "<input aria-label=\"검색어 입력\">",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 21",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 13",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 14",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 39",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "짧은 aria-label",
+          "en": "Ambiguous: Short aria-label"
+        },
+        "elementInfo": "[aria-label] x 3",
+        "description": {
+          "ko": "aria-label 값이 2자 이하로 의미 전달 불가",
+          "en": "Aria-label is too short (2 chars or less) to convey meaningful purpose."
+        },
+        "impact": {
+          "ko": "라벨이 너무 짧아 요소의 목적을 이해할 수 없음",
+          "en": "Label is too short to understand the element's purpose."
+        },
+        "fix": {
+          "code": "<button aria-label=\"메인 메뉴 열기\">☰</button>",
+          "label": {
+            "ko": "설명적 라벨 작성",
+            "en": "Write descriptive label"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 20",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이상 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소가 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테고리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 17",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이��� 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소가 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테고리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      }
+    ],
+    "captured_at": "2026-03-29T03:31:52.752+00:00",
+    "generated_at": "2026-03-29T03:37:42.092+00:00"
+  },
+  {
+    "id": 172,
+    "domain": "kurly.com",
+    "url": "https://www.kurly.com",
+    "parity_score": 34,
+    "ghost_count": 82,
+    "normal_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/kurly.com-normal.png",
+    "blackhole_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/kurly.com-blackhole.png",
+    "findings": [
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 10",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "이름 없는 링크",
+          "en": "이름 없는 링크"
+        },
+        "elementInfo": "a[href] x 36",
+        "description": {
+          "ko": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소",
+          "en": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소"
+        },
+        "impact": {
+          "ko": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음",
+          "en": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음"
+        },
+        "fix": {
+          "code": "<a href=\"...\" aria-label=\"페이지 설명\">...</a>",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 8",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "무의미한 alt 텍스트",
+          "en": "무의미한 alt 텍스트"
+        },
+        "elementInfo": "img[alt] x 3",
+        "description": {
+          "ko": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값",
+          "en": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값"
+        },
+        "impact": {
+          "ko": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보",
+          "en": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보"
+        },
+        "fix": {
+          "code": "<img alt=\"2026년 봄 시즌 할인 배너\">",
+          "label": {
+            "ko": "구체적 alt 작성",
+            "en": "구체적 alt 작성"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 3",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이상 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소가 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테고리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      }
+    ],
+    "captured_at": "2026-03-29T02:38:06.045+00:00",
+    "generated_at": "2026-03-29T03:37:42.092+00:00"
+  },
+  {
+    "id": 173,
+    "domain": "gmarket.co.kr",
+    "url": "https://www.gmarket.co.kr",
+    "parity_score": 36.8,
+    "ghost_count": 111,
+    "normal_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/gmarket.co.kr-normal.png",
+    "blackhole_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/gmarket.co.kr-blackhole.png",
+    "findings": [
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "라벨 없는 입력",
+          "en": "Ghost Inputs: No label"
+        },
+        "elementInfo": "input x 35",
+        "description": {
+          "ko": "label, aria-label, placeholder가 모두 없는 입력 필드",
+          "en": "Input fields have no label, aria-label, or placeholder, making their purpose unknown to machines."
+        },
+        "impact": {
+          "ko": "무엇을 입력해야 하는지 기계가 판단할 수 ���음",
+          "en": "Machines cannot determine what input is expected in the field."
+        },
+        "fix": {
+          "code": "<input aria-label=\"검색어 입력\">",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "라벨 없는 입력",
+          "en": "Ghost Inputs: No label"
+        },
+        "elementInfo": "input x 35",
+        "description": {
+          "ko": "label, aria-label, placeholder가 모두 없는 입력 필드",
+          "en": "Input fields have no label, aria-label, or placeholder, making their purpose unknown to machines."
+        },
+        "impact": {
+          "ko": "무엇을 입력해야 하는지 기계가 판단할 수 없음",
+          "en": "Machines cannot determine what input is expected in the field."
+        },
+        "fix": {
+          "code": "<input aria-label=\"검색어 입력\">",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "이름 없는 링크",
+          "en": "이름 없는 링크"
+        },
+        "elementInfo": "a[href] x 19",
+        "description": {
+          "ko": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소",
+          "en": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소"
+        },
+        "impact": {
+          "ko": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음",
+          "en": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음"
+        },
+        "fix": {
+          "code": "<a href=\"...\" aria-label=\"페이지 설명\">...</a>",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "무의미한 alt 텍스트",
+          "en": "무의미한 alt 텍스트"
+        },
+        "elementInfo": "img[alt] x 1",
+        "description": {
+          "ko": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값",
+          "en": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값"
+        },
+        "impact": {
+          "ko": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보",
+          "en": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보"
+        },
+        "fix": {
+          "code": "<img alt=\"2026년 봄 시즌 할인 배너\">",
+          "label": {
+            "ko": "구체적 alt 작성",
+            "en": "구체적 alt 작성"
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "짧은 aria-label",
+          "en": "Ambiguous: Short aria-label"
+        },
+        "elementInfo": "[aria-label] x 3",
+        "description": {
+          "ko": "aria-label 값이 2자 이하로 의미 전달 불가",
+          "en": "Aria-label is too short (2 chars or less) to convey meaningful purpose."
+        },
+        "impact": {
+          "ko": "라벨이 너무 짧아 요소의 목적을 이해할 수 없음",
+          "en": "Label is too short to understand the element's purpose."
+        },
+        "fix": {
+          "code": "<button aria-label=\"메인 메뉴 열기\">☰</button>",
+          "label": {
+            "ko": "설명적 라벨 작성",
+            "en": "Write descriptive label"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 8",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이상 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소가 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테고리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      }
+    ],
+    "captured_at": "2026-03-29T03:21:45.385+00:00",
+    "generated_at": "2026-03-29T03:37:42.092+00:00"
+  },
+  {
+    "id": 174,
+    "domain": "tmon.co.kr",
+    "url": "https://www.tmon.co.kr",
+    "parity_score": 41.7,
+    "ghost_count": 91,
+    "normal_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/tmon.co.kr-normal.png",
+    "blackhole_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/tmon.co.kr-blackhole.png",
+    "findings": [
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "이름 없는 링크",
+          "en": "이름 없는 링크"
+        },
+        "elementInfo": "a[href] x 11",
+        "description": {
+          "ko": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소",
+          "en": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소"
+        },
+        "impact": {
+          "ko": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음",
+          "en": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음"
+        },
+        "fix": {
+          "code": "<a href=\"...\" aria-label=\"페이지 설명\">...</a>",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "라벨 없는 입력",
+          "en": "Ghost Inputs: No label"
+        },
+        "elementInfo": "input x 11",
+        "description": {
+          "ko": "label, aria-label, placeholder가 모두 없는 입력 필드",
+          "en": "Input fields have no label, aria-label, or placeholder, making their purpose unknown to machines."
+        },
+        "impact": {
+          "ko": "무엇을 입력해야 하는지 기계가 판단할 수 없음",
+          "en": "Machines cannot determine what input is expected in the field."
+        },
+        "fix": {
+          "code": "<input aria-label=\"검색어 입력\">",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 21",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 22",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "짧은 aria-label",
+          "en": "Ambiguous: Short aria-label"
+        },
+        "elementInfo": "[aria-label] x 10",
+        "description": {
+          "ko": "aria-label 값이 2자 이하로 의미 전달 불가",
+          "en": "Aria-label is too short (2 chars or less) to convey meaningful purpose."
+        },
+        "impact": {
+          "ko": "라벨이 너무 짧아 요소의 목적을 이해할 수 없음",
+          "en": "Label is too short to understand the element's purpose."
+        },
+        "fix": {
+          "code": "<button aria-label=\"메인 메뉴 열기\">☰</button>",
+          "label": {
+            "ko": "설명적 라벨 작성",
+            "en": "Write descriptive label"
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "무의미한 alt 텍스트",
+          "en": "무의미한 alt 텍스트"
+        },
+        "elementInfo": "img[alt] x 10",
+        "description": {
+          "ko": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값",
+          "en": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값"
+        },
+        "impact": {
+          "ko": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보",
+          "en": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보"
+        },
+        "fix": {
+          "code": "<img alt=\"2026년 봄 시즌 할인 배너\">",
+          "label": {
+            "ko": "구체적 alt 작성",
+            "en": "구체적 alt 작성"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 12",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이상 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소가 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테고리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 11",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이상 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소가 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테고리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      }
+    ],
+    "captured_at": "2026-03-29T03:36:32.45+00:00",
+    "generated_at": "2026-03-29T03:37:42.092+00:00"
+  },
+  {
+    "id": 175,
+    "domain": "kyobobook.co.kr",
+    "url": "https://www.kyobobook.co.kr",
+    "parity_score": 44.6,
+    "ghost_count": 124,
+    "normal_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/kyobobook.co.kr-normal.png",
+    "blackhole_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/kyobobook.co.kr-blackhole.png",
+    "findings": [
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "라벨 없는 입력",
+          "en": "Ghost Inputs: No label"
+        },
+        "elementInfo": "input x 10",
+        "description": {
+          "ko": "label, aria-label, placeholder가 모두 없는 입력 필드",
+          "en": "Input fields have no label, aria-label, or placeholder, making their purpose unknown to machines."
+        },
+        "impact": {
+          "ko": "무엇을 입력해야 하는지 기계가 판단할 수 없음",
+          "en": "Machines cannot determine what input is expected in the field."
+        },
+        "fix": {
+          "code": "<input aria-label=\"검색어 입력\">",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 15",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 7",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 10",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "무의미한 alt 텍스트",
+          "en": "무의미한 alt 텍스트"
+        },
+        "elementInfo": "img[alt] x 7",
+        "description": {
+          "ko": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값",
+          "en": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값"
+        },
+        "impact": {
+          "ko": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보",
+          "en": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보"
+        },
+        "fix": {
+          "code": "<img alt=\"2026년 봄 시즌 할인 배너\">",
+          "label": {
+            "ko": "구체적 alt 작성",
+            "en": "구체적 alt 작성"
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "짧은 aria-label",
+          "en": "Ambiguous: Short aria-label"
+        },
+        "elementInfo": "[aria-label] x 14",
+        "description": {
+          "ko": "aria-label 값이 2자 이하로 의미 전달 불가",
+          "en": "Aria-label is too short (2 chars or less) to convey meaningful purpose."
+        },
+        "impact": {
+          "ko": "라벨이 너무 짧아 요소의 목적을 이해할 수 없음",
+          "en": "Label is too short to understand the element's purpose."
+        },
+        "fix": {
+          "code": "<button aria-label=\"메인 메뉴 열기\">☰</button>",
+          "label": {
+            "ko": "설명적 라벨 작성",
+            "en": "Write descriptive label"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 7",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이상 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소가 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테고리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      }
+    ],
+    "captured_at": "2026-03-29T03:04:45.134+00:00",
+    "generated_at": "2026-03-29T03:37:42.092+00:00"
+  },
+  {
+    "id": 176,
+    "domain": "auction.co.kr",
+    "url": "https://www.auction.co.kr",
+    "parity_score": 45.2,
+    "ghost_count": 71,
+    "normal_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/auction.co.kr-normal.png",
+    "blackhole_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/auction.co.kr-blackhole.png",
+    "findings": [
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "이름 없는 링크",
+          "en": "이름 없는 링크"
+        },
+        "elementInfo": "a[href] x 4",
+        "description": {
+          "ko": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소",
+          "en": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소"
+        },
+        "impact": {
+          "ko": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음",
+          "en": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음"
+        },
+        "fix": {
+          "code": "<a href=\"...\" aria-label=\"페이지 설명\">...</a>",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 37",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 40",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 20",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "짧은 aria-label",
+          "en": "Ambiguous: Short aria-label"
+        },
+        "elementInfo": "[aria-label] x 15",
+        "description": {
+          "ko": "aria-label 값이 2자 이하로 의미 전달 불가",
+          "en": "Aria-label is too short (2 chars or less) to convey meaningful purpose."
+        },
+        "impact": {
+          "ko": "라벨이 너무 짧아 요소의 목적을 이해할 수 없음",
+          "en": "Label is too short to understand the element's purpose."
+        },
+        "fix": {
+          "code": "<button aria-label=\"메인 메뉴 열기\">☰</button>",
+          "label": {
+            "ko": "설명적 라벨 작성",
+            "en": "Write descriptive label"
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "짧은 aria-label",
+          "en": "Ambiguous: Short aria-label"
+        },
+        "elementInfo": "[aria-label] x 3",
+        "description": {
+          "ko": "aria-label 값이 2자 이하로 의미 전달 불가",
+          "en": "Aria-label is too short (2 chars or less) to convey meaningful purpose."
+        },
+        "impact": {
+          "ko": "라벨이 너무 짧아 요소의 목적을 이해할 수 없음",
+          "en": "Label is too short to understand the element's purpose."
+        },
+        "fix": {
+          "code": "<button aria-label=\"메인 메뉴 열기\">☰</button>",
+          "label": {
+            "ko": "설명적 라벨 작성",
+            "en": "Write descriptive label"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 3",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이상 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소�� 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테고리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      }
+    ],
+    "captured_at": "2026-03-29T02:47:27.887+00:00",
+    "generated_at": "2026-03-29T03:37:42.092+00:00"
+  },
+  {
+    "id": 177,
+    "domain": "danawa.com",
+    "url": "https://www.danawa.com",
+    "parity_score": 45.6,
+    "ghost_count": 51,
+    "normal_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/danawa.com-normal.png",
+    "blackhole_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/danawa.com-blackhole.png",
+    "findings": [
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 9",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 11",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 14",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 31",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 14",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "짧은 aria-label",
+          "en": "Ambiguous: Short aria-label"
+        },
+        "elementInfo": "[aria-label] x 1",
+        "description": {
+          "ko": "aria-label 값이 2자 이하로 ���미 전달 불가",
+          "en": "Aria-label is too short (2 chars or less) to convey meaningful purpose."
+        },
+        "impact": {
+          "ko": "라벨이 너무 짧아 요소의 목적을 이해할 수 없음",
+          "en": "Label is too short to understand the element's purpose."
+        },
+        "fix": {
+          "code": "<button aria-label=\"메인 메뉴 열기\">☰</button>",
+          "label": {
+            "ko": "설명적 라벨 작성",
+            "en": "Write descriptive label"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 12",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이상 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소가 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테고리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      }
+    ],
+    "captured_at": "2026-03-29T03:17:08.374+00:00",
+    "generated_at": "2026-03-29T03:37:42.092+00:00"
+  },
+  {
+    "id": 178,
+    "domain": "donga.com",
+    "url": "https://www.donga.com",
+    "parity_score": 47.7,
+    "ghost_count": 41,
+    "normal_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/donga.com-normal.png",
+    "blackhole_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/donga.com-blackhole.png",
+    "findings": [
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "이름 없는 링크",
+          "en": "이름 없는 링크"
+        },
+        "elementInfo": "a[href] x 36",
+        "description": {
+          "ko": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소",
+          "en": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소"
+        },
+        "impact": {
+          "ko": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음",
+          "en": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음"
+        },
+        "fix": {
+          "code": "<a href=\"...\" aria-label=\"페이지 설명\">...</a>",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "이름 없는 링크",
+          "en": "이름 없는 링크"
+        },
+        "elementInfo": "a[href] x 13",
+        "description": {
+          "ko": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소",
+          "en": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소"
+        },
+        "impact": {
+          "ko": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음",
+          "en": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음"
+        },
+        "fix": {
+          "code": "<a href=\"...\" aria-label=\"페이지 설명\">...</a>",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 29",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 28",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "무의미한 alt 텍스트",
+          "en": "무의미한 alt 텍스트"
+        },
+        "elementInfo": "img[alt] x 14",
+        "description": {
+          "ko": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값",
+          "en": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값"
+        },
+        "impact": {
+          "ko": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보",
+          "en": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보"
+        },
+        "fix": {
+          "code": "<img alt=\"2026년 봄 시즌 할인 배너\">",
+          "label": {
+            "ko": "구체적 alt 작성",
+            "en": "구체적 alt 작성"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 5",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이상 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소가 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테���리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 11",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이상 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소가 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테고리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      }
+    ],
+    "captured_at": "2026-03-29T03:01:48.684+00:00",
+    "generated_at": "2026-03-29T03:37:42.092+00:00"
+  },
+  {
+    "id": 179,
+    "domain": "musinsa.com",
+    "url": "https://www.musinsa.com",
+    "parity_score": 47.8,
+    "ghost_count": 57,
+    "normal_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/musinsa.com-normal.png",
+    "blackhole_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/musinsa.com-blackhole.png",
+    "findings": [
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 19",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 23",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 27",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "이름 없는 링크",
+          "en": "이름 없는 링크"
+        },
+        "elementInfo": "a[href] x 9",
+        "description": {
+          "ko": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소",
+          "en": "href 속성은 있지만 텍스트, aria-label, title이 모두 없는 앵커 요소"
+        },
+        "impact": {
+          "ko": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음",
+          "en": "스크린 리더가 \"링크\"라고만 읽으며, 어디로 이동하는지 알 수 없음"
+        },
+        "fix": {
+          "code": "<a href=\"...\" aria-label=\"페이지 설명\">...</a>",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "라벨 없는 입력",
+          "en": "Ghost Inputs: No label"
+        },
+        "elementInfo": "input x 25",
+        "description": {
+          "ko": "label, aria-label, placeholder가 모두 없는 입력 필드",
+          "en": "Input fields have no label, aria-label, or placeholder, making their purpose unknown to machines."
+        },
+        "impact": {
+          "ko": "무엇을 입력해야 하는지 기계가 판단할 �� 없음",
+          "en": "Machines cannot determine what input is expected in the field."
+        },
+        "fix": {
+          "code": "<input aria-label=\"검색어 입력\">",
+          "label": {
+            "ko": "aria-label 추가",
+            "en": "Add aria-label"
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "무의미한 alt 텍스트",
+          "en": "무의미한 alt 텍스트"
+        },
+        "elementInfo": "img[alt] x 15",
+        "description": {
+          "ko": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값",
+          "en": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값"
+        },
+        "impact": {
+          "ko": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보",
+          "en": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보"
+        },
+        "fix": {
+          "code": "<img alt=\"2026년 봄 시즌 할인 배너\">",
+          "label": {
+            "ko": "구체적 alt 작성",
+            "en": "구체적 alt 작성"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 9",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이상 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소가 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테고리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      }
+    ],
+    "captured_at": "2026-03-29T03:10:52.624+00:00",
+    "generated_at": "2026-03-29T03:37:42.092+00:00"
+  },
+  {
+    "id": 180,
+    "domain": "coupang.com",
+    "url": "https://www.coupang.com",
+    "parity_score": 48,
+    "ghost_count": 91,
+    "normal_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/coupang.com-normal.png",
+    "blackhole_screenshot_url": "https://bmckziefnwiklcsbrxer.supabase.co/storage/v1/object/public/screenshots/deepdive/coupang.com-blackhole.png",
+    "findings": [
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 5",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식���지 않아 키보드/스크린 리더 접근 불가",
+          "en": "대화형 요소로 인식���지 않아 키보드/스크린 리더 접근 불가"
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 32",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "alt 없는 이미지 링크",
+          "en": "Ghost Images: Missing alt attribute"
+        },
+        "elementInfo": "a > img x 34",
+        "description": {
+          "ko": "링크 내부 이미지에 alt 속성이 없어 링크 목적을 알 수 없음",
+          "en": "Images lack alt attribute, making them invisible to screen readers and AI assistants."
+        },
+        "impact": {
+          "ko": "AI/스크린 리더가 이미지 내용을 인식할 수 없어 링크를 무시함",
+          "en": "AI/screen readers cannot identify image content, causing links to be ignored."
+        },
+        "fix": {
+          "code": "<img alt=\"설명 텍스트\" src=\"...\">",
+          "label": {
+            "ko": "alt 속성 추가",
+            "en": "Add alt attribute"
+          }
+        }
+      },
+      {
+        "severity": "ghost",
+        "title": {
+          "ko": "역할 없는 클릭 요소",
+          "en": "Ghost Clickables: No role attribute"
+        },
+        "elementInfo": "div[onclick] x 40",
+        "description": {
+          "ko": "onclick 또는 tabindex=0이 있지만 role 속성이 없는 비시맨틱 요소",
+          "en": "Elements with click handlers or tabindex lack role attribute, making them unrecognizable as interactive elements."
+        },
+        "impact": {
+          "ko": "대화형 요소로 인식되지 않아 키보드/스크린 리더 접근 불가",
+          "en": "Not recognized as interactive — keyboard and screen reader users cannot access it."
+        },
+        "fix": {
+          "code": "<div role=\"button\" tabindex=\"0\" onclick=\"...\">",
+          "label": {
+            "ko": "role=\"button\" 추가",
+            "en": "Add role=\"button\""
+          }
+        }
+      },
+      {
+        "severity": "ambiguous",
+        "title": {
+          "ko": "무의미한 alt 텍스트",
+          "en": "무의미한 alt 텍스트"
+        },
+        "elementInfo": "img[alt] x 14",
+        "description": {
+          "ko": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값",
+          "en": "alt 속성이 \"image\", \"photo\", \"icon\" 등 의미 없는 값"
+        },
+        "impact": {
+          "ko": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보",
+          "en": "이미지 내용을 파악할 수 없어 시각장애 사용자에게 무용한 정보"
+        },
+        "fix": {
+          "code": "<img alt=\"2026년 봄 시즌 할인 배너\">",
+          "label": {
+            "ko": "구체적 alt 작성",
+            "en": "구체적 alt 작성"
+          }
+        }
+      },
+      {
+        "severity": "duplicate",
+        "title": {
+          "ko": "중복 aria-label 그룹",
+          "en": "Duplicate Labels: Same name repeated"
+        },
+        "elementInfo": "[aria-label] x 18",
+        "description": {
+          "ko": "동일한 aria-label 값이 3회 이상 반복되는 요소 그룹",
+          "en": "Multiple elements share the same aria-label, causing confusion about which element to interact with."
+        },
+        "impact": {
+          "ko": "같은 라벨의 요소가 여러 개면 어떤 것을 선택해야 하는지 혼란",
+          "en": "Multiple elements with the same label create confusion about which to select."
+        },
+        "fix": {
+          "code": "<a aria-label=\"카테고리: 의류\">의류</a>",
+          "label": {
+            "ko": "고유 라벨 부여",
+            "en": "Give unique label"
+          }
+        }
+      }
+    ],
+    "captured_at": "2026-03-29T03:06:45.242+00:00",
+    "generated_at": "2026-03-29T03:37:42.092+00:00"
+  }
+]
