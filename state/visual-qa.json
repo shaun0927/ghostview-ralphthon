@@ -1,0 +1,24 @@
+{
+  "status": "ALL_PASSED",
+  "phase": 4,
+  "timestamp": "2026-03-29T06:02:44.349Z",
+  "allPassed": true,
+  "totalChecks": 13,
+  "passedChecks": 13,
+  "failedChecks": 0,
+  "results": [
+    {"id": "leaderboard_data", "passed": true, "detail": "제목 GhostView OK, 행 555개, 1위 Parity=30.2%"},
+    {"id": "detail_page_renders", "passed": true, "detail": "도메인: ably.com"},
+    {"id": "slider_interaction", "passed": true, "detail": "슬라이더 동작 확인"},
+    {"id": "two_different_screenshots", "passed": true, "detail": "normal과 blackhole 이미지 URL 상이"},
+    {"id": "findings_cards_count", "passed": true, "detail": "Finding 8개, 수정 코드 16개"},
+    {"id": "math_correctness", "passed": true, "detail": "수학 오류 없음"},
+    {"id": "slider_overlay_ux", "passed": true, "detail": "슬라이더가 이미지 위에 정확히 겹침"},
+    {"id": "live_scan_page", "passed": true, "detail": "URL 입력 + 버튼 존재"},
+    {"id": "live_scan_api", "passed": true, "detail": "스캔 성공, HTTP 200, parityScore=0"},
+    {"id": "openchrome_branding", "passed": true, "detail": "OpenChrome 크레딧 + GitHub 링크 확인"},
+    {"id": "i18n_toggle", "passed": true, "detail": "EN 클릭 후 UI 영어 전환 확인"},
+    {"id": "i18n_findings_en", "passed": true, "detail": "EN 모드에서 findings 영어 표시"},
+    {"id": "hero_narrative", "passed": true, "detail": "전면 메시지 표시 확인"}
+  ]
+}

@@ -29,7 +29,7 @@ async function getSiteData(domain: string) {
     const { data: report } = await supabase
       .from('reports')
       .select('*')
-      .eq('site_id', site.id)
+      .eq('domain', domain)
       .single()
 
     return { site, report }
