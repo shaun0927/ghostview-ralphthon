@@ -88,6 +88,17 @@ check_phase_gate() {
   " 2>/dev/null || echo "5"
 }
 
+# GitHub 이슈 닫힌 수로 실제 완료 검증 (phase-gate.json만 믿지 않음)
+check_real_completion() {
+  local TOTAL_ISSUES=$(gh issue list --state all --json number -q 'length' 2>/dev/null || echo "0")
+  local CLOSED=$(gh issue list --state closed --json number -q 'length' 2>/dev/null || echo "0")
+  if [ "$TOTAL_ISSUES" -gt 0 ] && [ "$CLOSED" -eq "$TOTAL_ISSUES" ]; then
+    echo "true"
+  else
+    echo "false"
+  fi
+}
+
 get_screen() {
   tmux capture-pane -t "$SESSION_NAME" -p 2>/dev/null | tail -20
 }
@@ -97,14 +108,34 @@ start_claude_session
 while [ "$RESTARTS" -le "$MAX_RESTARTS" ]; do
   sleep 10
 
-  # 1. phase-gate 확인
+  # 1. phase-gate 확인 (GitHub cross-check 포함)
   PENDING=$(check_phase_gate)
   if [ "$PENDING" -eq 0 ]; then
-    echo ""
-    echo "━━━ 모든 Phase 완료! $(date +%H:%M:%S) ━━━"
-    node -p "JSON.stringify(JSON.parse(require('fs').readFileSync('${ROOT}/state/phase-gate.json','utf8')),null,2)"
-        tmux send-keys -t "$SESSION_NAME" C-c 2>/dev/null
-    exit 0
+    # phase-gate.json만 믿지 않음 — GitHub 이슈 상태로 실제 완료 검증
+    REAL_DONE=$(check_real_completion)
+    if [ "$REAL_DONE" = "true" ]; then
+      echo ""
+      echo "━━━ 모든 Phase 완료! $(date +%H:%M:%S) ━━━"
+      node -p "JSON.stringify(JSON.parse(require('fs').readFileSync('${ROOT}/state/phase-gate.json','utf8')),null,2)"
+      tmux send-keys -t "$SESSION_NAME" C-c 2>/dev/null
+      exit 0
+    else
+      # phase-gate는 complete인데 GitHub 이슈가 안 닫혔으면 → phase-gate가 오염된 것
+      CLOSED_N=$(gh issue list --state closed --json number -q 'length' 2>/dev/null || echo "0")
+      TOTAL_N=$(gh issue list --state all --json number -q 'length' 2>/dev/null || echo "0")
+      echo "  [WARN] phase-gate 오염 감지: 파일은 all-complete지만 GitHub ${CLOSED_N}/${TOTAL_N} closed"
+      # GitHub 닫힌 이슈 수에 맞게 phase-gate 복구
+      node -e "
+        const fs=require('fs');
+        const path='${ROOT}/state/phase-gate.json';
+        const g=JSON.parse(fs.readFileSync(path,'utf8'));
+        for(let i=0;i<5;i++) g['phase'+i] = i < ${CLOSED_N} ? 'complete' : 'pending';
+        g.completedAt=null;
+        fs.writeFileSync(path,JSON.stringify(g,null,2));
+        console.log('  phase-gate 복구: phase0~'+(${CLOSED_N}-1)+' complete, 나머지 pending');
+      " 2>/dev/null
+      PENDING=$(check_phase_gate)
+    fi
   fi
 
   # 2. 세션 생존 확인
@@ -122,11 +153,8 @@ while [ "$RESTARTS" -le "$MAX_RESTARTS" ]; do
   CURRENT_SCREEN=$(get_screen)
   NOW=$(date +%s)
 
-  # 방법 1: phase-gate.json 변화 감지
-  COMPLETED_PHASES=$(node -p "
-    const g=JSON.parse(require('fs').readFileSync('${ROOT}/state/phase-gate.json','utf8'));
-    Object.entries(g).filter(([k,v])=>k.startsWith('phase')&&v==='complete').length
-  " 2>/dev/null || echo "0")
+  # 방법 1: GitHub 닫힌 이슈 수가 진실의 원천 (phase-gate.json은 AI가 오염 가능)
+  COMPLETED_PHASES=$(gh issue list --state closed --json number -q 'length' 2>/dev/null || echo "0")
 
   # 방법 2: GitHub 닫힌 이슈 수 변화 감지 (AI가 수동 close해도 감지)
   CLOSED_ISSUES=$(gh issue list --state closed --json number -q 'length' 2>/dev/null || echo "0")
@@ -139,17 +167,19 @@ while [ "$RESTARTS" -le "$MAX_RESTARTS" ]; do
     MAX_COMPLETED_PHASES="$COMPLETED_PHASES"
     CHANGE_DETECTED=1
   elif [ -n "$PREV_COMPLETED_PHASES" ] && [ "$COMPLETED_PHASES" -lt "$PREV_COMPLETED_PHASES" ] 2>/dev/null; then
-    # 역행 감지 — phase-gate.json 복구 (git checkout이 덮어쓴 경우)
-    echo "  [WARN] phase-gate 역행 ${PREV_COMPLETED_PHASES}→${COMPLETED_PHASES} (자동 복구)"
+    # 역행 감지 — GitHub 닫힌 이슈 수 기준으로만 복구 (오염 방지)
+    GH_CLOSED=$(gh issue list --state closed --json number -q 'length' 2>/dev/null || echo "0")
+    echo "  [WARN] phase-gate 역행 ${PREV_COMPLETED_PHASES}→${COMPLETED_PHASES} (GitHub 기준 ${GH_CLOSED}건 closed로 복구)"
     node -e "
       const fs=require('fs');
       const path='${ROOT}/state/phase-gate.json';
       const g=JSON.parse(fs.readFileSync(path,'utf8'));
-      // high-water mark까지 complete로 복구
-      for(let i=0;i<${MAX_COMPLETED_PHASES};i++) g['phase'+i]='complete';
+      // GitHub 닫힌 이슈 수만큼만 complete (오염 방지)
+      for(let i=0;i<5;i++) g['phase'+i] = i < ${GH_CLOSED} ? 'complete' : (g['phase'+i]==='complete' ? 'pending' : g['phase'+i]);
       fs.writeFileSync(path,JSON.stringify(g,null,2));
-      console.log('  복구 완료: phase0~'+(${MAX_COMPLETED_PHASES}-1)+' → complete');
+      console.log('  복구: GitHub closed=${GH_CLOSED} 기준');
     " 2>/dev/null
+    MAX_COMPLETED_PHASES="$GH_CLOSED"
   fi
 
   # Issue close: 이전보다 닫힌 이슈 수 증가 시에만 재시작
