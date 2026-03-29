@@ -5,6 +5,10 @@
 > 결정적 인프라가 비결정적 AI를 감싸는 하네스 엔지니어링 아키텍처.
 > 약 3시간 만에 1000개 사이트를 스캔하고, 웹사이트를 빌드하고, 배포까지 완료.
 
+**3만줄의 코드. No test code.** Output-driven development.
+웹사이트를 정확하게 볼 수 있다면 사실 테스트 코드는 필요 없습니다.
+직접 개발한 harness opensource — [OpenChrome MCP](https://github.com/anthropics/claude-code)로 웹사이트를 정확하게 파악하고, 웹 QA가 이후 모든 걸 대체합니다.
+
 **[Live Site](https://ghostview-chi.vercel.app)** | **[Architecture Presentation](docs/presentation.html)**
 
 ---
