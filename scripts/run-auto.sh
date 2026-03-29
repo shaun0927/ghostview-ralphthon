@@ -20,7 +20,7 @@ PREV_CLOSED_ISSUES=""
 MAX_COMPLETED_PHASES=0  # high-water mark — phase는 앞으로만 진행
 HANG_COUNT=0
 
-PROMPT='gv_resume로 상태 확인하고 다음 ready 이슈를 gv_start로 시작해. 코드 작성 후 gv_finish로 완료해. nextReady가 있으면 계속 진행해. autopilot으로 진행해줘.'
+PROMPT='gv_resume로 현재 상태를 확인해. 다음 ready 이슈를 gv_start로 시작하고, 이슈 본문의 지시대로 코드를 작성해. 완료되면 gv_finish로 마무리해. nextReady가 있으면 바로 다음 이슈를 gv_start로 시작해. 중요: phase-gate.json을 절대 직접 수정하지 마. issue-finish.sh가 자동으로 처리한다.'
 
 echo "╔═══════════════════════════════════════╗"
 echo "║  GhostView Auto Runner (tmux)         ║"
