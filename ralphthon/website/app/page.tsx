@@ -10,14 +10,21 @@ async function getData(): Promise<{ sites: Site[]; stats: Stats }> {
   if (!supabase) return { sites: MOCK_SITES, stats: MOCK_STATS }
 
   try {
-    const { data: sites, error } = await supabase
-      .from('sites')
-      .select('*')
-      .order('parity_score', { ascending: true })
+    const [sitesRes, reportsRes] = await Promise.all([
+      supabase.from('sites').select('*').order('parity_score', { ascending: true }),
+      supabase.from('reports').select('site_id'),
+    ])
 
-    if (error || !sites || sites.length === 0) {
+    if (sitesRes.error || !sitesRes.data || sitesRes.data.length === 0) {
       return { sites: MOCK_SITES, stats: MOCK_STATS }
     }
+
+    // reports 테이블의 site_id로 has_report 동적 설정
+    const reportSiteIds = new Set((reportsRes.data || []).map((r: { site_id: string }) => r.site_id))
+    const sites: Site[] = sitesRes.data.map((s: Record<string, unknown>) => ({
+      ...s,
+      has_report: reportSiteIds.has(s.id as string),
+    })) as Site[]
 
     const stats: Stats = {
       totalSites: sites.length,
